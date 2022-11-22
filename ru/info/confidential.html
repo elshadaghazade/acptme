@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html class="side-header" lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<script src="https://www.artfut.com/static/tagtag.min.js?campaign_code=bc95bf7490" async onerror='var self = this; window.ADMITAD=window.ADMITAD||{},ADMITAD.Helpers=ADMITAD.Helpers||{},ADMITAD.Helpers.generateDomains=function(){for(var e=new Date,n=Math.floor(new Date(2020,e.getMonth(),e.getDate()).setUTCHours(0,0,0,0)/1e3),t=parseInt(1e12*(Math.sin(n)+1)).toString(30),i=["de"],o=[],a=0;a<i.length;++a)o.push({domain:t+"."+i[a],name:t});return o},ADMITAD.Helpers.findTodaysDomain=function(e){function n(){var o=new XMLHttpRequest,a=i[t].domain,D="https://"+a+"/";o.open("HEAD",D,!0),o.onload=function(){setTimeout(e,0,i[t])},o.onerror=function(){++t<i.length?setTimeout(n,0):setTimeout(e,0,void 0)},o.send()}var t=0,i=ADMITAD.Helpers.generateDomains();n()},window.ADMITAD=window.ADMITAD||{},ADMITAD.Helpers.findTodaysDomain(function(e){if(window.ADMITAD.dynamic=e,window.ADMITAD.dynamic){var n=function(){return function(){return self.src?self:""}}(),t=n(),i=(/campaign_code=([^&]+)/.exec(t.src)||[])[1]||"";t.parentNode.removeChild(t);var o=document.getElementsByTagName("head")[0],a=document.createElement("script");a.src="https://www."+window.ADMITAD.dynamic.domain+"/static/"+window.ADMITAD.dynamic.name.slice(1)+window.ADMITAD.dynamic.name.slice(0,1)+".min.js?campaign_code="+i,o.appendChild(a)}});' type="ef128b3ff73a23612e1ef823-text/javascript"></script>
+
+
+<script type="ef128b3ff73a23612e1ef823-text/javascript">
+    // имя cookie для хранения источника
+    // если используется другое имя, укажите его
+    var cookie_name = 'deduplication_cookie';
+    // число дней жизни куки
+    var days_to_store = 90;
+    // ожидаемое значение deduplication_cookie для Admitad
+    var deduplication_cookie_value = 'admitad';
+    // имя GET параметра для дедупликации
+    // если у вас используется другой параметр, укажите его имя
+    var channel_name = 'deduplication_channel';
+    // функция для получения источника из GET параметра
+    getSourceParamFromUri = function () {
+        var pattern = channel_name + '=([^&]+)';
+        var re = new RegExp(pattern);
+        return (re.exec(document.location.search) || [])[1] || '';
+    };
+
+    // функция для получения источника из cookie с именем cookie_name
+    getSourceCookie = function () {
+        var matches = document.cookie.match(new RegExp(
+            '(?:^|; )' + cookie_name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + '=([^;]*)'
+        ));
+        return matches ? decodeURIComponent(matches[1]) : undefined;
+    };
+
+    // функция для записи источника в cookie с именем cookie_name
+    setSourceCookie = function () {
+        var param = getSourceParamFromUri();
+        if (!param) { return; }
+        var period = days_to_store * 60 * 60 * 24 * 1000;	// в секундах
+        var expiresDate = new Date((period) + +new Date);
+        var cookieString = cookie_name + '=' + param + '; path=/; expires=' + expiresDate.toGMTString();
+        document.cookie = cookieString;
+        document.cookie = cookieString + '; domain=.' + location.host;
+    };
+
+    // запись куки
+    setSourceCookie();
+
+    // определение канала для Admitad
+    if (window.ADMITAD) {
+        if (!getSourceCookie(cookie_name)) {
+            ADMITAD.Invoice.broker = 'na';
+        } else if (getSourceCookie(cookie_name) != deduplication_cookie_value) {
+            ADMITAD.Invoice.broker = getSourceCookie(cookie_name);
+        } else {
+            ADMITAD.Invoice.broker = 'adm';
+        }
+    }
+
+</script>
+
+
+<script type="ef128b3ff73a23612e1ef823-text/javascript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KB8MG4');</script>
+
+<link rel="canonical" href="https://www.yclients.com/info/confidential" hreflang="ru-RU" />
+<link rel="alternate" href="https://www.yclients.com/ua/info/confidential" hreflang="uk-UA" />
+<link rel="alternate" href="https://www.yclients.com/hu/info/confidential" hreflang="hu" />
+<link rel="alternate" href="https://www.yclients.com/tr/info/confidential" hreflang="tr" />
+<link rel="alternate" href="../../ro/info/confidential.html" hreflang="ro" />
+<link rel="alternate" href="https://www.yclients.com/en/info/confidential" hreflang="en" />
+<link rel="alternate" href="https://www.yclients.com/hr/info/confidential" hreflang="hr" />
+<title>Политика конфиденциальности | YCLIENTS</title>
+<meta name="description" content="Политика конфиденциальности пользователей YCLIENTS">
+<meta name="author" content="YCLIENTS LLC">
+<meta property="og:title" content="YCLIENTS — сервис онлайн-записи и платформа автоматизации для сферы услуг." />
+<meta property="og:description" content="Платформа позволяет подключить онлайн-запись на сайте, в социальных сетях и на других площадках, а также рассылать уведомления, управлять работой персонала, вести складской и финансовый учёт. YCLIENTS используют более 31 000 компаний и миллионы посетителей в России, СНГ и других странах мира." />
+<meta property="og:image" content="/assets/yclients/img/ru/og_image.png" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.yclients.com/info/confidential" />
+<meta name="ahrefs-site-verification" content="62bbcdff1dafd2dca5fd1c13f5db9fda8652a1662ad099a6b7d106d8f22f4e63">
+<link type="image/png" href="../../favicon.png" rel="shortcut icon" />
+<link rel="preload" href="../../assets/yclients/2019-template/img/YCLIENTS_yellow_dot_sm.gif" as="image">
+
+<link rel="preload" href="../../assets/yclients/2019-template/img/logo-mini.svg" as="image">
+<link rel="preload" href="../../assets/yclients/2019-template/img/logo-mini.svg" as="image">
+<link rel="preload" href="../../assets/yclients/images/new_site/phone_ico_mob.svg" as="image" media="(max-width: 700px)">
+<link rel="preload" href="../../assets/yclients/images/new_site/appstore.svg" as="image" media="(max-width: 700px)">
+<link rel="preload" href="../../assets/yclients/images/new_site/google-play.svg" as="image" media="(max-width: 700px)">
+<link rel="preload" href="../../assets/yclients/images/new_site/select_arr.svg" as="image" media="(max-width: 700px)">
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer type="ef128b3ff73a23612e1ef823-text/javascript"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-970179016" type="ef128b3ff73a23612e1ef823-text/javascript"></script>
+<script type="ef128b3ff73a23612e1ef823-text/javascript">
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-970179016');
+</script>
+<noindex>
+
+<script type="ef128b3ff73a23612e1ef823-text/javascript">
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym");
+    ym(20454571, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+        trackHash:true
+    });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/20454571" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+</noindex>
+<link href="../../themes/yclients/new-2019/vendor.css" rel="stylesheet"><link href="../../themes/yclients/new-2019/app.css" rel="stylesheet"><script async src='../../cdn-cgi/bm/cv/669835187/api.js'></script></head>
+<body>
+<div class="loader">
+<div class="sk-three-bounce loader_img">
+<div class="sk-child sk-bounce1"></div>
+<div class="sk-child sk-bounce2"></div>
+<div class="sk-child sk-bounce3"></div>
+</div>
+</div>
+<div class="body">
+
+<header id="mob-header" class="header scrolled">
+<div class="burger burger-open">
+<span></span>
+</div>
+<div class="header-backdrop"></div>
+<ul class="nav-list">
+<li>
+<a href="pricing.html">Цены</a>
+</li>
+<li>
+<a href="../../reviews.html">Отзывы</a>
+</li>
+<li>
+<a href="about.html">О компании</a>
+</li>
+<li class="last-child">
+<a href="../../blog.html" target="_blank">
+Блог
+</a>
+
+</ul>
+<strong class="logo">
+<a href="../../ru.html"></a>
+</strong>
+<div class="inner-box">
+<a href="https://www.yclients.com/onboarding/first" class="reg-link" target="_blank">Регистрация</a>
+<a href="../../signin.html" class="log-link mob-active" target="_blank">Войти</a>
+</div>
+<a href="tel:88005050475" class="tel_link mob">8 (800) 505-04-75</a>
+</header>
+<div class="menu-holder" id="block_id">
+<div class="inner-wrap">
+<div class="scroll-holder">
+<div class="holder-box">
+<div class="box">
+<span class="title">Продукт:</span>
+<span class="title mob">Функции продукта:</span>
+<ul class="menu-list">
+<li>
+<a href="../../online-booking.html">Онлайн-запись</a>
+</li>
+<li>
+<a href="../../electronic-schedule.html">Электронный журнал</a>
+</li>
+<li>
+<a href="../../sms-and-email-notification.html">SMS и Email уведомления</a>
+</li>
+<li>
+<a href="../../client-base.html">Клиентская база</a>
+</li>
+<li>
+<a href="../../statistics-and-analytics.html">Статистика и аналитика</a>
+</li>
+<li>
+<a href="../../inventory-control.html">Складской учет</a>
+</li>
+<li>
+<a href="../../app.html">Мобильное приложение</a>
+</li>
+<li class="small">
+<a href="../../finances-and-accounting.html">Финансовый учет</a>
+</li>
+<li class="small">
+<a href="../../electronic-cards.html">Электронные карты</a>
+</li>
+<li class="small">
+<a href="../../calculation-of-salaries.html">Расчет зарплат</a>
+</li>
+<li class="small">
+<a href="../../personal-mobile-applications.html">Мобильные приложения</a>
+</li>
+<li class="small">
+<a href="../../loyalty-program.html">Программа лояльности</a>
+</li>
+<li class="small">
+<a href="../../kassa.html">Работа с кассами</a>
+</li>
+</ul>
+</div>
+<div class="box">
+<ul class="menu-list style2">
+<li>
+<a href="pricing.html">Цены</a>
+</li>
+<li>
+<a href="../../reviews.html">Отзывы</a>
+</li>
+<li>
+<a href="about.html">О компании</a>
+</li>
+ 
+<li class="small">
+<a href="../../marketplace.html">Интеграции</a>
+</li>
+<li class="small">
+<a href="../../blog.html" target="_blank">
+Блог
+</a>
+</li>
+<li class="small">
+<a href="http://partners.yclients.com/" target="_blank" class="arr">Партнерская программа</a>
+</li>
+<li class="small">
+<a href="contact.html">Обратная связь</a>
+</li>
+
+<li class="small">
+<a href="http://support.yclients.com/hc/ru" target="_blank" class="arr">База знаний</a>
+</li>
+<li class="small">
+<a href="https://developers.yclients.com/ru/" target="_blank" class="arr">Разработчикам</a>
+</li>
+</ul>
+<div class="app-holder">
+<h3 class="holder-title">Мы в социальных сетях</h3>
+<div class="header-row justify-content-end">
+<ul class="header-social-icons social-icons social-icons-mobile social-icons-clean d-sm-0 ml-0">
+
+
+
+
+
+
+
+
+
+
+<li>
+<a href="https://vk.com/yclients?roistat_visit=482540" target="_blank" title="Vk" rel=”nofollow”>
+<i class="fab fa-vk"></i>
+</a>
+</li>
+<li>
+<a class="social-youtube" href="https://www.youtube.com/channel/UC6aHCPPSU9CDSA5cExZLd3Q?roistat_visit=482540" target="_blank" title="Youtube" rel=”nofollow”>
+<i class="fab fa-youtube"></i>
+</a>
+</li>
+<li>
+<a class="social-twitter" href="https://twitter.com/yclients?roistat_visit=482540" target="_blank" title="Twitter" rel="nofollow">
+<i class="fab fa-twitter">
+</i>
+</a>
+</li>
+ </ul>
+</div>
+<h3 class="holder-title">Мобильные приложения для сотрудников</h3>
+<ul class="app-list">
+<li>
+<a href="https://itunes.apple.com/ru/app/yclients/id1084371596?mt=8" class="apple" target="_blank" rel="nofollow">
+<span class="text">
+<img class="lazy-img" src="../../assets/yclients/images/new_site/apple_ico.png" alt="image description">
+Apple Store
+</span>
+</a>
+</li>
+<li>
+<a href="https://play.google.com/store/apps/details?id=apps.yclients1" class="gg" target="_blank" rel="nofollow">
+<span class="text">
+<img class="lazy-img" alt="image description" src="../../assets/yclients/images/new_site/market_ico.png">
+Google play
+</span>
+</a>
+</li>
+<li>
+<a href="https://appgallery.huawei.com/app/C105004393?sharePrepath=ag" class="huawei" target="_blank" rel="nofollow">
+<span class="text">
+<img class="lazy-img" alt="image description" src="../../assets/yclients/images/new_site/huawei_ico.png">
+AppGallery
+</span>
+</a>
+</li>
+</ul> </div>
+</div>
+</div>
+<div class="bottom-menu ">
+<a href="../../signin.html" class="log-link" target="_blank">Войти</a>
+<a href="https://www.yclients.com/onboarding/first" class="reg-link pl-4" target="_blank">Регистрация</a>
+<div class="select-mobile">
+<div class="select-holder">
+<select name="dropdown" class="dropdown-lang">
+<option value="/en">En</option>
+<option value="/el">El</option>
+<option value="/hr">Hr</option>
+<option value="/hu">Hu</option>
+<option value="/pt">Pt</option>
+<option selected value="/ru">Ru</option>
+<option value="/sr">Sr</option>
+<option value="/tr">Tr</option>
+</select> </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<header id="header" class="side-header d-flex">
+<div class="header-body">
+<div class="header-container container d-flex h-100">
+<div class="header-column flex-row flex-lg-column justify-content-center h-100">
+<div class="header-row flex-row justify-content-start justify-content-lg-center py-lg-5">
+<div class="header-logo">
+<a href="../../ru.html">
+<img alt="YCLIENTS" src="../../assets/yclients/2019-template/img/logo.svg">
+</a>
+</div>
+</div>
+<div class="header-row header-row-side-header flex-row h-100 pb-lg-5">
+<div class="header-nav header-nav-links header-nav-links-side-header header-nav-links-vertical header-nav-links-vertical-columns align-self-center">
+<div class="header-nav-main header-nav-main-square header-nav-main-dropdown-no-borders">
+<nav class="collapse">
+<ul class="nav nav-pills menu-nav_list" id="mainNav">
+<li class="menu-nav_item">
+<a href="../../online-booking.html">
+Онлайн-запись
+</a>
+</li>
+<li class="menu-nav_item">
+<a href="../../electronic-schedule.html">
+Электронный журнал
+</a>
+</li>
+<li class="menu-nav_item">
+<a href="../../sms-and-email-notification.html">
+Модуль уведомлений
+</a>
+</li>
+<li class="menu-nav_item">
+<a href="../../client-base.html">
+Клиентская база
+</a>
+</li>
+<li class="menu-nav_item">
+<a href="../../statistics-and-analytics.html">
+Статистика и аналитика
+</a>
+</li>
+<li class="menu-nav_item">
+<a href="../../inventory-control.html">
+Складской учет
+</a>
+</li>
+<li class="menu-nav_item">
+<a href="../../app.html">
+Мобильное приложение
+</a>
+</li>
+<li class="dropdown">
+<a class="dropdown-item dropdown-toggle" href="confidential.html#">
+<strong style="font-weight: 600">Все возможности</strong>
+</a>
+<ul class="dropdown-menu">
+<li class="menu-nav_item">
+<a class="dropdown-item" href="../../finances-and-accounting.html">Финансовый учет</a>
+</li>
+<li class="menu-nav_item">
+<a class="dropdown-item" href="../../loyalty-program.html">Программы лояльности</a>
+</li>
+<li class="menu-nav_item">
+<a class="dropdown-item" href="../../electronic-cards.html">Электронные карты</a>
+</li>
+<li class="menu-nav_item">
+<a class="dropdown-item" href="../../calculation-of-salaries.html">Расчет зарплат</a>
+</li>
+<li class="menu-nav_item">
+<a class="dropdown-item" href="../../personal-mobile-applications.html">Мобильные приложения для клиентов</a>
+</li>
+<li class="menu-nav_item">
+<a class="dropdown-item" href="../../telephony.html">Интеграция с телефонией</a>
+</li>
+<li class="menu-nav_item">
+<a class="dropdown-item" href="../../kassa.html">Интеграция с кассовым оборудованием</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="header-row justify-content-end pb-lg-3 hidden">
+<ul class="header-social-icons social-icons d-none d-sm-block social-icons-clean d-sm-0 ml-0">
+
+<li class="social-icons-vk">
+<a href="https://vk.com/yclients?roistat_visit=482540" target="_blank" title="Vk" rel=”nofollow”>
+<i class="fab fa-vk"></i>
+</a>
+</li>
+<li class="social-icons-youtube">
+<a class="social-youtube" href="https://www.youtube.com/channel/UC6aHCPPSU9CDSA5cExZLd3Q?roistat_visit=482540" target="_blank" title="Youtube" rel="nofollow">
+<i class="fab fa-youtube"></i>
+</a>
+</li>
+<li class="social-icons-twitter">
+<a class="social-twitter" href="https://twitter.com/yclients?roistat_visit=482540" target="_blank" title="Twitter" rel="nofollow">
+<i class="fab fa-twitter">
+</i>
+</a>
+</li>
+</ul>
+</div>
+<div class="justify-content-end pb-lg-3 hidden">
+<a href="https://itunes.apple.com/ru/app/yclients/id1084371596?mt=8" class="apple" target="_blank" rel="nofollow">
+<img src="../../assets/yclients/images/new_site/appstore.svg" alt="App Store"></span>
+</a>
+<a href="https://play.google.com/store/apps/details?id=apps.yclients1" class="gg" target="_blank" rel="nofollow">
+<img src="../../assets/yclients/images/new_site/google-play.svg" alt="Google Play">
+</a>
+<a href="https://appgallery.huawei.com/app/C105004393?sharePrepath=ag" class="huawei" target="_blank" rel="nofollow">
+<img src="../../assets/yclients/images/new_site/huawei.svg" alt="Google Play">
+</a>
+</div>
+</div>
+</div>
+</div>
+</header>
+<div class="top-header-row py-lg-4 d-none d-xl-block">
+<ul class="nav-list">
+<li>
+<a href="pricing.html" class="anim-link-2">Цены</a>
+</li>
+<li>
+<a href="../../marketplace.html" class="anim-link-2">Интеграции</a>
+</li>
+<li>
+<a href="../../reviews.html" class="anim-link-2">Отзывы</a>
+</li>
+<li>
+<a href="about.html" class="anim-link-2">О компании</a>
+</li>
+<li>
+<a href="../../blog.html" class="anim-link-2" target="_blank">
+Блог
+</a>
+</li>
+
+</ul>
+<ul class="inner-box">
+<li>
+<a href="https://www.yclients.com/onboarding/first" class="header-account header-signup anim-link-2">Регистрация</a>
+</li>
+<li>
+<a href="../../signin.html" class="header-account header-login anim-link-2">Вход</a>
+</li>
+</ul>
+</div>
+
+<main id="content">
+<section class="section small-header mt-9 pb-1">
+<div class="container">
+<header class="section-header small-header">
+<h1>
+ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ
+</h1>
+<hr>
+</header>
+</div>
+</section>
+<section class="section small-header mt-1 pt-1">
+<div class="container">
+<p><b>Термины и определения</b></p>
+<p><b>Автоматизированная обработка персональных данных</b> — обработка персональных данных с помощью средств вычислительной техники;</p>
+<p><b>Блокирование персональных данных</b> — временное прекращение обработки персональных данных (за исключением случаев, если обработка необходима для уточнения персональных данных);</p>
+<p><b>Информационная система персональных данных</b> — совокупность содержащихся в базах данных персональных данных, и обеспечивающих их обработку информационных технологий и технических средств;</p>
+<p><b>Обработка персональных данных</b> — любое действие (операция) или совокупность действий (операций), совершаемых с использованием средств автоматизации или без использования таких средств с персональными данными, включая сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передачу (предоставление, доступ), блокирование, удаление, уничтожение персональных данных;</p>
+<p><b>Оператор</b> — государственный орган, муниципальный орган, юридическое или физическое лицо, самостоятельно или совместно с другими лицами организующие и (или) осуществляющие обработку персональных данных, а также определяющие цели обработки персональных данных, состав персональных данных, подлежащих обработке, действия (операции), совершаемые с персональными данными;</p>
+<p><b>Персональные данные</b> — любая информация, относящаяся к прямо или косвенно определенному или определяемому физическому лицу (субъекту персональных данных);</p>
+<p><b>Предоставление персональных данных</b> — действия, направленные на раскрытие персональных данных определенному лицу или определенному кругу лиц;</p>
+<p><b>Распространение персональных данных</b> — действия, направленные на раскрытие персональных данных неопределенному кругу лиц.</p>
+<p><b>Трансграничная передача персональных данных</b> — передача персональных данных на территорию иностранного государства органу власти иностранного государства, иностранному физическому или иностранному юридическому лицу;</p>
+<p><b>Уничтожение персональных данных</b> — действия, в результате которых невозможно восстановить содержание персональных данных в информационной системе персональных данных и (или) результате которых уничтожаются материальные носители персональных данных.</p>
+</div>
+<section>
+<section class="section small-header mt-1 pt-1">
+<div class="container">
+<p>
+Настоящая Политика конфиденциальности персональной информации (далее — Политика) действует в отношении всей информации, которую ООО «УАЙКЛАЕНТС», расположенное по адресу: 127055, Москва, ул. Образцова, 4 строение 1 и/или его аффилированные лица, в том числе входящие в одну группу компаний с ООО «УАЙКЛАЕНТС» (далее — YCLIENTS), могут получить о пользователе во время использования им любого из сайтов, сервисов, служб, программ и продуктов YCLIENTS (далее — Сервисы, Сервисы YCLIENTS).
+</p>
+<p>
+Использование Сервисов YCLIENTS означает безоговорочное согласие пользователя с настоящей Политикой и указанными в ней условиями обработки его личной информации; в случае несогласия с этими условиями пользователь должен воздержаться от использования Сервисов.
+</p>
+<p>
+Компания обязана опубликовать или иным образом обеспечить неограниченный доступ к настоящей Политике обработки персональных данных в соответствии с ч. 2 ст. 18.1. ФЗ-152.
+</p>
+<p>
+Положения настоящей Политики являются основой для организации работы по обработке персональных данных у Оператора, в том числе для разработки внутренних нормативных документов, регламентирующих обработку и защиту персональных данных у Оператора.
+</p>
+<p>
+В случае если отдельные положения настоящей Политики войдут в противоречие с действующим законодательством о персональных данных, применяются положения действующего законодательства.
+</p>
+<p>
+Запросы субъектов персональных данных в отношении обработки их персональных данных Оператором принимаются по адресам: 127055 г Москва ул Образцова, 4 / стр 1 эт/пом 1-5/1-5.
+</p>
+<p>
+Также субъекты персональных данных могут направить свой запрос, с приложением данных, позволяющих идентифицировать субъекта или подписанный усиленной квалифицированной электронной подписью на адрес электронной почты <a href="../../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="a8dbddd8d8c7dadce8d1cbc4c1cdc6dcdb86cbc7c586">[email&#160;protected]</a>
+</p>
+<p>
+Срок рассмотрения обращений не превышает 30 (тридцати) дней со дня обращения.
+</p>
+<p>
+<b>1. Информация пользователей, которую получает и обрабатывает YCLIENTS</b>
+</p>
+<p>
+1.1. В рамках настоящей Политики под «информацией пользователя» понимаются:
+</p>
+<p>
+1.1.1. Информация, которую пользователь предоставляет о себе самостоятельно при регистрации (создании учётной записи) или в процессе использования Сервисов, включая персональные данные пользователя: фамилия, имя, отчество; номера контактных телефонов; адреса электронной почты; место работы. Обязательная для предоставления Сервисов (оказания услуг) информация помечена специальным образом. Иная информация предоставляется пользователем на его усмотрение.
+</p>
+<p>
+1.1.2 Данные, которые автоматически передаются Сервисам YCLIENTS в процессе их использования с помощью установленного на устройстве пользователя программного обеспечения, в том числе IP-адрес, информация из cookie, информация о браузере пользователя (или иной программе, с помощью которой осуществляется доступ к Сервисам), время доступа, адрес запрашиваемой страницы.
+</p>
+<p>
+1.1.3 Иная информация о пользователе, сбор и/или предоставление которой определено в Регулирующих документах отдельных Сервисов YCLIENTS.
+</p>
+<p>
+1.2. Настоящая Политика применима только к Сервисам YCLIENTS. YCLIENTS не контролирует и не несет ответственность за сайты третьих лиц, на которые пользователь может перейти по ссылкам, доступным на сайтах YCLIENTS, в том числе в результатах поиска. На таких сайтах у пользователя может собираться или запрашиваться иная персональная информация, а также могут совершаться иные действия.
+</p>
+<p>
+1.3. YCLIENTS в общем случае не проверяет достоверность информации, предоставляемой пользователями, и не осуществляет контроль за их дееспособностью. Однако YCLIENTS исходит из того, что пользователь предоставляет достоверную и достаточную информацию по вопросам, предлагаемым в форме регистрации, и поддерживает эту информацию в актуальном состоянии. Последствия предоставления недостоверной информации определены в Пользовательском соглашении сервисов YCLIENTS (<a href="https://www.yclients.com/info/rules" target="_blank">https://www.yclients.com/info/rules</a>).
+</p>
+<p>
+<b>2. Цели сбора и обработки информации пользователей</b>
+</p>
+<p>
+2.1. YCLIENTS собирает и хранит только те данные, которые необходимы для предоставления Сервисов и оказания услуг (исполнения соглашений и договоров с пользователем).
+</p>
+<p>
+2.2. Личную информацию пользователя YCLIENTS может использовать в следующих целях:
+</p>
+<p>
+2.2.1. Идентификация стороны в рамках соглашений и договоров с YCLIENTS;
+</p>
+<p>
+2.2.2. Предоставление пользователю персонализированных Сервисов, демо доступа в Сервисы;
+</p>
+<p>
+2.2.3. Связь с пользователем, в том числе направление уведомлений, запросов и информации, касающихся использования Сервисов, оказания услуг, а также обработка запросов и заявок от пользователя; отправка рекламных, новостных, информационных рассылок а, также пуш уведомлений ,касающихся использования Сервисов, оказания услуг, а также обработки запросов и заявок от пользователя;
+</p>
+<p>
+2.2.4. Улучшение качества Сервисов, удобства их использования, разработка новых Сервисов и услуг;
+</p>
+<p>
+2.2.5. Таргетирование рекламных материалов;
+</p>
+<p>
+2.2.6. Проведение статистических и иных исследований на основе обезличенных данных.
+</p>
+<p>
+<b>3. Условия обработки информации пользователя и её передачи третьим лицам</b>
+</p>
+<p>
+3.1. YCLIENTS хранит информацию пользователей в соответствии с внутренними регламентами конкретных сервисов.
+</p>
+<p>
+3.2. В отношении информации пользователя сохраняется ее конфиденциальность, кроме случаев добровольного предоставления пользователем информации о себе для общего доступа неограниченному кругу лиц. При использовании отдельных Сервисов пользователь соглашается с тем, что определённая часть его информации становится общедоступной.
+</p>
+<p>
+3.3. YCLIENTS вправе передать информацию пользователя третьим лицам в следующих случаях:
+</p>
+<p>
+3.3.1. Пользователь выразил свое согласие на такие действия;
+</p>
+<p>
+3.3.2. Передача необходима в рамках использования пользователем определенного Сервиса либо для оказания услуги пользователю;
+</p>
+<p>
+3.3.3. Передача предусмотрена российским или иным применимым законодательством в рамках установленной законодательством процедуры;
+ </p>
+<p>
+3.3.4. Такая передача происходит в рамках продажи или иной передачи бизнеса (полностью или в части), при этом к приобретателю переходят все обязательства по соблюдению условий настоящей Политики применительно к полученной им персональной информации;
+</p>
+<p>
+3.3.5. В целях обеспечения возможности защиты прав и законных интересов YCLIENTS или третьих лиц в случаях, когда пользователь нарушает Пользовательское соглашение сервисов YCLIENTS (<a href="https://www.yclients.com/info/rules/" target="_blank">https://www.yclients.com/info/rules/</a>).
+</p>
+<p>
+3.4. При обработке данных пользователей YCLIENTS руководствуется Федеральным законом РФ «О персональных данных»:
+</p>
+<p>
+3.4.1. В ходе обработки с персональными данными пользователя будут совершены следующие действия: сбор; запись; систематизация; накопление; хранение; уточнение (обновление, изменение); извлечение; использование; блокирование; удаление; уничтожение, передача (поручение; доступ).
+</p>
+<p>
+3.4.2. Персональные данные пользователя обрабатываются до достижения целей обработки персональных данных либо до отзыва согласия на обработку персональных данных, в зависимости от того, какое из событий наступит раньше.
+</p>
+<p>
+3.4.3. Пользователь вправе отозвать своё согласие на обработку персональных данных путём направления заявления YCLIENTS в соответствии с законодательством Российской Федерации. В случае отзыва согласия на обработку персональных данных YCLIENTS вправе продолжить обработку персональных данных при наличии оснований, указанных в пунктах 2-11 части 1 статьи 6, части 2 статьи 10 и части 2 статьи 11 Федерального закона №152-ФЗ «О персональных данных» от 27.07.2006 г.
+</p>
+<p>
+3.4.4. Согласие на обработку персональных данных действует всё время до момента прекращения обработки персональных данных, указанных в п. 3.4.2. настоящей Политики.
+</p>
+<p>
+<b>4. Права субъекта персональных данных</b>
+</p>
+<p>Субъект персональных данных имеет право на получение у Оператора информации, касающейся обработки его персональных данных, если такое право не ограничено в соответствии с федеральными законами. Субъект персональных данных вправе требовать от Оператора уточнения его персональных данных, их блокирования или уничтожения в случае, если персональные данные являются неполными, устаревшими, неточными, незаконно полученными или не являются необходимыми для заявленной цели обработки, а также принимать предусмотренные законом меры по защите своих прав.</p>
+<p>Обработка персональных данных в целях продвижения товаров, работ, услуг на рынке путем осуществления прямых контактов с субъектом персональных данных (потенциальным потребителем) с помощью средств связи, а также в целях политической агитации допускается только при условии предварительного согласия субъекта персональных данных. </p>
+<p>Оператор обязан немедленно прекратить по требованию субъекта персональных данных обработку его персональных данных в вышеуказанных целях.</p>
+<p>Запрещается принятие на основании исключительно автоматизированной обработки персональных данных решений, порождающих юридические последствия в отношении субъекта персональных данных или иным образом затрагивающих его права и законные интересы, за исключением случаев, предусмотренных федеральными законами, или при наличии согласия в письменной форме субъекта персональных данных.</p>
+<p>Если субъект персональных данных считает, что Оператор осуществляет обработку его персональных данных с нарушением требований ФЗ-152 или иным образом нарушает его права и свободы, субъект персональных данных вправе обжаловать действия или бездействие Оператора в Уполномоченный орган по защите прав субъектов персональных данных или в судебном порядке.</p>
+<p>Субъект персональных данных имеет право на защиту своих прав и законных интересов, в том числе на возмещение убытков и (или) компенсацию морального вреда.</p>
+<p>
+<b>5. Изменение пользователем персональной информации</b>
+</p>
+<p>
+5.1. Пользователь может в любой момент изменить (обновить, дополнить) предоставленную им информацию или её часть, а также параметры её конфиденциальности, воспользовавшись функцией редактирования данных в разделе «Личный кабинет» (<a href="https://yclients.com/cabinet" target="_blank">https://yclients.com/cabinet</a>) либо в персональном разделе соответствующего Сервиса.
+</p>
+<p>
+5.2. Пользователь также может удалить предоставленную им в рамках определенной учетной записи информацию, связавшись с YCLIENTS любым удобным для себя способом. При этом удаление аккаунта может повлечь невозможность использования некоторых Сервисов YCLIENTS.
+</p>
+<p>
+<b>6. Меры, применяемые для защиты персональной информации пользователей</b>
+</p>
+<p>
+YCLIENTS принимает необходимые и достаточные организационные и технические меры для защиты информации пользователя от неправомерного или случайного доступа, уничтожения, изменения, блокирования, копирования, распространения, а также от иных неправомерных действий с ней третьих лиц.
+</p>
+<p>
+<b>6.1 ТЕЛЕФОННЫЕ ЗВОНКИ</b>
+</p>
+<p>
+Звонки в Службу поддержки клиентов ООО «УАЙКЛАЕНТС» и звонки от Службы поддержки клиентов ООО «УАЙКЛАЕНТС» могут записываться. Это осуществляется в заявленных в п. 2.1 настоящего Положения целях обработки Ваших данных. Совершая звонок в ООО “УАЙКЛАЕНТС” или получая звонок от ООО “УЙАКЛАЕНТС” и продолжая разговор с сотрудником ООО “УАКЙЛАЕНТС”, Вы соглашаетесь на обработку предоставляемых Вами данных на условиях настоящей Политики.
+</p>
+<p>
+<b>7. Изменение Политики конфиденциальности. Применимое законодательство</b>
+</p>
+<p>
+7.1. YCLIENTS имеет право вносить изменения в настоящую Политику конфиденциальности. При внесении изменений в актуальной редакции указывается дата последнего обновления. Новая редакция Политики вступает в силу с момента ее размещения, если иное не предусмотрено новой редакцией Политики. Действующая редакция всегда находится на странице по адресу <a href="https://www.yclients.com/info/confidential" target="_blank">https://www.yclients.com/info/confidential</a>.
+</p>
+<p>
+7.2. К настоящей Политике и отношениям между пользователем и YCLIENTS, возникающим в связи с применением Политики конфиденциальности, подлежит применению право Российской Федерации.
+</p>
+<p>
+<b>8. Обратная связь. Вопросы и предложения</b>
+</p>
+<p>
+Все предложения или вопросы по поводу настоящей Политики следует сообщать в Службу поддержки пользователей YCLIENTS (<a href="../../cdn-cgi/l/email-protection.html#b6c5c3c6c6d9c4c2f6cfd5dadfd3d8c2c598d5d9db" target="_blank"><span class="__cf_email__" data-cfemail="6714121717081513271e040b0e020913144904080a">[email&#160;protected]</span></a>).
+</p>
+<p>
+Дата публикации: 01.01.2022 г.
+</p>
+<h2>
+<b>Предыдущие редакции</b>
+</h2>
+<p>
+<a href="https://www.yclients.com/info/confidential-01032016">от 01.03.2016 г.</a><br>
+<a href="https://www.yclients.com/info/confidential-03122018">от 03.12.2018 г.</a>
+</p>
+</div>
+</section></section></section>
+
+</main>
+
+
+<div class="fixed-bottom-box">
+<div class="callback-wrapper">
+<a href="tel:88005050475" class="tel_link">
+8 (800) 505-04-75
+</a>
+<div class="callback" onclick="if (!window.__cfRLUnblockHandlers) return false; ms.callback.showWidget()" data-cf-modified-ef128b3ff73a23612e1ef823-="">
+<p>Заказать звонок</p>
+</div>
+</div>
+<div class="select-holder">
+<select name="dropdown" class="dropdown-lang">
+<option value="/en">En</option>
+<option value="/el">El</option>
+<option value="/hr">Hr</option>
+<option value="/hu">Hu</option>
+<option value="/pt">Pt</option>
+<option selected value="/ru">Ru</option>
+<option value="/sr">Sr</option>
+<option value="/tr">Tr</option>
+</select> </div>
+</div>
+<div class="fixed-callback-button" onclick="if (!window.__cfRLUnblockHandlers) return false; ms.callback.showWidget()" data-cf-modified-ef128b3ff73a23612e1ef823-="" />
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<script src="../../themes/yclients/new-2019/all.min.js%3Fv2.22" async type="ef128b3ff73a23612e1ef823-text/javascript"></script>
+<script type="ef128b3ff73a23612e1ef823-text/javascript">
+    const promoCheckerInitInterval = setInterval(() => {
+        if (window.promoChecker) {
+            window.promoChecker.init(1)
+            clearInterval(promoCheckerInitInterval)
+        }
+    }, 50)
+</script>
+<script type="ef128b3ff73a23612e1ef823-text/javascript">
+    (function(g, e, t) {
+        e.GetReviewWidgetID = 'dCQVIye7txLqasHx';
+        var s = g.createElement('script');
+        e[t] = e[t] || function() {
+            (e[t].queue = e[t].queue || []).push(arguments);
+        };
+        s.async = true;
+        s.charset = 'UTF-8';
+        s.src = 'https://app.getreview.io/static/bundle.js';
+        if (g.head) { g.head.appendChild(s); }
+    })(document, window, 'GetReview');
+</script>
+<script type="ef128b3ff73a23612e1ef823-text/javascript">
+    function onloadCallback() {
+        ms.callback.renderCallbackCaptcha()
+    }
+</script>
+
+
+
+
+<script type="ef128b3ff73a23612e1ef823-text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-40235336-1', 'auto');
+    ga('send', 'pageview');
+</script>
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KB8MG4"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<noindex>
+
+<div class="modal inmodal animated bounceInRight" id="callModal" role="dialog" style="display: none;">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header text-center">
+<button type="button" class="close" onclick="if (!window.__cfRLUnblockHandlers) return false; ms.callback.hideWidget()" data-dismiss="modal" data-cf-modified-ef128b3ff73a23612e1ef823-=""><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+<img class="call-us_icon" src="../../assets/yclients/images/new_site/callback.png" alt="Online Booking Software and Appointment Scheduling">
+<div class="modal-title">У Вас остались вопросы?</div>
+<div class="modal-subtitle">Мы перезвоним Вам в течение 59 секунд</div>
+</div>
+<div class="modal-body">
+<form class="form-horizontal">
+<div id="validation-phone" class="form-group">
+<label for="callBack">Телефон</label>
+<input id="callBack" type="tel" placeholder="+7" class="phone form-control">
+<div class="validation">Некорректный номер телефона</div>
+</div>
+<div id="callbackRecaptchaWrapper" style="margin-top: 15px;"></div>
+<div id="validation-agreement" class="form-group">
+<div class="check-material check-material-ru agreement-block">
+<input id="agreement-block" type="checkbox" class="js-checkbox-kkm-module" name="agreement">
+<label for="agreement-block"></label>
+<div class="agreement-label"> Отправляя заявку, вы даете согласие с<a href="https://www.yclients.com/rinfo/user-agreement" target="_blank"> Политикой обработки персональных данных</a> и принимаете условия <a href="confidential.html" target="_blank">Политики конфиденциальности</a></div>
+<div class="validation">Подтвердите соглашение</div>
+</div>
+</div>
+<div id="validation-agreement3" class="form-group">
+<div class="check-material check-material-ru agreement-block">
+<input id="agreement-block3" type="checkbox" class="js-checkbox-kkm-module" name="agreement">
+<label for="agreement-block3"></label>
+<div class="agreement-label">Я согласен(а) на получение сообщений рекламного характера.</div>
+<div class="validation">Подтвердите соглашение</div>
+</div>
+</div>
+<div class="form-group text-center m-b-none">
+<a class="btn btn-primary" id="makeCallButton" onclick="if (!window.__cfRLUnblockHandlers) return false; return ms.callback.makeCall();" data-cf-modified-ef128b3ff73a23612e1ef823-="">
+<span id="timer_result">Заказать звонок</span>
+</a>
+</div>
+<span class="modal-info-text">или напишите нам</span>
+<div style="display: flex;" class="col-12 justify-content-center mr-0 mt-3">
+<a class="mr-2" href="https://api.whatsapp.com/send/?phone=79311112399&text&app_absent=0">
+<img src="../../assets/yclients/2019-template/img/icon/whatsapp.png" alt="">
+</a>
+<a class="mr-2" href="https://t.me/yclientsofficial_bot">
+<img src="../../assets/yclients/2019-template/img/icon/telegram.png" alt="">
+</a>
+<a href="viber://pa?chatURI=yclients">
+<img src="../../assets/yclients/2019-template/img/icon/viber.png" alt="">
+</a>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</noindex>
+<script type="ef128b3ff73a23612e1ef823-text/javascript" src="../../themes/yclients/new-2019/1.bundle.js%3Fv2.22"></script><script type="ef128b3ff73a23612e1ef823-text/javascript" src="../../themes/yclients/new-2019/bundle.js%3Fv2.22"></script><script src="../../cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="ef128b3ff73a23612e1ef823-|49" defer=""></script><script type="text/javascript">(function(){window['__CF$cv$params']={r:'71700b741b6b9dd8',m:'M2nV3RQ7IQ7W7fzsqF_76ygmfEXy.s7SKL1FomJbtgo-1654506939-0-AXJQndEBwVtsup/AcDv3nA4nFuQYI2IwVlDP58pdjGp5+TbhE4kBzaf9Bqx0UQqWoSsmQQOxecj4HcNKIuCR2TpVccZ6unb3ecV7KMxq1CVeIoohmqXRnfZxegrU9Je0VsR9ImRNYbMa3whbfupLSvE=',s:[0xd982e5528c,0x9fc36bdad9],}})();</script></body>
+</html>

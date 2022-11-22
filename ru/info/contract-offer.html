@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html class="side-header" lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<script src="https://www.artfut.com/static/tagtag.min.js?campaign_code=bc95bf7490" async onerror='var self = this; window.ADMITAD=window.ADMITAD||{},ADMITAD.Helpers=ADMITAD.Helpers||{},ADMITAD.Helpers.generateDomains=function(){for(var e=new Date,n=Math.floor(new Date(2020,e.getMonth(),e.getDate()).setUTCHours(0,0,0,0)/1e3),t=parseInt(1e12*(Math.sin(n)+1)).toString(30),i=["de"],o=[],a=0;a<i.length;++a)o.push({domain:t+"."+i[a],name:t});return o},ADMITAD.Helpers.findTodaysDomain=function(e){function n(){var o=new XMLHttpRequest,a=i[t].domain,D="https://"+a+"/";o.open("HEAD",D,!0),o.onload=function(){setTimeout(e,0,i[t])},o.onerror=function(){++t<i.length?setTimeout(n,0):setTimeout(e,0,void 0)},o.send()}var t=0,i=ADMITAD.Helpers.generateDomains();n()},window.ADMITAD=window.ADMITAD||{},ADMITAD.Helpers.findTodaysDomain(function(e){if(window.ADMITAD.dynamic=e,window.ADMITAD.dynamic){var n=function(){return function(){return self.src?self:""}}(),t=n(),i=(/campaign_code=([^&]+)/.exec(t.src)||[])[1]||"";t.parentNode.removeChild(t);var o=document.getElementsByTagName("head")[0],a=document.createElement("script");a.src="https://www."+window.ADMITAD.dynamic.domain+"/static/"+window.ADMITAD.dynamic.name.slice(1)+window.ADMITAD.dynamic.name.slice(0,1)+".min.js?campaign_code="+i,o.appendChild(a)}});' type="6dda125fd8eeced86f8ca979-text/javascript"></script>
+
+
+<script type="6dda125fd8eeced86f8ca979-text/javascript">
+    // имя cookie для хранения источника
+    // если используется другое имя, укажите его
+    var cookie_name = 'deduplication_cookie';
+    // число дней жизни куки
+    var days_to_store = 90;
+    // ожидаемое значение deduplication_cookie для Admitad
+    var deduplication_cookie_value = 'admitad';
+    // имя GET параметра для дедупликации
+    // если у вас используется другой параметр, укажите его имя
+    var channel_name = 'deduplication_channel';
+    // функция для получения источника из GET параметра
+    getSourceParamFromUri = function () {
+        var pattern = channel_name + '=([^&]+)';
+        var re = new RegExp(pattern);
+        return (re.exec(document.location.search) || [])[1] || '';
+    };
+
+    // функция для получения источника из cookie с именем cookie_name
+    getSourceCookie = function () {
+        var matches = document.cookie.match(new RegExp(
+            '(?:^|; )' + cookie_name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + '=([^;]*)'
+        ));
+        return matches ? decodeURIComponent(matches[1]) : undefined;
+    };
+
+    // функция для записи источника в cookie с именем cookie_name
+    setSourceCookie = function () {
+        var param = getSourceParamFromUri();
+        if (!param) { return; }
+        var period = days_to_store * 60 * 60 * 24 * 1000;	// в секундах
+        var expiresDate = new Date((period) + +new Date);
+        var cookieString = cookie_name + '=' + param + '; path=/; expires=' + expiresDate.toGMTString();
+        document.cookie = cookieString;
+        document.cookie = cookieString + '; domain=.' + location.host;
+    };
+
+    // запись куки
+    setSourceCookie();
+
+    // определение канала для Admitad
+    if (window.ADMITAD) {
+        if (!getSourceCookie(cookie_name)) {
+            ADMITAD.Invoice.broker = 'na';
+        } else if (getSourceCookie(cookie_name) != deduplication_cookie_value) {
+            ADMITAD.Invoice.broker = getSourceCookie(cookie_name);
+        } else {
+            ADMITAD.Invoice.broker = 'adm';
+        }
+    }
+
+</script>
+
+ 
+<script type="6dda125fd8eeced86f8ca979-text/javascript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KB8MG4');</script>
+
+<link rel="canonical" href="https://www.yclients.com/info/contract-offer" hreflang="ru-RU" />
+<link rel="alternate" href="https://www.yclients.com/ua/info/contract-offer" hreflang="uk-UA" />
+<link rel="alternate" href="https://www.yclients.com/hu/info/contract-offer" hreflang="hu" />
+<link rel="alternate" href="https://www.yclients.com/tr/info/contract-offer" hreflang="tr" />
+<link rel="alternate" href="https://www.yclients.com/ro/info/contract-offer" hreflang="ro" />
+<link rel="alternate" href="https://www.yclients.com/en/info/contract-offer" hreflang="en" />
+<link rel="alternate" href="https://www.yclients.com/hr/info/contract-offer" hreflang="hr" />
+<title>Договор-оферта | YCLIENTS</title>
+<meta name="description" content="Договор-оферта по платному внедрению программного обеспечения">
+<meta name="author" content="YCLIENTS LLC">
+<meta property="og:title" content="YCLIENTS — сервис онлайн-записи и платформа автоматизации для сферы услуг." />
+<meta property="og:description" content="Платформа позволяет подключить онлайн-запись на сайте, в социальных сетях и на других площадках, а также рассылать уведомления, управлять работой персонала, вести складской и финансовый учёт. YCLIENTS используют более 31 000 компаний и миллионы посетителей в России, СНГ и других странах мира." />
+<meta property="og:image" content="/assets/yclients/img/ru/og_image.png" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.yclients.com/info/contract-offer" />
+<meta name="ahrefs-site-verification" content="62bbcdff1dafd2dca5fd1c13f5db9fda8652a1662ad099a6b7d106d8f22f4e63">
+<link type="image/png" href="../../favicon.png" rel="shortcut icon" />
+<link rel="preload" href="../../assets/yclients/2019-template/img/YCLIENTS_yellow_dot_sm.gif" as="image">
+
+<link rel="preload" href="../../assets/yclients/2019-template/img/logo-mini.svg" as="image">
+<link rel="preload" href="../../assets/yclients/2019-template/img/logo-mini.svg" as="image">
+<link rel="preload" href="../../assets/yclients/images/new_site/phone_ico_mob.svg" as="image" media="(max-width: 700px)">
+<link rel="preload" href="../../assets/yclients/images/new_site/appstore.svg" as="image" media="(max-width: 700px)">
+<link rel="preload" href="../../assets/yclients/images/new_site/google-play.svg" as="image" media="(max-width: 700px)">
+<link rel="preload" href="../../assets/yclients/images/new_site/select_arr.svg" as="image" media="(max-width: 700px)">
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer type="6dda125fd8eeced86f8ca979-text/javascript"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-970179016" type="6dda125fd8eeced86f8ca979-text/javascript"></script>
+<script type="6dda125fd8eeced86f8ca979-text/javascript">
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-970179016');
+</script>
+<noindex>
+
+<script type="6dda125fd8eeced86f8ca979-text/javascript">
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym");
+    ym(20454571, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+        trackHash:true
+    });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/20454571" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+</noindex>
+<link href="../../themes/yclients/new-2019/vendor.css" rel="stylesheet"><link href="../../themes/yclients/new-2019/app.css" rel="stylesheet"><script async src='../../cdn-cgi/bm/cv/669835187/api.js'></script></head>
+<body>
+<div class="loader">
+<div class="sk-three-bounce loader_img">
+<div class="sk-child sk-bounce1"></div>
+<div class="sk-child sk-bounce2"></div>
+<div class="sk-child sk-bounce3"></div>
+</div>
+</div>
+<div class="body">
+
+<header id="mob-header" class="header scrolled">
+<div class="burger burger-open">
+<span></span>
+</div>
+<div class="header-backdrop"></div>
+<ul class="nav-list">
+<li>
+<a href="pricing.html">Цены</a>
+</li>
+<li>
+<a href="../../reviews.html">Отзывы</a>
+</li>
+<li>
+<a href="about.html">О компании</a>
+</li>
+<li class="last-child">
+<a href="../../blog.html" target="_blank">
+Блог
+</a>
+
+</ul>
+<strong class="logo">
+<a href="../../ru.html"></a>
+</strong>
+<div class="inner-box">
+<a href="https://www.yclients.com/onboarding/first" class="reg-link" target="_blank">Регистрация</a>
+<a href="../../signin.html" class="log-link mob-active" target="_blank">Войти</a>
+</div>
+<a href="tel:88005050475" class="tel_link mob">8 (800) 505-04-75</a>
+</header>
+<div class="menu-holder" id="block_id">
+<div class="inner-wrap">
+<div class="scroll-holder">
+<div class="holder-box">
+<div class="box">
+<span class="title">Продукт:</span>
+<span class="title mob">Функции продукта:</span>
+<ul class="menu-list">
+<li>
+<a href="../../online-booking.html">Онлайн-запись</a>
+</li>
+<li>
+<a href="../../electronic-schedule.html">Электронный журнал</a>
+</li>
+<li>
+<a href="../../sms-and-email-notification.html">SMS и Email уведомления</a>
+</li>
+<li>
+<a href="../../client-base.html">Клиентская база</a>
+</li>
+<li>
+<a href="../../statistics-and-analytics.html">Статистика и аналитика</a>
+</li>
+<li>
+<a href="../../inventory-control.html">Складской учет</a>
+</li>
+<li>
+<a href="../../app.html">Мобильное приложение</a>
+</li>
+<li class="small">
+<a href="../../finances-and-accounting.html">Финансовый учет</a>
+</li>
+<li class="small">
+<a href="../../electronic-cards.html">Электронные карты</a>
+</li>
+<li class="small">
+<a href="../../calculation-of-salaries.html">Расчет зарплат</a>
+</li>
+<li class="small">
+<a href="../../personal-mobile-applications.html">Мобильные приложения</a>
+</li>
+<li class="small">
+<a href="../../loyalty-program.html">Программа лояльности</a>
+</li>
+<li class="small">
+<a href="../../kassa.html">Работа с кассами</a>
+</li>
+</ul>
+</div>
+<div class="box">
+<ul class="menu-list style2">
+<li>
+<a href="pricing.html">Цены</a>
+</li>
+<li>
+<a href="../../reviews.html">Отзывы</a>
+</li>
+<li>
+<a href="about.html">О компании</a>
+</li>
+
+<li class="small">
+<a href="../../marketplace.html">Интеграции</a>
+</li>
+<li class="small">
+<a href="../../blog.html" target="_blank">
+Блог
+</a>
+</li>
+<li class="small">
+<a href="http://partners.yclients.com/" target="_blank" class="arr">Партнерская программа</a>
+</li>
+<li class="small">
+<a href="contact.html">Обратная связь</a>
+</li>
+
+<li class="small">
+<a href="http://support.yclients.com/hc/ru" target="_blank" class="arr">База знаний</a>
+</li>
+<li class="small">
+<a href="https://developers.yclients.com/ru/" target="_blank" class="arr">Разработчикам</a>
+</li>
+</ul>
+<div class="app-holder">
+<h3 class="holder-title">Мы в социальных сетях</h3>
+<div class="header-row justify-content-end">
+<ul class="header-social-icons social-icons social-icons-mobile social-icons-clean d-sm-0 ml-0">
+
+
+
+
+
+
+
+
+
+
+<li>
+<a href="https://vk.com/yclients?roistat_visit=482540" target="_blank" title="Vk" rel=”nofollow”>
+<i class="fab fa-vk"></i>
+</a>
+</li>
+<li>
+<a class="social-youtube" href="https://www.youtube.com/channel/UC6aHCPPSU9CDSA5cExZLd3Q?roistat_visit=482540" target="_blank" title="Youtube" rel=”nofollow”>
+<i class="fab fa-youtube"></i>
+</a>
+</li>
+<li>
+<a class="social-twitter" href="https://twitter.com/yclients?roistat_visit=482540" target="_blank" title="Twitter" rel="nofollow">
+<i class="fab fa-twitter">
+</i>
+</a>
+</li>
+</ul>
+</div>
+<h3 class="holder-title">Мобильные приложения для сотрудников</h3>
+<ul class="app-list">
+<li>
+<a href="https://itunes.apple.com/ru/app/yclients/id1084371596?mt=8" class="apple" target="_blank" rel="nofollow">
+<span class="text">
+<img class="lazy-img" src="../../assets/yclients/images/new_site/apple_ico.png" alt="image description">
+Apple Store
+</span>
+</a>
+</li>
+<li>
+<a href="https://play.google.com/store/apps/details?id=apps.yclients1" class="gg" target="_blank" rel="nofollow">
+<span class="text">
+<img class="lazy-img" alt="image description" src="../../assets/yclients/images/new_site/market_ico.png">
+Google play
+</span>
+</a>
+</li>
+<li>
+<a href="https://appgallery.huawei.com/app/C105004393?sharePrepath=ag" class="huawei" target="_blank" rel="nofollow">
+<span class="text">
+<img class="lazy-img" alt="image description" src="../../assets/yclients/images/new_site/huawei_ico.png">
+AppGallery
+</span>
+</a>
+</li>
+</ul> </div>
+</div>
+</div>
+<div class="bottom-menu ">
+<a href="../../signin.html" class="log-link" target="_blank">Войти</a>
+<a href="https://www.yclients.com/onboarding/first" class="reg-link pl-4" target="_blank">Регистрация</a>
+<div class="select-mobile">
+<div class="select-holder">
+<select name="dropdown" class="dropdown-lang">
+<option value="/en">En</option>
+<option value="/el">El</option>
+<option value="/hr">Hr</option>
+<option value="/hu">Hu</option>
+<option value="/pt">Pt</option>
+<option selected value="/ru">Ru</option>
+<option value="/sr">Sr</option>
+<option value="/tr">Tr</option>
+</select> </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<header id="header" class="side-header d-flex">
+<div class="header-body">
+<div class="header-container container d-flex h-100">
+<div class="header-column flex-row flex-lg-column justify-content-center h-100">
+<div class="header-row flex-row justify-content-start justify-content-lg-center py-lg-5">
+<div class="header-logo">
+<a href="../../ru.html">
+<img alt="YCLIENTS" src="../../assets/yclients/2019-template/img/logo.svg">
+</a>
+</div>
+</div>
+<div class="header-row header-row-side-header flex-row h-100 pb-lg-5">
+<div class="header-nav header-nav-links header-nav-links-side-header header-nav-links-vertical header-nav-links-vertical-columns align-self-center">
+<div class="header-nav-main header-nav-main-square header-nav-main-dropdown-no-borders">
+<nav class="collapse">
+<ul class="nav nav-pills menu-nav_list" id="mainNav">
+<li class="menu-nav_item">
+<a href="../../online-booking.html">
+Онлайн-запись
+</a>
+</li>
+<li class="menu-nav_item">
+<a href="../../electronic-schedule.html">
+Электронный журнал
+</a>
+</li>
+<li class="menu-nav_item">
+<a href="../../sms-and-email-notification.html">
+Модуль уведомлений
+</a>
+</li>
+<li class="menu-nav_item">
+<a href="../../client-base.html">
+Клиентская база
+</a>
+</li>
+<li class="menu-nav_item">
+<a href="../../statistics-and-analytics.html">
+Статистика и аналитика
+</a>
+</li>
+<li class="menu-nav_item">
+<a href="../../inventory-control.html">
+Складской учет
+</a>
+</li>
+<li class="menu-nav_item">
+<a href="../../app.html">
+ Мобильное приложение
+</a>
+</li>
+<li class="dropdown">
+<a class="dropdown-item dropdown-toggle" href="contract-offer.html#">
+<strong style="font-weight: 600">Все возможности</strong>
+</a>
+<ul class="dropdown-menu">
+<li class="menu-nav_item">
+<a class="dropdown-item" href="../../finances-and-accounting.html">Финансовый учет</a>
+</li>
+<li class="menu-nav_item">
+<a class="dropdown-item" href="../../loyalty-program.html">Программы лояльности</a>
+</li>
+<li class="menu-nav_item">
+<a class="dropdown-item" href="../../electronic-cards.html">Электронные карты</a>
+</li>
+<li class="menu-nav_item">
+<a class="dropdown-item" href="../../calculation-of-salaries.html">Расчет зарплат</a>
+</li>
+<li class="menu-nav_item">
+<a class="dropdown-item" href="../../personal-mobile-applications.html">Мобильные приложения для клиентов</a>
+</li>
+<li class="menu-nav_item">
+<a class="dropdown-item" href="../../telephony.html">Интеграция с телефонией</a>
+</li>
+<li class="menu-nav_item">
+<a class="dropdown-item" href="../../kassa.html">Интеграция с кассовым оборудованием</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="header-row justify-content-end pb-lg-3 hidden">
+<ul class="header-social-icons social-icons d-none d-sm-block social-icons-clean d-sm-0 ml-0">
+
+<li class="social-icons-vk">
+<a href="https://vk.com/yclients?roistat_visit=482540" target="_blank" title="Vk" rel=”nofollow”>
+<i class="fab fa-vk"></i>
+</a>
+</li>
+<li class="social-icons-youtube">
+<a class="social-youtube" href="https://www.youtube.com/channel/UC6aHCPPSU9CDSA5cExZLd3Q?roistat_visit=482540" target="_blank" title="Youtube" rel="nofollow">
+ <i class="fab fa-youtube"></i>
+</a>
+</li>
+<li class="social-icons-twitter">
+<a class="social-twitter" href="https://twitter.com/yclients?roistat_visit=482540" target="_blank" title="Twitter" rel="nofollow">
+<i class="fab fa-twitter">
+</i>
+</a>
+</li>
+</ul>
+</div>
+<div class="justify-content-end pb-lg-3 hidden">
+<a href="https://itunes.apple.com/ru/app/yclients/id1084371596?mt=8" class="apple" target="_blank" rel="nofollow">
+<img src="../../assets/yclients/images/new_site/appstore.svg" alt="App Store"></span>
+</a>
+<a href="https://play.google.com/store/apps/details?id=apps.yclients1" class="gg" target="_blank" rel="nofollow">
+<img src="../../assets/yclients/images/new_site/google-play.svg" alt="Google Play">
+</a>
+<a href="https://appgallery.huawei.com/app/C105004393?sharePrepath=ag" class="huawei" target="_blank" rel="nofollow">
+<img src="../../assets/yclients/images/new_site/huawei.svg" alt="Google Play">
+</a>
+</div>
+</div>
+</div>
+</div>
+</header>
+<div class="top-header-row py-lg-4 d-none d-xl-block">
+<ul class="nav-list">
+<li>
+<a href="pricing.html" class="anim-link-2">Цены</a>
+</li>
+<li>
+<a href="../../marketplace.html" class="anim-link-2">Интеграции</a>
+</li>
+<li>
+<a href="../../reviews.html" class="anim-link-2">Отзывы</a>
+</li>
+<li>
+<a href="about.html" class="anim-link-2">О компании</a>
+</li>
+<li>
+<a href="../../blog.html" class="anim-link-2" target="_blank">
+Блог
+</a>
+</li>
+
+</ul>
+<ul class="inner-box">
+<li>
+<a href="https://www.yclients.com/onboarding/first" class="header-account header-signup anim-link-2">Регистрация</a>
+</li>
+<li>
+<a href="../../signin.html" class="header-account header-login anim-link-2">Вход</a>
+</li>
+</ul>
+</div>
+
+<main id="content">
+<section class="section small-header mt-9 pb-1">
+<div class="container">
+<header class="section-header small-header">
+<h1>
+Договор-оферта <br>
+по платному внедрению программного обеспечения <br>
+«Система YCLIENTS»
+</h1>
+<hr>
+</header>
+</div>
+</section>
+<section class="section small-header mt-1 pt-1">
+<div class="container">
+<p>
+Настоящий Публичный Договор является публичной офертой ООО «УАЙКЛАЕНТС» ИНН 7708274185, ОГРН 5157746100716 именуемой в дальнейшем «Исполнитель», предлагает индивидуальным предпринимателям или юридическим лицам, именуемым в дальнейшем «Заказчик», а совместно именуемые «Стороны», заключить настоящий Договор-оферту (далее – «Договор») в соответствии с п. 2 ст. 437 Гражданского кодекса Российской Федерации, на возмездное оказание Исполнителем услуг Заказчику в порядке и на условиях предусмотренных настоящим Договором.
+</p>
+<p>
+Свидетельством полного и безоговорочного акцепта (принятия) условий настоящего Договора является осуществление индивидуальным предпринимателем или юридическим лицом оплаты выставленного Исполнителем этому юридическому лицу (далее - «Заказчик») счета или произведенного по ссылке на оплату, в котором указано, что счет выставлен в соответствии с условиями настоящего Договора. Электронная версия счета, направленная по каналам связи, является равноценной бумажному счету. Актуальная версия Договора размещена на интернет-сайте по электронному адресу: <a href="https://www.yclients.com/info/contract-offer" target="_blank">https://www.yclients.com/info/contract-offer</a>.
+</p>
+<h2>
+1. Термины и определения
+</h2>
+<p>
+1.1. Программа — программа для ЭВМ «Система YCLIENTS» (далее YCLIENTS) как в целом, так и ее компоненты, являющаяся представленной в объективной форме совокупностью данных и команд, в том числе исходного текста, базы данных, аудиовизуальных произведений, включенных в состав Программы, а также любая документация по ее использованию. Исполнитель, являясь участником проекта «Сколково», предоставляет права использования собственной Программы и оказывает сопутствующие услуги в рамках коммерциализации результатов своих научных исследований и разработок.
+</p>
+<p>
+1.2. Сайт — веб-сайт Заказчика в сети Интернет по адресу: <a href="../../index.html" target="_blank">www.yclients.com</a>.
+</p>
+<p>
+1.3. Тариф — тарифный план, избираемый Заказчиком перечень оказываемых услуг платного внедрения из списка Тарифов, размещенного Исполнителем в сети Интернет на странице <a href="../../assets/uploads/pdf/implementation-tariff.pdf" target="_blank">https://www.yclients.com/assets/uploads/pdf/implementation-tariff.pdf</a>.
+</p>
+<p>
+1.4. В Договоре могут быть использованы термины, не определенные настоящим Разделом. В этом случае толкование такого термина производится в соответствии с текстами Лицензионного договора, текст которого размещен в сети Интернет на странице <a href="https://www.yclients.com/info/licence-agreement" target="_blank">https://www.yclients.com/info/licence-agreement</a> (далее — Лицензионное соглашение), Пользовательского соглашения, текст которого размещен в сети Интернет на странице <a href="https://www.yclients.com/info/user-agreement" target="_blank">https://www.yclients.com/info/user-agreement</a> (далее — Пользовательское соглашение), Политики конфиденциальности, текст которой размещен в сети Интернет на странице <a href="https://www.yclients.com/info/confidential" target="_blank">https://www.yclients.com/info/confidential</a> (далее — Политика конфиденциальности). В случае отсутствия однозначного толкования термина в тексте указанных выше документов следует руководствоваться толкованием термина в первую очередь, в соответствии с законодательством РФ, во вторую очередь, согласно толкованию, сложившемуся в сети Интернет.
+</p>
+<h2>
+2. Предмет договора
+</h2>
+<p>
+2.1. В рамках настоящего Договора Заказчик поручает Исполнителю оказать перечень услуг платного внедрения в соответствии с условиями выбранного Заказчиком Тарифа, либо отдельных услуг, согласованных Сторонами, стоимость которых указана в счете, а Заказчик обязуется принять и оплатить оказанные услуги в порядке и сроки, установленные п. 4.1. и 4.2. настоящего Договора.
+</p>
+<p>
+2.2. Местом реализации услуг Исполнителя является Российская Федерация.
+</p>
+<h2>
+3. Права и обязанности сторон договора
+</h2>
+<p>
+3.1. Заказчик обязуется:
+</p>
+<p>
+3.1.1. Оказать услуги в соответствии с выбранным и оплаченным Заказчиком Тарифом, если иное не согласовано Сторонами дополнительно.
+</p>
+<p>
+3.1.2. Предоставлять по запросу Исполнителя исходные данные (сведения и документацию), необходимые для исполнения предмета Договора.
+</p>
+<p>
+3.1.3. Предоставлять Исполнителю необходимые дополнительные данные (сведения и документацию) и информировать обо всех изменениях, относящиеся к исполнению Исполнителем предмета Договора, на протяжении периода внедрения.
+</p>
+<p>
+3.1.4. Предоставлять Исполнителю доступ к технологическим процессам и объектам, ознакомление с которыми необходимо для оказания услуг.
+</p>
+<p>
+3.1.5. Все необходимые данные Заказчика и доступы необходимо предоставить на электронную почту Исполнителя по адресу <a href="../../cdn-cgi/l/email-protection.html#7e0d0b0e0e110c0a3e071d12171b100a0d501d1113" target="_blank"><span class="__cf_email__" data-cfemail="2a595f5a5a45585e6a534946434f445e5904494547">[email&#160;protected]</span></a> с темой письма «Материалы для Технического задания - Название компании». Формат поддерживаемых данных - xls, csv, doc в табличном виде (изображения в виде фотографий и скриншотов не поддерживаются) в течение 3 (Трех) дней с даты оплаты.
+</p>
+<p>
+3.1.6. Предоставлять Исполнителю ответственных сотрудников Заказчика, имеющих право приемки работ и подписи документов, оформляемых в ходе выполнения работ по Договору, а также данные сотрудников Заказчика, являющихся контактом Заказчика.
+</p>
+<p>
+Имена, должности, номера телефонов и адреса электронной почты сотрудников Заказчика необходимо предоставить на электронную почту по адресу <a href="../../cdn-cgi/l/email-protection.html#7e0d0b0e0e110c0a3e071d12171b100a0d501d1113" target="_blank"><span class="__cf_email__" data-cfemail="3d4e484d4d524f497d445e51545853494e135e5250">[email&#160;protected]</span></a> с темой письма “Контакты Название компании” в течение 1 (Одного) дня с даты осуществления оплаты.
+</p>
+<p>
+3.1.7. Для выполнения загрузки данных предоставить доступ в Личный кабинет Заказчика сотруднику Исполнителя как пользователю с соответствующими правами (с адресом электронной почты <a href="../../cdn-cgi/l/email-protection.html#0e6d61607d7b627a6760694e776d62676b607a7d206d6163" target="_blank"><span class="__cf_email__" data-cfemail="482b27263b3d243c21262f08312b24212d263c3b662b2725">[email&#160;protected]</span></a>), строго на период оказания услуг по настоящему Договору. По окончанию оказания услуг по настоящему Договору, вышеуказанный пользователь должен быть удален.
+</p>
+<p>
+3.1.8. В рамках исполнения условий настоящего Договора, Стороны обязуются обеспечивать конфиденциальность персональных данных в соответствии с Политикой конфиденциальности, расположенной на Сайте по адресу <a href="https://www.yclients.com/info/confidential" target="_blank">https://www.yclients.com/info/confidential</a>.
+</p>
+<p>
+3.1.9. Заказчик гарантирует, что:
+</p>
+<ul class="text">
+<li>
+При обработке персональных данных Заказчиком соблюдены все права субъектов персональных данных, предусмотренные законодательством Российской Федерации в области защиты персональных данных.
+</li>
+<li>
+Заказчиком получено согласие субъектов персональных данных на передачу ООО “УАЙКЛАЕНТС” для обработки принадлежащих им персональных данных.
+</li>
+</ul>
+<h2>
+3.2. Исполнитель вправе:
+</h2>
+<p>
+3.2.1. В безусловном порядке изменять (дополнять) условия настоящего Договора и Приложения к настоящему Договору.
+</p>
+<p>
+3.2.2. По собственному усмотрению изменять Тарифы, перечень и условия предоставления услуг.
+</p>
+<p>
+3.2.3. В целях исполнения предусмотренных Договором обязательств, в одностороннем порядке привлекать к оказанию услуг третьих лиц.
+</p>
+<p>
+3.2.4. На свое усмотрение и исключительно за свой счет предоставлять скидки, в том числе с учетом проводимых Исполнителем маркетинговых акций.
+</p>
+<p>
+3.2.5. Исполнитель не инициирует и не контролирует размещение пользователями любой информации в процессе использования Программы, YCLIENTS, Услуг и сервисов, не влияет на ее содержание и целостность, а также в момент размещения указанной информации не знает и не может знать нарушает ли она охраняемые законом права и интересы третьих лиц, международные договоры и законодательство Российской Федерации.
+</p>
+<p>
+3.2.6. Стороны пришли к соглашению, что Исполнитель не несет ответственности за последствия, а также прямые и косвенные убытки, включая упущенную выгоду, возникшие в результате нарушения конфиденциальности данных не по вине Исполнителя.
+</p>
+<h2>
+3.3. Исполнитель обязуется:
+</h2>
+<p>
+3.3.1. В пределах полученного от Заказчика вознаграждения, указанного в п. 4.1. настоящего Договора, в течение периода внедрения оказать услуги в соответствии с выбранным и оплаченным Заказчиком Тарифом. Исполнитель приступает к оказанию услуг в течение 10 (Десяти) рабочих дней с даты поступления оплаты. Загрузка данных Заказчика осуществляется в течение всего периода внедрения. Список CMS (Content Management System), в которых доступна установка виджета онлайн-записи, расположен по ссылке <a href="http://yclients.usedocs.com/category/9744" target="_blank">http://yclients.usedocs.com/category/9744</a>.
+</p>
+<p>
+3.3.2. В рамках оказания услуг по настоящему Договору Исполнителем может быть произведено одно выездное обучение) при условии, что офис Заказчика находится в г. Москва или г.Санкт-Петербург в пределах МКАД и КАД соответственно (не более 15 минут), либо проведено одно очное обучение в офисах Исполнителя в г. Москва или г. Санкт-Петербург (если указанные категории услуг включены в выбранный и оплаченный Заказчиком Тариф).
+</p>
+<p>
+Исполнитель не осуществляет выездные и очные обучения в периоды введения каких-либо законодательных ограничительных мер, в том числе, но не ограничиваясь, мер по противодействию распространения коронавирусной инфекции.
+</p>
+<p>
+3.3.3. В случае, если Заказчику необходимо оказать лишь часть указанных в Тарифе услуг, между Сторонами не заключается дополнительное соглашение к настоящему Договору, Исполнителем выставляется счет на оплату вышеуказанных услуг. Период оказания Исполнителем сокращенного перечня услуг составляет от 10 (Десяти) до 20 (Двадцати) рабочих дней с даты поступления оплаты на расчетный счет Исполнителя.
+</p>
+<h2>
+4. Вознаграждение Исполнителя:
+</h2>
+<p>
+4.1. Заказчик оплачивает услуги Исполнителя в соответствии с выбранным Тарифом на условиях полной предоплаты в размере, указанном в счете. Вознаграждение Исполнителя не включает налоги и сборы, которые Заказчик должен оплачивать и/или оплачивает самостоятельно в соответствии с законодательством местонахождения Заказчика, и не подлежит удержанию Заказчиком из суммы оплаты.
+</p>
+<p>
+4.2. Заказчик оплачивает выставленный Исполнителем в порядке, предусмотренном п. 4.1. настоящего Договора, счет путем единовременного перечисления в срок, указанный в таком счете всей суммы вознаграждения.
+</p>
+<p>
+4.3. Вознаграждение Исполнителя налогом на добавленную стоимость не облагается на основании статьи 145.1 Налогового кодекса Российской Федерации.
+</p>
+<h2>
+5. Срок действия
+</h2>
+<p>
+5.1. Настоящий Договор вступает в силу с момента принятия Заказчиком условий настоящего Договора, подтвержденного оплатой выставленного Исполнителем счета, и действует в соответствии с выбранным Тарифом.
+</p>
+<p>
+5.2. Расчеты по настоящему Договору между Сторонами производятся одним из способов:
+</p>
+<p>
+5.2.1. путем безналичного перечисления денежных средств на расчётный̆ счет Исполнителя;
+</p>
+<p>
+5.2.2. иным способом, указанным на Сайте Исполнителя.
+</p>
+<p>
+5.2.3. Обязательство Заказчика по оплате считается надлежаще исполненным в момент зачисления суммы оплаты на расчётный̆ счет или счет платежной системы Исполнителя. Датой оплаты в этом случае является дата зачисления платежа.
+</p>
+<p>
+5.2.4. По настоящему Договору все расчеты с Заказчиками на территории Российской Федерации производятся в валюте Российской Федерации. Расчеты с Заказчиками из других стран производятся в валюте Российской Федерации, если иного порядка расчетов не согласовано Сторонами в счете.
+</p>
+<p>
+5.3. Датой заключения настоящего Договора признается день поступления оплаты по выставленному Исполнителем в адрес Заказчика счету, на расчетный счет Исполнителя.
+</p>
+<p>
+5.4. По окончании выполнения работ Стороны в течение 5 (пяти) рабочих дней с момента оказания услуг подписывают Акт сдачи-приемки выполненных работ. В случае, если в течение 5 (Пяти) календарных дней с момента выполнения Исполнителем обязанности, указанной в п. 3.1.1. настоящего договора, Исполнитель не получил претензий Заказчика, связанных с оказанными по настоящему договору услугами, то считается что услуги оказаны Заказчику в соответствии с настоящим Договором в полном объеме и надлежащим образом.
+</p>
+<p>
+5.5. Исполнитель оставляет за собой право изменять условия Договора и конфигурации Тарифов без предварительного уведомления Заказчика в одностороннем порядке. Все изменения и дополнения, вносимые в настоящий Договор, вступают в силу в день размещения новой редакции Договора на сайте Исполнителя. Перед акцептом настоящего Договора Заказчик обязан ознакомиться с актуальной версией Тарификации и Договора по ссылке: <a href="https://www.yclients.com/info/contract-offer" target="_blank">https://www.yclients.com/info/contract-offer</a>; <a href="../../assets/uploads/pdf/implementation-tariff.pdf" target="_blank">https://www.yclients.com/assets/uploads/pdf/implementation-tariff.pdf</a>
+</p>
+<p>
+5.6. Заказчик вправе расторгнуть настоящий Договор в одностороннем порядке до начала оказания Исполнителем услуги путем письменного уведомления Исполнителя за 10 (Десять) календарных дней до даты расторжения по реквизитам, указанным в Договоре. В случае получения Исполнителем письменного уведомления о расторжении настоящего Договора в период внедрения, вознаграждение Исполнителя возврату не подлежит в силу специфики процессов внедрения, и засчитывается в счет компенсации понесенных Исполнителем расходов на оказание услуг.
+</p>
+<p>
+5.7. Обязательства Сторон по Договору, которые в силу своей природы должны продолжать действовать (включая обязательства в отношении конфиденциальности, проведения взаиморасчетов, использованию информации, но, не ограничиваясь указанным), остаются в силе после окончания действия Договора.
+</p>
+<p>
+5.8. Прекращение действия Договора по любому основанию не освобождает Стороны от ответственности за нарушения условий Договора, возникшие в течение срока его действия.
+</p>
+<h2>
+6. Ответственность
+</h2>
+<p>
+6.1. За невыполнение или ненадлежащее выполнение обязательств по настоящему Договору Заказчик и Исполнитель несут ответственность в соответствии с законодательством Российской Федерации.
+</p>
+<p>
+6.2. Исполнитель не несет ответственности за невозможность использования Заказчиком любой из возможностей Программы, доступ к которым настроен Исполнителем в рамках настоящего Договора, по причинам, не зависящим от Исполнителя.
+</p>
+<p>
+6.3. Исполнитель не несет ответственности за содержание, достоверность и полноту информации, полученной Заказчиком в результате использования любой из возможностей Программы, доступ к которым настроен Исполнителем в рамках настоящего Договора.
+</p>
+<p>
+6.4. Исполнитель не несет ответственности за действия и решения Заказчика, принятые на основании информации, полученной Заказчиком при использовании любой из возможностей Программы, их последствия, а также прямые и косвенные убытки, включая упущенную выгоду, возникшие в результате использования указанных возможностей.
+</p>
+<p>
+6.5. Исполнитель не несет ответственности за качество и скорость доступа к программному обеспечению YCLIENTS со стороны Заказчика, осуществляемых по каналам связи операторов и Интернет-провайдеров.
+</p>
+<p>
+6.6. Исполнитель не несет ответственности по обстоятельствам, являющимися форс-мажорными, не зависящим от Исполнителя, т. е. обстоятельствами «непреодолимой силы», к числу которых относится сбои в работе телекоммуникационных сетей и оборудования третьих лиц.
+</p>
+<h2>
+7. Заключительные положения
+</h2>
+<p>
+7.1. По всем иным вопросам, прямо не урегулированным настоящим договором, отношения, возникающие между Заказчиком и Исполнителем, регулируются законодательством Российской Федерации.
+</p>
+<p>
+7.2. Стороны договорились, что подписание настоящего Договора, Приложений, Дополнительных соглашений к Договору и иных документов, связанных с исполнением обязательств сторон по заключенному Договору, допускается также с использованием факсимильного воспроизведения подписи. Документы, заверенные факсимильным воспроизведением подписи уполномоченного лица и скрепленные оттиском печати другой стороны, являются подписанными должным образом и имеют правовую силу документов, оформленных оригинальной собственноручной подписью уполномоченного лица, заверенной оттиском печати.
+</p>
+<p>
+7.3. В случае возникновения вопросов, касающихся использования YCLIENTS, его функционала Заказчика вправе обратиться к Исполнителю (в техническую поддержку) по указанному на Сайте контактному телефону или адресу электронной почты.
+</p>
+<p>
+7.4. Во всем остальном, что не предусмотрено настоящим Договором, Стороны руководствуются действующим законодательством Российской Федерации.
+</p>
+<p>
+7.5. Исполнитель вправе использовать товарный знак и фирменное наименование Заказчика для уведомления третьих лиц о факте сотрудничества без получения предварительного согласия Заказчика.
+</p>
+<p>
+7.6. Обмен документами между Сторонами осуществляется посредством электронной почты, а также системы электронного документооборота (при наличии технической возможности).
+</p>
+<p>
+7.7. Стороны принимают все меры к тому, чтобы любые спорные вопросы, разногласия либо претензии, касающиеся исполнения настоящего Договора, были урегулированы путем переговоров. Обязателен претензионный порядок, срок ответа на претензию – 10 (десять) рабочих дней.
+</p>
+<p>
+7.8. Любые споры, неурегулированные во внесудебном порядке, стороны передаются на разрешение в Арбитражный суд по месту нахождения Исполнителя.
+</p>
+<h2>
+8. Реквизиты Исполнителя:
+</h2>
+<p>
+ООО «УАЙКЛАЕНТС»
+</p>
+<p>
+Юридический адрес: 127055, г. Москва, ул. Образцова, д. 4, стр. 1, этаж 1-5, пом. 1-5
+</p>
+<p>
+Банковские реквизиты:
+</p>
+<p>
+р/с 40702 810 9013 0000 8233 в АО «АЛЬФА-БАНК»
+</p>
+<p>
+БИК 044525593
+</p>
+<p>
+к/с 30101 810 2000 0000 0593
+</p>
+<p>
+ИНН 770827418
+</p>
+<p>
+КПП 771501001
+</p>
+<p>
+ОГРН 5157746100716
+</p>
+<p>
+ОКПО 52401731
+</p>
+<p>
+E-mail для направления заявок, а также для общих вопросов: <a href="../../cdn-cgi/l/email-protection.html#6f1c1a1f1f001d1b2f160c03060a011b1c410c0002" target="_blank"><span class="__cf_email__" data-cfemail="9ae9efeaeaf5e8eedae3f9f6f3fff4eee9b4f9f5f7">[email&#160;protected]</span></a>
+</p>
+<p>
+Дата размещения на сайте «23» мая 2022 г.
+</p>
+<h2>
+<b>Предыдущие редакции</b>
+</h2>
+<p>
+<a href="https://www.yclients.com/info/contract-offer-01072021">от 01.07.2021 г.</a><br>
+</p>
+</div>
+</section>
+
+</main>
+
+
+<div class="fixed-bottom-box">
+<div class="callback-wrapper">
+<a href="tel:88005050475" class="tel_link">
+8 (800) 505-04-75
+</a>
+<div class="callback" onclick="if (!window.__cfRLUnblockHandlers) return false; ms.callback.showWidget()" data-cf-modified-6dda125fd8eeced86f8ca979-="">
+<p>Заказать звонок</p>
+</div>
+</div>
+<div class="select-holder">
+<select name="dropdown" class="dropdown-lang">
+<option value="/en">En</option>
+<option value="/el">El</option>
+<option value="/hr">Hr</option>
+<option value="/hu">Hu</option>
+<option value="/pt">Pt</option>
+<option selected value="/ru">Ru</option>
+<option value="/sr">Sr</option>
+<option value="/tr">Tr</option>
+</select> </div>
+</div>
+<div class="fixed-callback-button" onclick="if (!window.__cfRLUnblockHandlers) return false; ms.callback.showWidget()" data-cf-modified-6dda125fd8eeced86f8ca979-="" />
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<script src="../../themes/yclients/new-2019/all.min.js%3Fv2.22" async type="6dda125fd8eeced86f8ca979-text/javascript"></script>
+<script type="6dda125fd8eeced86f8ca979-text/javascript">
+    const promoCheckerInitInterval = setInterval(() => {
+        if (window.promoChecker) {
+            window.promoChecker.init(1)
+            clearInterval(promoCheckerInitInterval)
+        }
+    }, 50)
+</script>
+<script type="6dda125fd8eeced86f8ca979-text/javascript">
+    (function(g, e, t) {
+        e.GetReviewWidgetID = 'dCQVIye7txLqasHx';
+        var s = g.createElement('script');
+        e[t] = e[t] || function() {
+            (e[t].queue = e[t].queue || []).push(arguments);
+        };
+        s.async = true;
+        s.charset = 'UTF-8';
+        s.src = 'https://app.getreview.io/static/bundle.js';
+        if (g.head) { g.head.appendChild(s); }
+    })(document, window, 'GetReview');
+</script>
+<script type="6dda125fd8eeced86f8ca979-text/javascript">
+    function onloadCallback() {
+        ms.callback.renderCallbackCaptcha()
+    }
+</script>
+
+
+
+
+<script type="6dda125fd8eeced86f8ca979-text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-40235336-1', 'auto');
+    ga('send', 'pageview');
+</script>
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KB8MG4"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<noindex>
+
+<div class="modal inmodal animated bounceInRight" id="callModal" role="dialog" style="display: none;">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header text-center">
+<button type="button" class="close" onclick="if (!window.__cfRLUnblockHandlers) return false; ms.callback.hideWidget()" data-dismiss="modal" data-cf-modified-6dda125fd8eeced86f8ca979-=""><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+<img class="call-us_icon" src="../../assets/yclients/images/new_site/callback.png" alt="Online Booking Software and Appointment Scheduling">
+<div class="modal-title">У Вас остались вопросы?</div>
+<div class="modal-subtitle">Мы перезвоним Вам в течение 59 секунд</div>
+</div>
+<div class="modal-body">
+<form class="form-horizontal">
+<div id="validation-phone" class="form-group">
+<label for="callBack">Телефон</label>
+<input id="callBack" type="tel" placeholder="+7" class="phone form-control">
+<div class="validation">Некорректный номер телефона</div>
+</div>
+<div id="callbackRecaptchaWrapper" style="margin-top: 15px;"></div>
+<div id="validation-agreement" class="form-group">
+<div class="check-material check-material-ru agreement-block">
+<input id="agreement-block" type="checkbox" class="js-checkbox-kkm-module" name="agreement">
+<label for="agreement-block"></label>
+<div class="agreement-label"> Отправляя заявку, вы даете согласие с<a href="https://www.yclients.com/rinfo/user-agreement" target="_blank"> Политикой обработки персональных данных</a> и принимаете условия <a href="confidential.html" target="_blank">Политики конфиденциальности</a></div>
+<div class="validation">Подтвердите соглашение</div>
+</div>
+</div>
+<div id="validation-agreement3" class="form-group">
+<div class="check-material check-material-ru agreement-block">
+<input id="agreement-block3" type="checkbox" class="js-checkbox-kkm-module" name="agreement">
+<label for="agreement-block3"></label>
+<div class="agreement-label">Я согласен(а) на получение сообщений рекламного характера.</div>
+<div class="validation">Подтвердите соглашение</div>
+</div>
+</div>
+<div class="form-group text-center m-b-none">
+<a class="btn btn-primary" id="makeCallButton" onclick="if (!window.__cfRLUnblockHandlers) return false; return ms.callback.makeCall();" data-cf-modified-6dda125fd8eeced86f8ca979-="">
+<span id="timer_result">Заказать звонок</span>
+</a>
+</div>
+<span class="modal-info-text">или напишите нам</span>
+<div style="display: flex;" class="col-12 justify-content-center mr-0 mt-3">
+<a class="mr-2" href="https://api.whatsapp.com/send/?phone=79311112399&text&app_absent=0">
+<img src="../../assets/yclients/2019-template/img/icon/whatsapp.png" alt="">
+</a>
+<a class="mr-2" href="https://t.me/yclientsofficial_bot">
+<img src="../../assets/yclients/2019-template/img/icon/telegram.png" alt="">
+</a>
+<a href="viber://pa?chatURI=yclients">
+<img src="../../assets/yclients/2019-template/img/icon/viber.png" alt="">
+</a>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</noindex>
+<script type="6dda125fd8eeced86f8ca979-text/javascript" src="../../themes/yclients/new-2019/1.bundle.js%3Fv2.22"></script><script type="6dda125fd8eeced86f8ca979-text/javascript" src="../../themes/yclients/new-2019/bundle.js%3Fv2.22"></script><script src="../../cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="6dda125fd8eeced86f8ca979-|49" defer=""></script><script type="text/javascript">(function(){window['__CF$cv$params']={r:'71700b759c5e9dd8',m:'IKO9Wu2cJKFlrYmspqFTjOFjf76eGJOGyEd_YZRyXiI-1654506940-0-ATDqvP/9rMfwVLylydN/7Oxwqo/vyNgf0jXwYBs9r0qa4zxL6GswQ7aQUcSudoVZB9gmBxFMUJQs+dk/E0fmMA+fVkQMi+T7aWba7MPMJlNCBDysP0bwnuD/R0n7fi+bDV16ts/wkdi04j8AviVCuMw=',s:[0xf87cbb88ee,0xcb298e0174],}})();</script></body>
+</html>

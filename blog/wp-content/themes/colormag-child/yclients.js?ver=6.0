@@ -1,0 +1,65 @@
+$(document).ready(function() {
+
+    $('.menu-opener').on('click', function () {
+        $('.burger').click();
+        return false;
+    });
+    $('.burger').on('click', function () {
+        $('.burger').css("pointer-events", "none");
+        if ($('body').hasClass('menu-open')) {
+            $('body').removeClass('menu-open');
+            $('body').removeClass('animation-end');
+            //$('.slick-initialized').slick('slickPlay');
+        } else {
+
+            //$('.slick-initialized').slick('slickPause');
+
+            $('body').addClass('menu-open');
+            $('.menu-holder').one('transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd', function () {
+                $('body').addClass('animation-end');
+            });
+        }
+        $('.menu-holder').one('transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd', function () {
+            $('.burger').css("pointer-events", "auto");
+        });
+
+        return false;
+    });
+});
+
+
+window.onload= function() {
+    document.getElementById('toggler').onclick = function() {
+        opentabs('tabs-small', this);
+        closedtabs('tabs-big', this);
+        return false;
+    };
+};
+
+
+function opentabs(id, toggler) {
+    var div = document.getElementById(id);
+    if(div.style.display == 'block') {
+        div.style.display = 'none';
+        toggler.innerHTML = 'скрыть 15 адресов';
+    }
+    else {
+        div.style.display = 'block';
+        toggler.innerHTML = 'еще 15 адресов';
+    }
+}
+function closedtabs(id, toggler) {
+    var div = document.getElementById(id);
+    if(div.style.display == 'none') {
+        div.style.display = 'block';
+        toggler.innerHTML = 'скрыть 15 адресов';
+    }
+    else {
+        div.style.display = 'none';
+        toggler.innerHTML = 'еще 15 адресов';
+    }
+}
+
+$( function() {
+    $( "#tabs-one, #tabs-two " ).tabs();
+} );

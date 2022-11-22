@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html class="side-header" lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<script src="https://www.artfut.com/static/tagtag.min.js?campaign_code=bc95bf7490" async onerror='var self = this; window.ADMITAD=window.ADMITAD||{},ADMITAD.Helpers=ADMITAD.Helpers||{},ADMITAD.Helpers.generateDomains=function(){for(var e=new Date,n=Math.floor(new Date(2020,e.getMonth(),e.getDate()).setUTCHours(0,0,0,0)/1e3),t=parseInt(1e12*(Math.sin(n)+1)).toString(30),i=["de"],o=[],a=0;a<i.length;++a)o.push({domain:t+"."+i[a],name:t});return o},ADMITAD.Helpers.findTodaysDomain=function(e){function n(){var o=new XMLHttpRequest,a=i[t].domain,D="https://"+a+"/";o.open("HEAD",D,!0),o.onload=function(){setTimeout(e,0,i[t])},o.onerror=function(){++t<i.length?setTimeout(n,0):setTimeout(e,0,void 0)},o.send()}var t=0,i=ADMITAD.Helpers.generateDomains();n()},window.ADMITAD=window.ADMITAD||{},ADMITAD.Helpers.findTodaysDomain(function(e){if(window.ADMITAD.dynamic=e,window.ADMITAD.dynamic){var n=function(){return function(){return self.src?self:""}}(),t=n(),i=(/campaign_code=([^&]+)/.exec(t.src)||[])[1]||"";t.parentNode.removeChild(t);var o=document.getElementsByTagName("head")[0],a=document.createElement("script");a.src="https://www."+window.ADMITAD.dynamic.domain+"/static/"+window.ADMITAD.dynamic.name.slice(1)+window.ADMITAD.dynamic.name.slice(0,1)+".min.js?campaign_code="+i,o.appendChild(a)}});' type="b524b48a3eb943735fb1bbfe-text/javascript"></script>
+
+
+<script type="b524b48a3eb943735fb1bbfe-text/javascript">
+    // имя cookie для хранения источника
+    // если используется другое имя, укажите его
+    var cookie_name = 'deduplication_cookie';
+    // число дней жизни куки
+    var days_to_store = 90;
+    // ожидаемое значение deduplication_cookie для Admitad
+    var deduplication_cookie_value = 'admitad';
+    // имя GET параметра для дедупликации
+    // если у вас используется другой параметр, укажите его имя
+    var channel_name = 'deduplication_channel';
+    // функция для получения источника из GET параметра
+    getSourceParamFromUri = function () {
+        var pattern = channel_name + '=([^&]+)';
+        var re = new RegExp(pattern);
+        return (re.exec(document.location.search) || [])[1] || '';
+    };
+
+    // функция для получения источника из cookie с именем cookie_name
+    getSourceCookie = function () {
+        var matches = document.cookie.match(new RegExp(
+            '(?:^|; )' + cookie_name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + '=([^;]*)'
+        ));
+        return matches ? decodeURIComponent(matches[1]) : undefined;
+    };
+
+    // функция для записи источника в cookie с именем cookie_name
+    setSourceCookie = function () {
+        var param = getSourceParamFromUri();
+        if (!param) { return; }
+        var period = days_to_store * 60 * 60 * 24 * 1000;	// в секундах
+        var expiresDate = new Date((period) + +new Date);
+        var cookieString = cookie_name + '=' + param + '; path=/; expires=' + expiresDate.toGMTString();
+        document.cookie = cookieString;
+        document.cookie = cookieString + '; domain=.' + location.host;
+    };
+
+    // запись куки
+    setSourceCookie();
+
+    // определение канала для Admitad
+    if (window.ADMITAD) {
+        if (!getSourceCookie(cookie_name)) {
+            ADMITAD.Invoice.broker = 'na';
+        } else if (getSourceCookie(cookie_name) != deduplication_cookie_value) {
+            ADMITAD.Invoice.broker = getSourceCookie(cookie_name);
+        } else {
+            ADMITAD.Invoice.broker = 'adm';
+        }
+    }
+
+</script>
+
+ 
+<script type="b524b48a3eb943735fb1bbfe-text/javascript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KB8MG4');</script>
+
+<link rel="canonical" href="statistics-and-analytics.html" hreflang="ru-RU" />
+<link rel="alternate" href="https://www.yclients.com/ua/statistics-and-analytics" hreflang="uk-UA" />
+<link rel="alternate" href="https://www.yclients.com/hu/statistics-and-analytics" hreflang="hu" />
+<link rel="alternate" href="https://www.yclients.com/tr/statistics-and-analytics" hreflang="tr" />
+<link rel="alternate" href="ro/statistics-and-analytics.html" hreflang="ro" />
+<link rel="alternate" href="en/statistics-and-analytics.html" hreflang="en" />
+<link rel="alternate" href="https://www.yclients.com/hr/statistics-and-analytics" hreflang="hr" />
+<title>Статистика и аналитика в сфере услуг – программа | YCLIENTS</title>
+<meta name="description" content="YCLIENTS – автоматизация бизнеса, статистика и аналитика в сфере услуг, финансы, склад, отчёты о прибыли. Средний рост на 20% через 3 месяца. Демо-доступ: ✆ 8-800-505-04-75.">
+<meta name="author" content="YCLIENTS LLC">
+<meta property="og:title" content="YCLIENTS — сервис онлайн-записи и платформа автоматизации для сферы услуг." />
+<meta property="og:description" content="Платформа позволяет подключить онлайн-запись на сайте, в социальных сетях и на других площадках, а также рассылать уведомления, управлять работой персонала, вести складской и финансовый учёт. YCLIENTS используют более 23 000 компаний и миллионы посетителей в России, СНГ и других странах мира." />
+<meta property="og:image" content="/assets/yclients/img/ru/og_image.png" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.yclients.com/statistics-and-analytics" />
+<meta name="ahrefs-site-verification" content="62bbcdff1dafd2dca5fd1c13f5db9fda8652a1662ad099a6b7d106d8f22f4e63">
+<link type="image/png" href="favicon.png" rel="shortcut icon" />
+<link rel="preload" href="assets/yclients/2019-template/img/YCLIENTS_yellow_dot_sm.gif" as="image">
+
+<link rel="preload" href="assets/yclients/2019-template/img/logo-mini.svg" as="image">
+<link rel="preload" href="assets/yclients/2019-template/img/logo-mini.svg" as="image">
+<link rel="preload" href="assets/yclients/images/new_site/phone_ico_mob.svg" as="image" media="(max-width: 700px)">
+<link rel="preload" href="assets/yclients/images/new_site/appstore.svg" as="image" media="(max-width: 700px)">
+<link rel="preload" href="assets/yclients/images/new_site/google-play.svg" as="image" media="(max-width: 700px)">
+<link rel="preload" href="assets/yclients/images/new_site/select_arr.svg" as="image" media="(max-width: 700px)">
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer type="b524b48a3eb943735fb1bbfe-text/javascript"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-970179016" type="b524b48a3eb943735fb1bbfe-text/javascript"></script>
+<script type="b524b48a3eb943735fb1bbfe-text/javascript">
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-970179016');
+</script>
+<noindex>
+
+<script type="b524b48a3eb943735fb1bbfe-text/javascript">
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym");
+    ym(20454571, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+        trackHash:true
+    });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/20454571" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+</noindex>
+<link href="themes/yclients/new-2019/vendor.css" rel="stylesheet"><link href="themes/yclients/new-2019/app.css" rel="stylesheet"><script async src='cdn-cgi/bm/cv/669835187/api.js'></script></head>
+<body>
+<div class="loader">
+<div class="sk-three-bounce loader_img">
+<div class="sk-child sk-bounce1"></div>
+<div class="sk-child sk-bounce2"></div>
+<div class="sk-child sk-bounce3"></div>
+</div>
+</div>
+<div class="body">
+
+<header id="mob-header" class="header scrolled">
+<div class="burger burger-open">
+<span></span>
+</div>
+<div class="header-backdrop"></div>
+<ul class="nav-list">
+<li>
+<a href="ru/info/pricing.html">Цены</a>
+</li>
+<li>
+<a href="reviews.html">Отзывы</a>
+</li>
+<li>
+<a href="ru/info/about.html">О компании</a>
+</li>
+<li class="last-child">
+<a href="blog.html" target="_blank">
+Блог
+</a>
+
+</ul>
+<strong class="logo">
+<a href="ru.html"></a>
+</strong>
+<div class="inner-box">
+<a href="https://www.yclients.com/onboarding/first" class="reg-link" target="_blank">Регистрация</a>
+ <a href="signin.html" class="log-link mob-active" target="_blank">Войти</a>
+</div>
+<a href="tel:88005050475" class="tel_link mob">8 (800) 505-04-75</a>
+</header>
+<div class="menu-holder" id="block_id">
+<div class="inner-wrap">
+<div class="scroll-holder">
+<div class="holder-box">
+<div class="box">
+<span class="title">Продукт:</span>
+<span class="title mob">Функции продукта:</span>
+<ul class="menu-list">
+<li>
+<a href="online-booking.html">Онлайн-запись</a>
+</li>
+<li>
+<a href="electronic-schedule.html">Электронный журнал</a>
+</li>
+<li>
+<a href="sms-and-email-notification.html">SMS и Email уведомления</a>
+</li>
+<li>
+<a href="client-base.html">Клиентская база</a>
+</li>
+<li>
+<a href="statistics-and-analytics.html">Статистика и аналитика</a>
+</li>
+<li>
+<a href="inventory-control.html">Складской учет</a>
+</li>
+<li>
+<a href="app.html">Мобильное приложение</a>
+</li>
+<li class="small">
+<a href="finances-and-accounting.html">Финансовый учет</a>
+</li>
+<li class="small">
+<a href="electronic-cards.html">Электронные карты</a>
+</li>
+<li class="small">
+<a href="calculation-of-salaries.html">Расчет зарплат</a>
+</li>
+<li class="small">
+<a href="personal-mobile-applications.html">Мобильные приложения</a>
+</li>
+<li class="small">
+<a href="loyalty-program.html">Программа лояльности</a>
+</li>
+<li class="small">
+<a href="kassa.html">Работа с кассами</a>
+</li>
+</ul>
+</div>
+<div class="box">
+<ul class="menu-list style2">
+<li>
+<a href="ru/info/pricing.html">Цены</a>
+</li>
+<li>
+<a href="reviews.html">Отзывы</a>
+</li>
+<li>
+<a href="ru/info/about.html">О компании</a>
+</li>
+
+<li class="small">
+<a href="marketplace.html">Интеграции</a>
+</li>
+<li class="small">
+<a href="blog.html" target="_blank">
+Блог
+</a>
+</li>
+<li class="small">
+<a href="http://partners.yclients.com/" target="_blank" class="arr">Партнерская программа</a>
+ </li>
+<li class="small">
+<a href="ru/info/contact.html">Обратная связь</a>
+</li>
+
+<li class="small">
+<a href="http://support.yclients.com/hc/ru" target="_blank" class="arr">База знаний</a>
+</li>
+<li class="small">
+<a href="https://developers.yclients.com/ru/" target="_blank" class="arr">Разработчикам</a>
+</li>
+</ul>
+<div class="app-holder">
+<h3 class="holder-title">Мы в социальных сетях</h3>
+<div class="header-row justify-content-end">
+<ul class="header-social-icons social-icons social-icons-mobile social-icons-clean d-sm-0 ml-0">
+
+
+
+
+
+
+
+
+
+
+<li>
+<a href="https://vk.com/yclients?roistat_visit=482540" target="_blank" title="Vk" rel=”nofollow”>
+<i class="fab fa-vk"></i>
+</a>
+</li>
+<li>
+<a class="social-youtube" href="https://www.youtube.com/channel/UC6aHCPPSU9CDSA5cExZLd3Q?roistat_visit=482540" target="_blank" title="Youtube" rel=”nofollow”>
+<i class="fab fa-youtube"></i>
+</a>
+</li>
+<li>
+<a class="social-twitter" href="https://twitter.com/yclients?roistat_visit=482540" target="_blank" title="Twitter" rel="nofollow">
+<i class="fab fa-twitter">
+</i>
+</a>
+</li>
+</ul>
+</div>
+<h3 class="holder-title">Мобильные приложения для сотрудников</h3>
+<ul class="app-list">
+<li>
+<a href="https://itunes.apple.com/ru/app/yclients/id1084371596?mt=8" class="apple" target="_blank" rel="nofollow">
+<span class="text">
+<img class="lazy-img" src="assets/yclients/images/new_site/apple_ico.png" alt="image description">
+Apple Store
+</span>
+</a>
+</li>
+<li>
+<a href="https://play.google.com/store/apps/details?id=apps.yclients1" class="gg" target="_blank" rel="nofollow">
+<span class="text">
+<img class="lazy-img" alt="image description" src="assets/yclients/images/new_site/market_ico.png">
+ Google play
+</span>
+</a>
+</li>
+<li>
+<a href="https://appgallery.huawei.com/app/C105004393?sharePrepath=ag" class="huawei" target="_blank" rel="nofollow">
+<span class="text">
+<img class="lazy-img" alt="image description" src="assets/yclients/images/new_site/huawei_ico.png">
+AppGallery
+</span>
+</a>
+</li>
+</ul> </div>
+</div>
+</div>
+<div class="bottom-menu ">
+<a href="signin.html" class="log-link" target="_blank">Войти</a>
+<a href="https://www.yclients.com/onboarding/first" class="reg-link pl-4" target="_blank">Регистрация</a>
+<div class="select-mobile">
+<div class="select-holder">
+<select name="dropdown" class="dropdown-lang">
+<option value="/en">En</option>
+<option value="/el">El</option>
+<option value="/hr">Hr</option>
+<option value="/hu">Hu</option>
+<option value="/pt">Pt</option>
+<option selected value="/ru">Ru</option>
+<option value="/sr">Sr</option>
+<option value="/tr">Tr</option>
+</select> </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<header id="header" class="side-header d-flex">
+<div class="header-body">
+<div class="header-container container d-flex h-100">
+<div class="header-column flex-row flex-lg-column justify-content-center h-100">
+<div class="header-row flex-row justify-content-start justify-content-lg-center py-lg-5">
+<div class="header-logo">
+<a href="ru.html">
+<img alt="YCLIENTS" src="assets/yclients/2019-template/img/logo.svg">
+</a>
+</div>
+</div>
+<div class="header-row header-row-side-header flex-row h-100 pb-lg-5">
+<div class="header-nav header-nav-links header-nav-links-side-header header-nav-links-vertical header-nav-links-vertical-columns align-self-center">
+<div class="header-nav-main header-nav-main-square header-nav-main-dropdown-no-borders">
+<nav class="collapse">
+<ul class="nav nav-pills menu-nav_list" id="mainNav">
+<li class="menu-nav_item">
+<a href="online-booking.html">
+Онлайн-запись
+</a>
+</li>
+<li class="menu-nav_item">
+<a href="electronic-schedule.html">
+Электронный журнал
+</a>
+</li>
+<li class="menu-nav_item">
+<a href="sms-and-email-notification.html">
+Модуль уведомлений
+</a>
+</li>
+<li class="menu-nav_item">
+<a href="client-base.html">
+Клиентская база
+</a>
+</li>
+<li class="menu-nav_item">
+<a href="statistics-and-analytics.html">
+Статистика и аналитика
+</a>
+</li>
+<li class="menu-nav_item">
+<a href="inventory-control.html">
+ Складской учет
+</a>
+</li>
+<li class="menu-nav_item">
+<a href="app.html">
+Мобильное приложение
+</a>
+</li>
+<li class="dropdown">
+<a class="dropdown-item dropdown-toggle" href="statistics-and-analytics.html#">
+<strong style="font-weight: 600">Все возможности</strong>
+</a>
+<ul class="dropdown-menu">
+<li class="menu-nav_item">
+<a class="dropdown-item" href="finances-and-accounting.html">Финансовый учет</a>
+</li>
+<li class="menu-nav_item">
+<a class="dropdown-item" href="loyalty-program.html">Программы лояльности</a>
+</li>
+<li class="menu-nav_item">
+<a class="dropdown-item" href="electronic-cards.html">Электронные карты</a>
+</li>
+<li class="menu-nav_item">
+<a class="dropdown-item" href="calculation-of-salaries.html">Расчет зарплат</a>
+</li>
+<li class="menu-nav_item">
+<a class="dropdown-item" href="personal-mobile-applications.html">Мобильные приложения для клиентов</a>
+</li>
+<li class="menu-nav_item">
+<a class="dropdown-item" href="telephony.html">Интеграция с телефонией</a>
+</li>
+<li class="menu-nav_item">
+<a class="dropdown-item" href="kassa.html">Интеграция с кассовым оборудованием</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="header-row justify-content-end pb-lg-3 hidden">
+<ul class="header-social-icons social-icons d-none d-sm-block social-icons-clean d-sm-0 ml-0">
+
+<li class="social-icons-vk">
+<a href="https://vk.com/yclients?roistat_visit=482540" target="_blank" title="Vk" rel=”nofollow”>
+<i class="fab fa-vk"></i>
+</a>
+ </li>
+<li class="social-icons-youtube">
+<a class="social-youtube" href="https://www.youtube.com/channel/UC6aHCPPSU9CDSA5cExZLd3Q?roistat_visit=482540" target="_blank" title="Youtube" rel="nofollow">
+<i class="fab fa-youtube"></i>
+</a>
+</li>
+<li class="social-icons-twitter">
+<a class="social-twitter" href="https://twitter.com/yclients?roistat_visit=482540" target="_blank" title="Twitter" rel="nofollow">
+<i class="fab fa-twitter">
+</i>
+</a>
+</li>
+</ul>
+</div>
+<div class="justify-content-end pb-lg-3 hidden">
+<a href="https://itunes.apple.com/ru/app/yclients/id1084371596?mt=8" class="apple" target="_blank" rel="nofollow">
+<img src="assets/yclients/images/new_site/appstore.svg" alt="App Store"></span>
+</a>
+<a href="https://play.google.com/store/apps/details?id=apps.yclients1" class="gg" target="_blank" rel="nofollow">
+<img src="assets/yclients/images/new_site/google-play.svg" alt="Google Play">
+</a>
+<a href="https://appgallery.huawei.com/app/C105004393?sharePrepath=ag" class="huawei" target="_blank" rel="nofollow">
+<img src="assets/yclients/images/new_site/huawei.svg" alt="Google Play">
+</a>
+</div>
+</div>
+</div>
+</div>
+</header>
+<div class="top-header-row py-lg-4 d-none d-xl-block">
+<ul class="nav-list">
+<li>
+<a href="ru/info/pricing.html" class="anim-link-2">Цены</a>
+</li>
+<li>
+<a href="marketplace.html" class="anim-link-2">Интеграции</a>
+</li>
+<li>
+<a href="reviews.html" class="anim-link-2">Отзывы</a>
+</li>
+<li>
+<a href="ru/info/about.html" class="anim-link-2">О компании</a>
+</li>
+<li>
+<a href="blog.html" class="anim-link-2" target="_blank">
+Блог
+</a>
+</li>
+
+</ul>
+<ul class="inner-box">
+<li>
+<a href="https://www.yclients.com/onboarding/first" class="header-account header-signup anim-link-2">Регистрация</a>
+</li>
+<li>
+<a href="signin.html" class="header-account header-login anim-link-2">Вход</a>
+</li>
+</ul>
+</div>
+
+<main id="content">
+<section class="vertical-center illust-block">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-md-8">
+<div class="clearfix">
+<h1 class="main-title">
+Статистика и аналитика
+</h1>
+<p class="mt-3 mb-4">
+Принимайте правильные решения и реагируйте вовремя
+</p>
+<a href="https://www.yclients.com/onboarding/first" class="btn btn-warning pr-5 pl-5 transition-hover">
+Попробовать бесплатно
+</a>
+<div class="mt-2 mb-0">
+<span class="o-3 ml-2 mr-1">7 дней</span>
+<a href="https://www.yclients.com/onboarding/first" class="anim-link-2 anim-link-2-primary">
+пробный период<span class="icon-arrow-right ml-1"></span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="col-12 col-md-7 col-lg-7 position-illust pr-0 main-image main-image pb-6">
+<figure class="ie-main-hero">
+<img src="assets/yclients/2019-template/img/illustrations-img/Analitic.png" class="w-70 position-illust" alt="Image Description">
+</figure>
+</div>
+</div>
+</section>
+<section class="section pt-0">
+<div class="container">
+<div class="row">
+<div class="col-sm-6 col-md-6 col-lg-3">
+<div class="card clearfix text-center pl-3 pr-3 pt-5 pb-4 shadow-4 mb-5 transition-hover">
+<div class="d-inline-block position-relative mb-3">
+<img src="assets/yclients/2019-template/img/svg/radar.svg" class="size-svg_65" alt="Image Description">
+</div>
+<h3 class="h5 mb-3 mt-2">
+Источники записей
+</h3>
+<p>
+График источников записей клиентов, показывает откуда пришли клиенты.
+</p>
+</div>
+<div class="card clearfix text-center pl-3 pr-3 pt-5 pb-4 shadow-4 bg-primary text-white transition-hover mb-5">
+<div class="d-inline-block position-relative mb-3">
+<img src="assets/yclients/2019-template/img/svg/calendar-3.svg" class="size-svg_65" alt="Image Description">
+</div>
+<h3 class="h5 mb-3 mt-2">
+Заполняемость
+</h3>
+<p>
+Отношение количества занятых часов к часам простоя компании.
+</p>
+</div>
+</div>
+<div class="col-sm-6 col-md-6 col-lg-3">
+<div class="card clearfix text-center text-white pl-3 pr-3 pt-5 pb-4 shadow-4 mb-5 bg-primary transition-hover">
+<div class="d-inline-block position-relative mb-3">
+<img src="assets/yclients/2019-template/img/svg/presentation.svg" class="size-svg_65" alt="Image Description">
+</div>
+<h3 class="h5 mb-3 mt-2">
+Статистика отмен
+</h3>
+<p>
+Количество отмененных записей и записей со статусом “клиент не пришел”.
+</p>
+</div>
+<div class="card clearfix text-center pl-3 pr-3 pt-5 pb-4 shadow-4 transition-hover">
+<div class="d-inline-block position-relative mb-3">
+<img src="assets/yclients/2019-template/img/svg/teamwork.svg" class="size-svg_65" alt="Image Description">
+</div>
+<h3 class="h5 mb-3 mt-2">
+Потерянные клиенты
+</h3>
+<p>
+Клиенты, переставшие вас посещать в течение заданного промежутка времени.
+</p>
+</div>
+</div>
+<div class="col-sm-12 col-md-12 col-lg-6 m-gab-2-top pl-lg-8 align-self-center">
+<h2 class="mb-4">
+Анализируйте поведение клиентов
+</h2>
+<p class="mb-0 text-dark fw-500">
+Данные доступны в разрезе по сотрудникам за произвольный период
+</p>
+<div class="pt-4">
+<a href="https://www.yclients.com/onboarding/first" target="_blank" class="btn btn-warning pr-5 pl-5 transition-hover">
+Попробовать бесплатно
+</a><br>
+<span class="o-3 ml-2 mr-1">7 дней</span>
+<a href="https://www.yclients.com/onboarding/first" target="_blank" class="anim-link-2 anim-link-2-primary">
+пробный период<span class="icon-arrow-right ml-1"></span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section pt-0 pb-7">
+<div class="container">
+<div class="row">
+<div class="col-md-12 text-center">
+<h2 class="mb-4">
+4 важнейших отчета
+</h2>
+<p class="mb-0 text-dark fw-500 mb-4">
+Данные доступны в разрезе по сотрудникам за произвольный период
+</p>
+</div>
+</div>
+<div class="row pt-5">
+<div class="col-md-12">
+<div id="js-grid-masonry" class="cbp cbp-caption-zoom-2" data-filters="#js-filters-masonry" data-layout-mode="grid" data-animation-type="slideDelay" data-gap-horizontal="20" data-gap-vertical="20" data-grid-adjustment="responsive" data-caption="zoom" data-display-type="bottomToTop" data-media-queries='[
+                        {"width": 1500, "cols": 5},
+                        {"width": 1100, "cols": 4},
+                        {"width": 800, "cols": 3},
+                        {"width": 480, "cols": 2},
+                        {"width": 300, "cols": 1}
+                     ]'>
+<div class="cbp-item">
+<a href="assets/yclients/2019-template/img/reports_img1.jpg" class="cbp-caption cbp-lightbox">
+<div class="cbp-caption-defaultWrap">
+<img src="assets/yclients/2019-template/img/reports_img1.jpg" alt="Востребованность персонала yclients">
+</div>
+<div class="cbp-caption-activeWrap">
+<div class="cbp-l-caption-alignLeft">
+<div class="cbp-l-caption-body">
+<div class="cbp-l-caption-title text-center">
+Востребованность<br>
+персонала
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="cbp-item">
+<a href="assets/yclients/2019-template/img/reports_img2.jpg" class="cbp-caption cbp-lightbox">
+<div class="cbp-caption-defaultWrap">
+<img src="assets/yclients/2019-template/img/reports_img2.jpg" alt="Востребованность услуг yclients">
+</div>
+<div class="cbp-caption-activeWrap">
+<div class="cbp-l-caption-alignLeft">
+<div class="cbp-l-caption-body">
+<div class="cbp-l-caption-title text-center">
+Востребованность<br>
+услуг
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="cbp-item">
+<a href="assets/yclients/2019-template/img/reports_img3.jpg" class="cbp-caption cbp-lightbox">
+<div class="cbp-caption-defaultWrap">
+<img src="assets/yclients/2019-template/img/reports_img3.jpg" alt="Эффективность персонала yclients">
+</div>
+<div class="cbp-caption-activeWrap">
+<div class="cbp-l-caption-alignLeft">
+<div class="cbp-l-caption-body">
+<div class="cbp-l-caption-title text-center">
+Эффективность<br>
+персонала
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="cbp-item">
+<a href="assets/yclients/2019-template/img/reports_img4.jpg" class="cbp-caption cbp-lightbox">
+<div class="cbp-caption-defaultWrap">
+<img src="assets/yclients/2019-template/img/reports_img4.jpg" alt="Важные клиенты yclients">
+</div>
+<div class="cbp-caption-activeWrap">
+<div class="cbp-l-caption-alignLeft">
+<div class="cbp-l-caption-body">
+<div class="cbp-l-caption-title text-center">
+Важные<br>
+клиенты
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row mt-9">
+<div class="col-md-12 text-center pt-3">
+<a href="https://www.yclients.com/onboarding/first" target="_blank" class="btn btn-warning pr-5 pl-5 transition-hover">
+Попробовать бесплатно
+<span class="fas fa-angle-right align-middle ml-2"></span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<section class="vertical-center mt-5 parallax-block parallax-img-13 " data-overlay="5">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-md-12">
+
+<div class="mb-7 text-center">
+<h2 class="text-white mb-3">
+Сетевая статистика
+</h2>
+<p class="text-white">
+Удобные отчеты без рутины и путанницы
+</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="container">
+<div class="row mt-1 mb-3 justify-content-lg-center">
+<div class="col-md-6 col-lg-6">
+<div class="media">
+<div class="media-body text-center">
+<img src="assets/yclients/2019-template/img/svg/teamwork.svg" class="size-svg_65" alt="Image Description">
+<h3 class="h5 fw-500 mb-0 pt-2 pb-2">
+Потерянные клиенты для сети
+</h3>
+<p class="pl-lg-9 pr-lg-9">
+Потерянные клиенты для сети и для конкретных филиалов считаются по-разному. Вы знаете, сколько клиентов перестали посещать всю сеть, а сколько отдельно взятые филиалы.
+</p>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-6">
+<div class="media">
+<div class="media-body text-center">
+<img src="assets/yclients/2019-template/img/svg/analytics-3.svg" class="size-svg_65" alt="Image Description">
+<h3 class="h5 fw-500 mb-0 pt-2 pb-2">
+Группировка филиалов
+</h3>
+<p class="pl-lg-9 pr-lg-9">
+Возможность группировать филиалы по правилам, которые вы задаете сами. Позволяет просматривать статистические отчеты по каждой группе в отдельности.
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12 text-center pt-3">
+<a href="https://www.yclients.com/onboarding/first" target="_blank" class="btn btn-warning pr-5 pl-5 transition-hover">
+Попробовать бесплатно
+<span class="fas fa-angle-right align-middle ml-2"></span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<section class="vertical-center parallax-block parallax-img-12" data-overlay="5">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-md-8">
+
+<div class="mb-7 mnt-6">
+<h2 class="text-white">
+Основные показатели на одном экране
+</h2>
+<p class="text-white">
+По компании в целом и по каждому сотруднику в отдельности
+</p>
+</div>
+<a href="https://www.yclients.com/onboarding/first" target="_blank" class="btn btn-outline-light">
+Попробовать бесплатно
+</a><br>
+</div>
+</div>
+</div>
+<div class="oval-divider--bottom oval-divider--1"></div>
+</section>
+<section class="m-gab-2">
+<div class="container py-3">
+<div class="row">
+<div class="col-12 text-center">
+<h3 class="mb-4">
+Присоединяйтесь <span class="text-nowrap">к 31 000 компаний,</span><br>
+которые доверяют YCLIENTS
+</h3>
+
+<p class="text-center">
+<a href="https://www.yclients.com/onboarding/first" target="_blank" class="btn btn-warning pr-5 pl-5 transition-hover">
+Попробовать бесплатно
+</a>
+</p>
+</div>
+</div>
+</div>
+</section>
+
+</main>
+
+
+<div class="fixed-bottom-box">
+<div class="callback-wrapper">
+<a href="tel:88005050475" class="tel_link">
+8 (800) 505-04-75
+</a>
+<div class="callback" onclick="if (!window.__cfRLUnblockHandlers) return false; ms.callback.showWidget()" data-cf-modified-b524b48a3eb943735fb1bbfe-="">
+<p>Заказать звонок</p>
+</div>
+</div>
+<div class="select-holder">
+<select name="dropdown" class="dropdown-lang">
+<option value="/en">En</option>
+<option value="/el">El</option>
+<option value="/hr">Hr</option>
+<option value="/hu">Hu</option>
+<option value="/pt">Pt</option>
+<option selected value="/ru">Ru</option>
+<option value="/sr">Sr</option>
+<option value="/tr">Tr</option>
+</select> </div>
+</div>
+<div class="fixed-callback-button" onclick="if (!window.__cfRLUnblockHandlers) return false; ms.callback.showWidget()" data-cf-modified-b524b48a3eb943735fb1bbfe-="" />
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<script src="themes/yclients/new-2019/all.min.js%3Fv2.22" async type="b524b48a3eb943735fb1bbfe-text/javascript"></script>
+<script type="b524b48a3eb943735fb1bbfe-text/javascript">
+    const promoCheckerInitInterval = setInterval(() => {
+        if (window.promoChecker) {
+            window.promoChecker.init(1)
+            clearInterval(promoCheckerInitInterval)
+        }
+    }, 50)
+</script>
+<script type="b524b48a3eb943735fb1bbfe-text/javascript">
+    (function(g, e, t) {
+        e.GetReviewWidgetID = 'dCQVIye7txLqasHx';
+        var s = g.createElement('script');
+        e[t] = e[t] || function() {
+            (e[t].queue = e[t].queue || []).push(arguments);
+        };
+        s.async = true;
+        s.charset = 'UTF-8';
+        s.src = 'https://app.getreview.io/static/bundle.js';
+        if (g.head) { g.head.appendChild(s); }
+    })(document, window, 'GetReview');
+</script>
+<script type="b524b48a3eb943735fb1bbfe-text/javascript">
+    function onloadCallback() {
+        ms.callback.renderCallbackCaptcha()
+    }
+</script>
+
+
+
+
+<script type="b524b48a3eb943735fb1bbfe-text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-40235336-1', 'auto');
+    ga('send', 'pageview');
+</script>
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KB8MG4"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<noindex>
+
+<div class="modal inmodal animated bounceInRight" id="callModal" role="dialog" style="display: none;">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header text-center">
+<button type="button" class="close" onclick="if (!window.__cfRLUnblockHandlers) return false; ms.callback.hideWidget()" data-dismiss="modal" data-cf-modified-b524b48a3eb943735fb1bbfe-=""><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+<img class="call-us_icon" src="assets/yclients/images/new_site/callback.png" alt="Online Booking Software and Appointment Scheduling">
+<div class="modal-title">У Вас остались вопросы?</div>
+<div class="modal-subtitle">Мы перезвоним Вам в течение 59 секунд</div>
+</div>
+<div class="modal-body">
+<form class="form-horizontal">
+<div id="validation-phone" class="form-group">
+<label for="callBack">Телефон</label>
+<input id="callBack" type="tel" placeholder="+7" class="phone form-control">
+<div class="validation">Некорректный номер телефона</div>
+</div>
+<div id="callbackRecaptchaWrapper" style="margin-top: 15px;"></div>
+<div id="validation-agreement" class="form-group">
+<div class="check-material check-material-ru agreement-block">
+<input id="agreement-block" type="checkbox" class="js-checkbox-kkm-module" name="agreement">
+<label for="agreement-block"></label>
+<div class="agreement-label"> Отправляя заявку, вы даете согласие с<a href="https://www.yclients.com/rinfo/user-agreement" target="_blank"> Политикой обработки персональных данных</a> и принимаете условия <a href="ru/info/confidential.html" target="_blank">Политики конфиденциальности</a></div>
+<div class="validation">Подтвердите соглашение</div>
+</div>
+</div>
+<div id="validation-agreement3" class="form-group">
+<div class="check-material check-material-ru agreement-block">
+<input id="agreement-block3" type="checkbox" class="js-checkbox-kkm-module" name="agreement">
+<label for="agreement-block3"></label>
+<div class="agreement-label">Я согласен(а) на получение сообщений рекламного характера.</div>
+<div class="validation">Подтвердите соглашение</div>
+</div>
+</div>
+<div class="form-group text-center m-b-none">
+<a class="btn btn-primary" id="makeCallButton" onclick="if (!window.__cfRLUnblockHandlers) return false; return ms.callback.makeCall();" data-cf-modified-b524b48a3eb943735fb1bbfe-="">
+<span id="timer_result">Заказать звонок</span>
+</a>
+</div>
+<span class="modal-info-text">или напишите нам</span>
+<div style="display: flex;" class="col-12 justify-content-center mr-0 mt-3">
+<a class="mr-2" href="https://api.whatsapp.com/send/?phone=79311112399&text&app_absent=0">
+<img src="assets/yclients/2019-template/img/icon/whatsapp.png" alt="">
+</a>
+<a class="mr-2" href="https://t.me/yclientsofficial_bot">
+<img src="assets/yclients/2019-template/img/icon/telegram.png" alt="">
+</a>
+<a href="viber://pa?chatURI=yclients">
+<img src="assets/yclients/2019-template/img/icon/viber.png" alt="">
+</a>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</noindex>
+<script type="b524b48a3eb943735fb1bbfe-text/javascript" src="themes/yclients/new-2019/1.bundle.js%3Fv2.22"></script><script type="b524b48a3eb943735fb1bbfe-text/javascript" src="themes/yclients/new-2019/bundle.js%3Fv2.22"></script><script src="cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="b524b48a3eb943735fb1bbfe-|49" defer=""></script><script type="text/javascript">(function(){window['__CF$cv$params']={r:'71700aed1fdd9dd8',m:'HvowzjbSzXVUi0SlB7b6pU_r_SPI4oixw5zm6WNIBtY-1654506918-0-Adk4Q8SXQWkaGLWhrVzDliAZ7eI/cPgZYoykB67oTpp3+1S5LhJtryQTX9+qL5YRRCWjmZKrLnK94LtE93JTjkHqK/kvk8uYEdZlrAU0L3D4Dk2o2SrkAYPt6wT4WAaBqlrYivd9NiLBxEPS/0K5J5c=',s:[0x5213abd0d5,0xdf60fa697d],}})();</script></body>
+</html>

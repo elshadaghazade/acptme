@@ -1,0 +1,53 @@
+User-Agent: *
+Disallow: *&*
+Disallow: /api/
+Disallow: /userparam/
+Disallow: /social/
+Disallow: /info/
+Disallow: /add/
+Disallow: /*/add/
+Disallow: /onboarding/
+Disallow: /*/onboarding/
+Disallow: /signup/
+Disallow: /signin/
+Disallow: /*/signin/
+Disallow: /auth/
+Disallow: *?*
+Disallow: /maxsoftapi/
+Disallow: /info/pricing/single
+Disallow: /en/demo
+Disallow: /en/info/privacy-policy-and-terms-of-use
+Disallow: */coming-soon*
+Disallow: */pricing-archive
+Disallow: /t/en
+Disallow: /t/en/*
+Disallow: /blog/tilda/
+Disallow: /blog/tilda/*
+
+Disallow: /hu/
+Disallow: /rs/
+Disallow: /uk/
+Disallow: /hr/
+Disallow: /tr/
+Disallow: /pt/
+Disallow: /el/
+
+Disallow: /en/blog/*
+Disallow: /blog/en/*
+Disallow: /blog/hu/*
+Disallow: /blog/pt/*
+
+Disallow: */privacy
+Disallow: */terms
+Disallow: */license
+Disallow: */confidential
+Disallow: */licence-agreement
+Disallow: */user-agreement
+Disallow: */contract-offer
+
+Allow: /info/pricing
+Allow: /info/about
+Allow: /info/contact 
+
+Host: https://www.acptme.com
+Sitemap: https://www.acptme.com/sitemap.xml

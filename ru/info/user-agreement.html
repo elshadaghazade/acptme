@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html class="side-header" lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<script src="https://www.artfut.com/static/tagtag.min.js?campaign_code=bc95bf7490" async onerror='var self = this; window.ADMITAD=window.ADMITAD||{},ADMITAD.Helpers=ADMITAD.Helpers||{},ADMITAD.Helpers.generateDomains=function(){for(var e=new Date,n=Math.floor(new Date(2020,e.getMonth(),e.getDate()).setUTCHours(0,0,0,0)/1e3),t=parseInt(1e12*(Math.sin(n)+1)).toString(30),i=["de"],o=[],a=0;a<i.length;++a)o.push({domain:t+"."+i[a],name:t});return o},ADMITAD.Helpers.findTodaysDomain=function(e){function n(){var o=new XMLHttpRequest,a=i[t].domain,D="https://"+a+"/";o.open("HEAD",D,!0),o.onload=function(){setTimeout(e,0,i[t])},o.onerror=function(){++t<i.length?setTimeout(n,0):setTimeout(e,0,void 0)},o.send()}var t=0,i=ADMITAD.Helpers.generateDomains();n()},window.ADMITAD=window.ADMITAD||{},ADMITAD.Helpers.findTodaysDomain(function(e){if(window.ADMITAD.dynamic=e,window.ADMITAD.dynamic){var n=function(){return function(){return self.src?self:""}}(),t=n(),i=(/campaign_code=([^&]+)/.exec(t.src)||[])[1]||"";t.parentNode.removeChild(t);var o=document.getElementsByTagName("head")[0],a=document.createElement("script");a.src="https://www."+window.ADMITAD.dynamic.domain+"/static/"+window.ADMITAD.dynamic.name.slice(1)+window.ADMITAD.dynamic.name.slice(0,1)+".min.js?campaign_code="+i,o.appendChild(a)}});' type="97d79a3b5d1f52e47ddd0049-text/javascript"></script>
+
+
+<script type="97d79a3b5d1f52e47ddd0049-text/javascript">
+    // имя cookie для хранения источника
+    // если используется другое имя, укажите его
+    var cookie_name = 'deduplication_cookie';
+    // число дней жизни куки
+    var days_to_store = 90;
+    // ожидаемое значение deduplication_cookie для Admitad
+    var deduplication_cookie_value = 'admitad';
+    // имя GET параметра для дедупликации
+    // если у вас используется другой параметр, укажите его имя
+    var channel_name = 'deduplication_channel';
+    // функция для получения источника из GET параметра
+    getSourceParamFromUri = function () {
+        var pattern = channel_name + '=([^&]+)';
+        var re = new RegExp(pattern);
+        return (re.exec(document.location.search) || [])[1] || '';
+    };
+
+    // функция для получения источника из cookie с именем cookie_name
+    getSourceCookie = function () {
+        var matches = document.cookie.match(new RegExp(
+            '(?:^|; )' + cookie_name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + '=([^;]*)'
+        ));
+        return matches ? decodeURIComponent(matches[1]) : undefined;
+    };
+
+    // функция для записи источника в cookie с именем cookie_name
+    setSourceCookie = function () {
+        var param = getSourceParamFromUri();
+        if (!param) { return; }
+        var period = days_to_store * 60 * 60 * 24 * 1000;	// в секундах
+        var expiresDate = new Date((period) + +new Date);
+        var cookieString = cookie_name + '=' + param + '; path=/; expires=' + expiresDate.toGMTString();
+        document.cookie = cookieString;
+        document.cookie = cookieString + '; domain=.' + location.host;
+    };
+
+    // запись куки
+    setSourceCookie();
+
+    // определение канала для Admitad
+    if (window.ADMITAD) {
+        if (!getSourceCookie(cookie_name)) {
+            ADMITAD.Invoice.broker = 'na';
+        } else if (getSourceCookie(cookie_name) != deduplication_cookie_value) {
+            ADMITAD.Invoice.broker = getSourceCookie(cookie_name);
+        } else {
+            ADMITAD.Invoice.broker = 'adm';
+        }
+    }
+
+</script>
+
+
+<script type="97d79a3b5d1f52e47ddd0049-text/javascript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KB8MG4');</script>
+
+<link rel="canonical" href="https://www.yclients.com/info/user-agreement" hreflang="ru-RU" />
+<link rel="alternate" href="https://www.yclients.com/ua/info/user-agreement" hreflang="uk-UA" />
+<link rel="alternate" href="https://www.yclients.com/hu/info/user-agreement" hreflang="hu" />
+<link rel="alternate" href="https://www.yclients.com/tr/info/user-agreement" hreflang="tr" />
+<link rel="alternate" href="../../ro/info/user-agreement.html" hreflang="ro" />
+<link rel="alternate" href="https://www.yclients.com/en/info/user-agreement" hreflang="en" />
+<link rel="alternate" href="https://www.yclients.com/hr/info/user-agreement" hreflang="hr" />
+<title>Пользовательское соглашение | YCLIENTS</title>
+<meta name="description" content="Пользовательское соглашение на ПО YCLIENTS">
+<meta name="author" content="YCLIENTS LLC">
+<meta property="og:title" content="YCLIENTS — сервис онлайн-записи и платформа автоматизации для сферы услуг." />
+<meta property="og:description" content="Платформа позволяет подключить онлайн-запись на сайте, в социальных сетях и на других площадках, а также рассылать уведомления, управлять работой персонала, вести складской и финансовый учёт. YCLIENTS используют более 31 000 компаний и миллионы посетителей в России, СНГ и других странах мира." />
+<meta property="og:image" content="/assets/yclients/img/ru/og_image.png" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.yclients.com/info/user-agreement" />
+<meta name="ahrefs-site-verification" content="62bbcdff1dafd2dca5fd1c13f5db9fda8652a1662ad099a6b7d106d8f22f4e63">
+<link type="image/png" href="../../favicon.png" rel="shortcut icon" />
+<link rel="preload" href="../../assets/yclients/2019-template/img/YCLIENTS_yellow_dot_sm.gif" as="image">
+
+<link rel="preload" href="../../assets/yclients/2019-template/img/logo-mini.svg" as="image">
+<link rel="preload" href="../../assets/yclients/2019-template/img/logo-mini.svg" as="image">
+<link rel="preload" href="../../assets/yclients/images/new_site/phone_ico_mob.svg" as="image" media="(max-width: 700px)">
+<link rel="preload" href="../../assets/yclients/images/new_site/appstore.svg" as="image" media="(max-width: 700px)">
+<link rel="preload" href="../../assets/yclients/images/new_site/google-play.svg" as="image" media="(max-width: 700px)">
+<link rel="preload" href="../../assets/yclients/images/new_site/select_arr.svg" as="image" media="(max-width: 700px)">
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer type="97d79a3b5d1f52e47ddd0049-text/javascript"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-970179016" type="97d79a3b5d1f52e47ddd0049-text/javascript"></script>
+<script type="97d79a3b5d1f52e47ddd0049-text/javascript">
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-970179016');
+</script>
+<noindex>
+
+<script type="97d79a3b5d1f52e47ddd0049-text/javascript">
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym");
+    ym(20454571, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+        trackHash:true
+    });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/20454571" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+</noindex>
+<link href="../../themes/yclients/new-2019/vendor.css" rel="stylesheet"><link href="../../themes/yclients/new-2019/app.css" rel="stylesheet"><script async src='../../cdn-cgi/bm/cv/669835187/api.js'></script></head>
+<body>
+<div class="loader">
+<div class="sk-three-bounce loader_img">
+<div class="sk-child sk-bounce1"></div>
+<div class="sk-child sk-bounce2"></div>
+<div class="sk-child sk-bounce3"></div>
+</div>
+</div>
+<div class="body">
+
+<header id="mob-header" class="header scrolled">
+<div class="burger burger-open">
+<span></span>
+</div>
+<div class="header-backdrop"></div>
+<ul class="nav-list">
+<li>
+<a href="pricing.html">Цены</a>
+</li>
+<li>
+<a href="../../reviews.html">Отзывы</a>
+</li>
+<li>
+<a href="about.html">О компании</a>
+</li>
+<li class="last-child">
+<a href="../../blog.html" target="_blank">
+Блог
+</a>
+
+</ul>
+<strong class="logo">
+<a href="../../ru.html"></a>
+</strong>
+<div class="inner-box">
+<a href="https://www.yclients.com/onboarding/first" class="reg-link" target="_blank">Регистрация</a>
+<a href="../../signin.html" class="log-link mob-active" target="_blank">Войти</a>
+</div>
+<a href="tel:88005050475" class="tel_link mob">8 (800) 505-04-75</a>
+</header>
+<div class="menu-holder" id="block_id">
+<div class="inner-wrap">
+<div class="scroll-holder">
+<div class="holder-box">
+<div class="box">
+<span class="title">Продукт:</span>
+<span class="title mob">Функции продукта:</span>
+<ul class="menu-list">
+<li>
+<a href="../../online-booking.html">Онлайн-запись</a>
+</li>
+<li>
+<a href="../../electronic-schedule.html">Электронный журнал</a>
+</li>
+<li>
+<a href="../../sms-and-email-notification.html">SMS и Email уведомления</a>
+</li>
+<li>
+<a href="../../client-base.html">Клиентская база</a>
+</li>
+<li>
+<a href="../../statistics-and-analytics.html">Статистика и аналитика</a>
+</li>
+<li>
+<a href="../../inventory-control.html">Складской учет</a>
+</li>
+<li>
+<a href="../../app.html">Мобильное приложение</a>
+</li>
+<li class="small">
+<a href="../../finances-and-accounting.html">Финансовый учет</a>
+</li>
+<li class="small">
+<a href="../../electronic-cards.html">Электронные карты</a>
+</li>
+<li class="small">
+<a href="../../calculation-of-salaries.html">Расчет зарплат</a>
+</li>
+<li class="small">
+<a href="../../personal-mobile-applications.html">Мобильные приложения</a>
+</li>
+<li class="small">
+<a href="../../loyalty-program.html">Программа лояльности</a>
+</li>
+<li class="small">
+<a href="../../kassa.html">Работа с кассами</a>
+</li>
+</ul>
+</div>
+<div class="box">
+<ul class="menu-list style2">
+<li>
+<a href="pricing.html">Цены</a>
+</li>
+<li>
+<a href="../../reviews.html">Отзывы</a>
+</li>
+<li>
+<a href="about.html">О компании</a>
+</li>
+
+<li class="small">
+<a href="../../marketplace.html">Интеграции</a>
+</li>
+<li class="small">
+<a href="../../blog.html" target="_blank">
+Блог
+</a>
+</li>
+<li class="small">
+<a href="http://partners.yclients.com/" target="_blank" class="arr">Партнерская программа</a>
+</li>
+<li class="small">
+<a href="contact.html">Обратная связь</a>
+</li>
+
+<li class="small">
+<a href="http://support.yclients.com/hc/ru" target="_blank" class="arr">База знаний</a>
+</li>
+<li class="small">
+<a href="https://developers.yclients.com/ru/" target="_blank" class="arr">Разработчикам</a>
+</li>
+</ul>
+<div class="app-holder">
+<h3 class="holder-title">Мы в социальных сетях</h3>
+<div class="header-row justify-content-end">
+<ul class="header-social-icons social-icons social-icons-mobile social-icons-clean d-sm-0 ml-0">
+
+
+
+
+
+
+
+
+
+
+<li>
+<a href="https://vk.com/yclients?roistat_visit=482540" target="_blank" title="Vk" rel=”nofollow”>
+<i class="fab fa-vk"></i>
+</a>
+</li>
+<li>
+<a class="social-youtube" href="https://www.youtube.com/channel/UC6aHCPPSU9CDSA5cExZLd3Q?roistat_visit=482540" target="_blank" title="Youtube" rel=”nofollow”>
+<i class="fab fa-youtube"></i>
+</a>
+</li>
+<li>
+<a class="social-twitter" href="https://twitter.com/yclients?roistat_visit=482540" target="_blank" title="Twitter" rel="nofollow">
+<i class="fab fa-twitter">
+ </i>
+</a>
+</li>
+</ul>
+</div>
+<h3 class="holder-title">Мобильные приложения для сотрудников</h3>
+<ul class="app-list">
+<li>
+<a href="https://itunes.apple.com/ru/app/yclients/id1084371596?mt=8" class="apple" target="_blank" rel="nofollow">
+<span class="text">
+<img class="lazy-img" src="../../assets/yclients/images/new_site/apple_ico.png" alt="image description">
+Apple Store
+</span>
+</a>
+</li>
+<li>
+<a href="https://play.google.com/store/apps/details?id=apps.yclients1" class="gg" target="_blank" rel="nofollow">
+<span class="text">
+<img class="lazy-img" alt="image description" src="../../assets/yclients/images/new_site/market_ico.png">
+Google play
+</span>
+</a>
+</li>
+<li>
+<a href="https://appgallery.huawei.com/app/C105004393?sharePrepath=ag" class="huawei" target="_blank" rel="nofollow">
+<span class="text">
+<img class="lazy-img" alt="image description" src="../../assets/yclients/images/new_site/huawei_ico.png">
+AppGallery
+</span>
+</a>
+</li>
+</ul> </div>
+</div>
+</div>
+<div class="bottom-menu ">
+<a href="../../signin.html" class="log-link" target="_blank">Войти</a>
+<a href="https://www.yclients.com/onboarding/first" class="reg-link pl-4" target="_blank">Регистрация</a>
+<div class="select-mobile">
+<div class="select-holder">
+<select name="dropdown" class="dropdown-lang">
+<option value="/en">En</option>
+<option value="/el">El</option>
+<option value="/hr">Hr</option>
+<option value="/hu">Hu</option>
+<option value="/pt">Pt</option>
+<option selected value="/ru">Ru</option>
+<option value="/sr">Sr</option>
+<option value="/tr">Tr</option>
+</select> </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<header id="header" class="side-header d-flex">
+<div class="header-body">
+<div class="header-container container d-flex h-100">
+<div class="header-column flex-row flex-lg-column justify-content-center h-100">
+<div class="header-row flex-row justify-content-start justify-content-lg-center py-lg-5">
+<div class="header-logo">
+<a href="../../ru.html">
+<img alt="YCLIENTS" src="../../assets/yclients/2019-template/img/logo.svg">
+</a>
+</div>
+</div>
+<div class="header-row header-row-side-header flex-row h-100 pb-lg-5">
+<div class="header-nav header-nav-links header-nav-links-side-header header-nav-links-vertical header-nav-links-vertical-columns align-self-center">
+<div class="header-nav-main header-nav-main-square header-nav-main-dropdown-no-borders">
+<nav class="collapse">
+<ul class="nav nav-pills menu-nav_list" id="mainNav">
+<li class="menu-nav_item">
+<a href="../../online-booking.html">
+Онлайн-запись
+</a>
+</li>
+<li class="menu-nav_item">
+<a href="../../electronic-schedule.html">
+Электронный журнал
+</a>
+</li>
+<li class="menu-nav_item">
+ <a href="../../sms-and-email-notification.html">
+Модуль уведомлений
+</a>
+</li>
+<li class="menu-nav_item">
+<a href="../../client-base.html">
+Клиентская база
+</a>
+</li>
+<li class="menu-nav_item">
+<a href="../../statistics-and-analytics.html">
+Статистика и аналитика
+</a>
+</li>
+<li class="menu-nav_item">
+<a href="../../inventory-control.html">
+Складской учет
+</a>
+</li>
+<li class="menu-nav_item">
+<a href="../../app.html">
+Мобильное приложение
+</a>
+</li>
+<li class="dropdown">
+<a class="dropdown-item dropdown-toggle" href="user-agreement.html#">
+<strong style="font-weight: 600">Все возможности</strong>
+</a>
+<ul class="dropdown-menu">
+<li class="menu-nav_item">
+<a class="dropdown-item" href="../../finances-and-accounting.html">Финансовый учет</a>
+</li>
+<li class="menu-nav_item">
+<a class="dropdown-item" href="../../loyalty-program.html">Программы лояльности</a>
+</li>
+<li class="menu-nav_item">
+<a class="dropdown-item" href="../../electronic-cards.html">Электронные карты</a>
+</li>
+<li class="menu-nav_item">
+<a class="dropdown-item" href="../../calculation-of-salaries.html">Расчет зарплат</a>
+</li>
+<li class="menu-nav_item">
+<a class="dropdown-item" href="../../personal-mobile-applications.html">Мобильные приложения для клиентов</a>
+</li>
+<li class="menu-nav_item">
+<a class="dropdown-item" href="../../telephony.html">Интеграция с телефонией</a>
+</li>
+<li class="menu-nav_item">
+<a class="dropdown-item" href="../../kassa.html">Интеграция с кассовым оборудованием</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="header-row justify-content-end pb-lg-3 hidden">
+<ul class="header-social-icons social-icons d-none d-sm-block social-icons-clean d-sm-0 ml-0">
+
+<li class="social-icons-vk">
+<a href="https://vk.com/yclients?roistat_visit=482540" target="_blank" title="Vk" rel=”nofollow”>
+<i class="fab fa-vk"></i>
+</a>
+</li>
+<li class="social-icons-youtube">
+<a class="social-youtube" href="https://www.youtube.com/channel/UC6aHCPPSU9CDSA5cExZLd3Q?roistat_visit=482540" target="_blank" title="Youtube" rel="nofollow">
+<i class="fab fa-youtube"></i>
+</a>
+</li>
+<li class="social-icons-twitter">
+<a class="social-twitter" href="https://twitter.com/yclients?roistat_visit=482540" target="_blank" title="Twitter" rel="nofollow">
+<i class="fab fa-twitter">
+</i>
+</a>
+</li>
+</ul>
+</div>
+<div class="justify-content-end pb-lg-3 hidden">
+<a href="https://itunes.apple.com/ru/app/yclients/id1084371596?mt=8" class="apple" target="_blank" rel="nofollow">
+<img src="../../assets/yclients/images/new_site/appstore.svg" alt="App Store"></span>
+</a>
+<a href="https://play.google.com/store/apps/details?id=apps.yclients1" class="gg" target="_blank" rel="nofollow">
+<img src="../../assets/yclients/images/new_site/google-play.svg" alt="Google Play">
+</a>
+<a href="https://appgallery.huawei.com/app/C105004393?sharePrepath=ag" class="huawei" target="_blank" rel="nofollow">
+<img src="../../assets/yclients/images/new_site/huawei.svg" alt="Google Play">
+</a>
+</div>
+</div>
+</div>
+</div>
+</header>
+<div class="top-header-row py-lg-4 d-none d-xl-block">
+<ul class="nav-list">
+<li>
+<a href="pricing.html" class="anim-link-2">Цены</a>
+</li>
+<li>
+<a href="../../marketplace.html" class="anim-link-2">Интеграции</a>
+</li>
+<li>
+<a href="../../reviews.html" class="anim-link-2">Отзывы</a>
+</li>
+<li>
+<a href="about.html" class="anim-link-2">О компании</a>
+</li>
+<li>
+<a href="../../blog.html" class="anim-link-2" target="_blank">
+Блог
+</a>
+</li>
+
+</ul>
+<ul class="inner-box">
+<li>
+<a href="https://www.yclients.com/onboarding/first" class="header-account header-signup anim-link-2">Регистрация</a>
+</li>
+<li>
+<a href="../../signin.html" class="header-account header-login anim-link-2">Вход</a>
+</li>
+</ul>
+</div>
+
+<main id="content">
+<section class="section small-header mt-9 pb-1">
+<div class="container">
+<header class="section-header small-header">
+<h1>ПОЛЬЗОВАТЕЛЬСКОЕ СОГЛАШЕНИЕ</h1>
+<hr>
+</header>
+</div>
+</section>
+<section class="section small-header mt-1 pt-1">
+<div class="container">
+<p>
+«Система YCLIENTS» (далее YCLIENTS) предоставляет свои функциональные возможности на платной основе.
+С тарифами можно ознакомиться на странице <a href="https://www.yclients.com/info/pricing" target="_blank">https://www.yclients.com/info/pricing</a>. Переходя к использованию YCLIENTS, вы
+соглашаетесь с изложенными ниже правилами Пользовательского соглашения.
+</p>
+<h2>1. Общие правила</h2>
+<p>
+1.1. Настоящее Пользовательское соглашение (далее – Соглашение) определяет общие условия использования программного обеспечения YCLIENTS на веб-сайте в сети Интернет по адресу: <a href="user-agreement.html" target="_blank">yclients.com</a> (далее – YCLIENTS), а также права и обязанности Пользователя и Лицензиара. Настоящее Соглашение распространяется также на отношения, связанные с правами и интересами третьих лиц, не являющимися Пользователями YCLIENTS, но чьи права и интересы могут быть затронуты в результате действий Пользователей YCLIENTS.
+</p>
+<p>
+1.2. Настоящее Соглашение составляет соглашение между Пользователем и Лицензиаром относительно порядка использования YCLIENTS и ее сервисов и заменяют собой все предыдущие соглашения, которые имели место или могли иметь место между Пользователем и Лицензиаром вне зависимости от формы, в которой таковые соглашения были достигнуты.
+</p>
+<p>
+1.3. YCLIENTS предоставляет свои функциональные возможности на платной основе. С действующими тарифами можно ознакомиться на странице <a href="https://www.yclients.com/info/pricing" target="_blank">https://www.yclients.com/info/pricing</a>. Со списком архивных тарифов можно ознакомиться на странице <a href="https://www.yclients.com/info/pricing-archive" target="_blank">https://www.yclients.com/info/pricing-archive</a>. Использование YCLIENTS на бесплатной основе допускается в случаях, определяемых Лицензиаром. Лицензиар вправе вводить и (или) устанавливать любые ограничения в части функциональных возможностей YCLIENTS, используемой на бесплатной основе.
+</p>
+<p>
+1.4. Настоящее Соглашение является юридически обязательным соглашением между Пользователем и Лицензиаром, предметом которого является предоставление Лицензиаром Пользователю права использования на условиях простой (неисключительной) лицензии YCLIENTS в соответствии с ее функциональными возможностями, в объеме, определенном Лицензиаром, а также оказания иных сопутствующих услуг и предоставления иных сервисов (далее – Услуги). Помимо настоящего Соглашения, к соглашению между Пользователем и Лицензиаром относятся все прочие документы, регулирующие предоставление Услуг и размещенные в соответствующих разделах YCLIENTS.
+</p>
+<p>
+1.5. Пользователь обязан полностью ознакомиться с настоящим Соглашением до момента регистрации в YCLIENTS. Регистрация Пользователя в YCLIENTS означает полное и безоговорочное принятие Пользователем настоящего Пользовательского соглашения в соответствии со статьей 438 Гражданского кодекса Российской Федерации.
+</p>
+<p>
+1.6. Настоящее Соглашение может быть изменено и (или) дополнено Лицензиаром в одностороннем порядке без какого-либо специального уведомления Пользователя. Настоящее Соглашение является открытым и общедоступным документом.
+</p>
+<p>
+1.7. Пользователь обязан регулярно проверять условия настоящего Соглашения на предмет их изменения и (или) дополнения. Продолжение использования YCLIENTS Пользователем после внесения изменений и (или) дополнений в настоящее Соглашение означает принятие и согласие Пользователя со всеми такими изменениями и (или) дополнениями.
+</p>
+<p>
+1.8. Никакие положения настоящего Соглашения не предоставляют Пользователю прав на использование фирменного наименования, товарных знаков, доменных имен и результатов интеллектуальной деятельности, используемых в YCLIENTS, за исключением случаев, когда такое использование допускается с письменного и предварительного согласия Лицензиара.
+</p>
+<p>
+1.9. При регистрации Пользователь соглашается с настоящим Соглашением и принимает на себя указанные в нем права и обязанности, связанные с использованием и функционированием YCLIENTS.
+</p>
+<p>
+1.10. Принимая настоящее Соглашение, Пользователь подтверждает свое согласие на обработку Лицензиаром персональных данных Пользователя, предоставленных Пользователем при регистрации, а также размещаемых Пользователем добровольно в YCLIENTS.
+</p>
+<p>
+1.11. Пользователь вправе заключить с Лицензиаром отдельный Лицензионный договор на использование YCLIENTS без ограничений, установленных для использования YCLIENTS в бесплатной версии.
+ </p>
+<h2>2. Основные термины</h2>
+<p>
+2.1. Программа – программа для ЭВМ «Система YCLIENTS» как в целом, так и ее компоненты, являющаяся представленной в объективной форме совокупностью данных и команд, в том числе исходного текста, базы данных, аудиовизуальных произведений, включенных Лицензиаром в состав Программы, а также любая документация по ее использованию.
+</p>
+<p>
+2.2. Использование Программы – использование функциональных возможностей и (или) воспроизведение одной копии Программы посредством ее инсталляции и (или) запуска в порядке, определенном пользовательской (технической) документацией, Лицензионным договором и настоящим Соглашением.
+</p>
+<p>
+2.3. Лицензиар – юридическое лицо, созданное по законодательству Российской Федерации, – ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "УАЙКЛАЕНТС", ОГРН 5157746100716, ИНН/КПП 7708274185/771501001, адрес (место нахождения): 127018, Москва, ул. Образцова д. 4 строение 1.
+</p>
+<p>
+2.4. Лицензиат – любое физическое или юридическое лицо, которое имеет право на использование Программы в своем интересе в соответствии с требованиями законодательства РФ, Лицензионного договора и настоящего Соглашения.
+</p>
+<p>
+2.5. Лицензионный договор – документ, на основании которого Лицензиар (или иное лицо, имеющее соответствующие права) предоставил
+Лицензиату Программу для ее использования на условиях настоящего Соглашения. Указанный документ оформляется
+в простой письменной форме в порядке, предусмотренном пунктом 3 статьи 434 Гражданского кодекса
+Российской Федерации (путем совершения Лицензиатом, получившим письменное предложение
+Лицензиара заключить договор – оферту, действий по выполнению указанных в оферте условий договора –
+уплате соответствующей суммы), либо – по желанию Лицензиата – в виде одного документа,
+подписанного сторонами. В последнем случае Лицензиат обеспечивает изготовление
+на бумажном носителе, подписание со своей стороны и отправку Лицензиару на почтовый адрес,
+указанный в Лицензионном договоре, двух экземпляров Лицензионного договора, текст
+которого размещен Лицензиаром в сети Интернет на странице <a href="https://www.yclients.com/info/licence-agreement" target="_blank">https://www.yclients.com/info/licence-agreement</a>.
+Лицензиар направляет подписанный со своей стороны экземпляр Лицензионного договора в обратном письме.
+Также возможно подписание документа в электронном виде при помощи программных средств и
+технических возможностей, используемых Лицензиаром и Лицензиатом, в соответствии
+с пунктом 1 статьи 160 и пунктом 2 статьи 434 Гражданского кодекса Российской Федерации.
+</p>
+<p>
+2.6. Тип лицензии – тарифный план, избираемый Лицензиатом из списка, размещенного Лицензиаром в сети Интернет на странице <a href="https://www.yclients.com/info/pricing" target="_blank">https://www.yclients.com/info/pricing</a>.
+</p>
+<p>
+2.7. Пользователь – физическое лицо, которое от лица и (или) с ведома Лицензиата осуществляет фактическое использование Программы; любое лицо, выразившее желание воспользоваться услугами, которые предоставляет Лицензиат, оформляет заявку о намерении воспользоваться данными услугами. Если вы являетесь физическим лицом, действующим от имени корпорации/сети или другого юридического лица, индивидуального предпринимателя, вы заявляете, что имеете полномочия соглашаться с настоящим Пользовательским соглашением от имени юридического лица. Если вы не согласны с настоящим Пользовательским соглашением, вы не можете получить доступ или использовать Программу, Сайт или любые материалы, документацию, информацию, принадлежащие YCLIENTS или третьим лицам.
+</p>
+<p>
+2.8. Авторизованный пользователь – Пользователь, зарегистрированный Лицензиатом в Программе и авторизовавшийся в ней как минимум один раз.
+</p>
+<p>
+2.9. Учетная запись Пользователя – запись в системе Лицензиара и (или) в Программе, хранящая данные, позволяющие идентифицировать и авторизовать Пользователя.
+</p>
+<p>
+2.10. Регистрация – действие, направленное на создание Учетной записи Пользователя. Регистрация Пользователя в YCLIENTS является бесплатной и добровольной. При регистрации в YCLIENTS Пользователь обязан предоставить Лицензиару необходимую достоверную и актуальную информацию. Пользователь несет ответственность за достоверность, актуальность, полноту и соответствие законодательству Российской Федерации предоставленной при регистрации информации и ее чистоту от претензий третьих лиц.
+</p>
+<p>
+2.11. Авторизация – разрешение, предоставляемое Лицензиаром для доступа к Личному кабинету Пользователя, которое реализуется путем анализа учетной информации в виде уникальной комбинации имени пользователя и пароля, вводимой Пользователем на странице авторизации YCLIENTS, и проверки ее соответствия сведениям, содержащимся в Учетной записи Пользователя.
+</p>
+<p>
+2.12. Личный кабинет Пользователя – специализированный закрытый раздел YCLIENTS, доступный Авторизованному Пользователю после Регистрации и Авторизации, и предназначенный для осуществления Пользователем управления YCLIENTS и ее настройками. Для входа в Личный кабинет Пользователя используются уникальные имя пользователя и пароль, полученные Пользователем при Регистрации в соответствии с п. 8.4. настоящего Соглашения.
+</p>
+<p>
+2.13. Персональная страница Пользователя – специальный отдельный статистический раздел YCLIENTS, в котором размещается информация о Лицензиате и его деятельности, в том числе включающий информацию об услугах и (или) ценах на услуги, предоставляемых Лицензиатом, фото- и видеоматериалы,
+контактные данные Лицензиата. Выбор информации, размещаемой Лицензиатом на Персональной странице Пользователя, осуществляется Лицензиатом самостоятельно и предварительному согласованию с Лицензиаром не подлежит.
+</p>
+<p>
+2.14. Сервис записи – совокупность программно-аппаратных средств YCLIENTS, отображающих в YCLIENTS в режиме реального времени информацию о лицах, выразивших желание воспользоваться услугами, которые предоставляет Лицензиат.
+</p>
+<p>
+2.15. Акция – рекламная акция, проводимая Лицензиатом с целью продвижения своих услуг с использованием YCLIENTS.
+</p>
+<p>
+2.16. Клиентская база – структурированная определенным образом информация о лицах, выразивших желание воспользоваться услугами, которые предоставляет Лицензиат, а также сведения о потреблении услуг, которые предоставляет Лицензиат, которая была внесена Пользователем в YCLIENTS.
+</p>
+<p>
+2.17. Биллинг – раздел Личного кабинета Пользователя, содержащий информацию о сроке действи Лицензии, тарифах и объеме Услуг, доступных Пользователю.
+</p>
+<p>
+2.18. Онлайн-запись – процесс, в ходе которого с помощью специального интерфейса YCLIENTS, размещенного на сайте или иных онлайн-ресурсах Лицензиата, любое лицо, выразившее желание воспользоваться услугами, которые предоставляет Лицензиат, оформляет заявку о намерении воспользоваться данными услугами. Результатом Онлайн-записи является передача Лицензиату информации о времени, дате, услуге и контактных данных, введенных в специальном интерфейсе YCLIENTS, размещенном на сайте или иных онлайн-ресурсах Лицензиата, лицом, выразившим желание воспользоваться услугами, которые предлагает Лицензиат.
+</p>
+<p>
+2.19. Программа лояльности – совокупность скидок (наценок), а также бонусов и прочих привилегий, предоставляемых Лицензиаром Лицензиату, информация о которых размещена Лицензиаром в сети Интернет на странице <a href="https://www.yclients.com/info/pricing" target="_blank">https://www.yclients.com/info/pricing</a>.
+</p>
+<p>
+2.20. Услуги – оказываемые вне рамок Лицензионного договора услуги по перечню, размещенному Лицензиаром в сети Интернет на странице <a href="https://www.yclients.com/info/service-agreement" target="_blank">https://www.yclients.com/info/service-agreement</a>, доступ к которым может быть получен Пользователем с использованием интерфейса Программы. Порядок предоставления доступа к Услугам устанавливается отдельным договором.
+</p>
+<h2>3. Предмет соглашения</h2>
+<p>
+3.1. Лицензиар предоставляет Лицензиату право использования (простую (неисключительную) лицензию) Программы в рамках ее функциональных возможностей путем воспроизведения программы (подключения к Программе через сеть Интернет), исключительно для самостоятельного использования Лицензиатом без права сублицензирования третьим лицам. Лицензиар, являясь участником проекта «Сколково», предоставляет права использования собственной Программы и оказывает сопутствующие услуги в рамках коммерциализации результатов своих исследований и разработок, а также с целью непрерывного развития и усовершенствования Программы, ее адаптации под нужды Клиентов.
+</p>
+<p>
+3.2. Настоящее Соглашение заключается до или непосредственно в момент начала использования Программы и действует на протяжении всего срока ее правомерного использования Лицензиатом в пределах срока действия авторского права на нее при условии надлежащего соблюдения Лицензиатом условий настоящего Соглашения.
+</p>
+<p>
+3.3. Лицензиар предоставляет Лицензиату право использования Программы без ограничения по территории в порядке и на условиях, предусмотренных законодательством Российской Федерации, Лицензионным договором и настоящим Соглашением.
+</p>
+<p>
+3.4. Размер, порядок и условия уплаты Лицензиатом вознаграждения за использование Программы устанавливаются Лицензионным договором.
+</p>
+<h2>4. Авторские права и товарные знаки</h2>
+<p>
+4.1. Программа является результатом интеллектуальной деятельности и объектом авторских прав (Программа для ЭВМ), которые регулируются и защищены законодательством Российской Федерации об интеллектуальной собственности и нормами международного права.
+</p>
+<p>
+4.2. Алгоритмы работы Программы и ее исходные коды (в том числе их части) являются коммерческой тайной Лицензиара. Любое их использование либо использование Программы в нарушение условий настоящего Соглашения и (или) Лицензионного договора рассматривается как нарушение прав Лицензиара и является достаточным основанием для лишения Пользователя предоставленных по настоящему Соглашению прав.
+</p>
+<p>
+4.3. Настоящим Соглашением Лицензиату не предоставляется право собственности на Программу и ее компоненты, а только право использования Программы и ее компонентов в соответствии с условиями, которые обозначены в настоящем Соглашении и Лицензионном договоре.
+</p>
+<p>
+4.4. Лицензиар гарантирует, что обладает всем необходимым объемом прав на Программу для предоставления их Лицензиату, включая документацию к Программе.
+</p>
+<p>
+4.5. Настоящим Соглашением Лицензиату не предоставляются никакие права на использование товарных знаков и знаков обслуживания Лицензиара и (или) его партнеров.
+</p>
+<p>
+4.6. Лицензиат не вправе ни при каких условиях удалять или делать малозаметными информацию и сведения об авторских правах, правах на товарные знаки, знаки обслуживания, патенты, указанные в Программе.
+</p>
+<p>
+4.7. Лицензиат не вправе копировать, распространять Программу и ее компоненты в любой форме, в том числе в виде исходного кода, каким-либо способом, в том числе сдавать в аренду, безвозмездное пользование, либо в прокат.
+</p>
+<p>
+4.8. Лицензиат не вправе использовать Программу каким-либо способом, если такое использование противоречит или приводит к нарушению настоящего Соглашения, Лицензионного договора или законодательства Российской Федерации.
+</p>
+<p>
+4.9. Ответственность за нарушение авторских прав наступает в соответствии с законодательством Российской Федерации.
+</p>
+<h2>5. Условия использования Программы и ограничения</h2>
+<p>
+5.1. Лицензиату предоставляется право Регистрации в рамках настоящего Соглашения.
+</p>
+<p>
+5.2. Лицензиар не предоставляет Лицензиату услуги связи, не организует для него возможность доступа к информационным системам информационно-телекоммуникационных сетей, в том числе к сети Интернет, и не осуществляет деятельность по приему, обработке, хранению, передаче, доставке сообщений электросвязи.
+</p>
+<p>
+5.3. Лицензиат имеет право в рамках настоящего Соглашения, Лицензионного договора и в соответствии с выбранным Типом лицензии размещать в Программе принадлежащие ему данные, если это не нарушает настоящее Соглашение, Лицензионный договор, законодательство Российской Федерации.
+</p>
+<p>
+5.4. Лицензиат вправе изменять, добавлять или удалять файлы Программы только в случаях, предусмотренных законодательством Российской Федерации об авторском праве.
+</p>
+<p>
+5.5. Лицензиат не вправе использовать Программу каким-либо способом, если такое использование противоречит или приводит к нарушению законодательства Российской Федерации.
+</p>
+<p>
+5.6. В случае несоблюдения любого из пунктов настоящего Соглашения, Лицезиат утрачивает право на обновление Программы без какого-либо уведомления со стороны Лицензиара.
+</p>
+<h2>6. Уступка (передача) прав на Программу</h2>
+<p>
+6.1. Лицензиат имеет право однократно уступить (передать) полностью свои права и обязанности по настоящему Соглашению другому лицу только при условии получения предварительного письменного согласия Лицензиара. Указанное право на уступку (передачу) не предоставляется тем Лицензиатам, которые получили права на использование Программы в результате аналогичной уступки (передачи).
+</p>
+<p>
+6.2. Уступка (передача) прав по настоящему Соглашению не может быть осуществлена косвенно или через какое-либо третье лицо.
+</p>
+<p>
+6.3. Уступка (передача) прав и обязанностей осуществляется только при условии полного и безоговорочного согласия нового Лицензиата со всеми положениями и условиями настоящего Соглашения и Лицензионного договора.
+</p>
+<p>
+6.4. Лицензиат обязан предоставить Лицензиару полные данные о новом Лицензиате для перерегистрации на него Программы в соответствии с настоящим Соглашением.
+</p>
+<h2>7. Типы лицензий</h2>
+<p>
+7.1. Лицензиат вправе без выплаты вознаграждения использовать Программу в рамках лицензии для ознакомления (триальной версии) в ограниченный период времени, определяемый действующими на момент Регистрации условиями, установленными Лицензиаром и размещенными в сети Интернет на странице <a href="https://www.yclients.com/info/pricing" target="_blank">https://www.yclients.com/info/pricing</a>.
+</p>
+<p>
+7.2. Лицензиат вправе самостоятельно выбирать соответствующий Тип лицензии из перечня, который размещен Лицензиаром в сети Интернет на странице <a href="https://www.yclients.com/info/pricing" target="_blank">https://www.yclients.com/info/pricing</a>.
+</p>
+<p>
+7.3. Выбранный Лицензиатом Тип лицензии определяется Лицензионным договором.
+</p>
+<p>
+7.4. Определенный в соответствии с Типом лицензии срок действия лицензии начинает течь со дня, следующего за днем заключения Лицензионного договора.
+</p>
+<p>
+7.5. Лицензиат имеет право сменить Тип лицензии в любое время в течение всего срока действия лицензии, определенного Лицензионным договором. При этом:
+</p>
+<p>
+7.5.1. Срок действия приобретаемой лицензии будет увеличен на срок оплаченной, но неизрасходованной, текущей лицензии с учетом тарифной стоимости новой лицензии.
+</p>
+<p>
+7.5.2. Перерасчет стоимости и возврат вознаграждения, уплаченного в соответствии с Лицензионным договором при приобретении текущей лицензии, не производится.
+</p>
+<p>
+7.6. По окончании срока действия лицензии дальнейшее использование Программы Лицензиатом может быть ограничено Лицензиаром, а Учетная запись Пользователя – заблокирована.
+</p>
+<p>
+7.7. Лицензиар вправе изменять в одностороннем порядке Типы лицензий путем размещения нового их перечня в сети Интернет на странице <a href="https://www.yclients.com/info/pricing" target="_blank">https://www.yclients.com/info/pricing</a>. Измененные в указанном порядке Типы лицензий применяются в Лицензионных договорах, заключаемых, начиная со дня публикации соответствующей (измененной) информации о Типах лицензии на указанной выше странице в сети Интернет. Изменение Типов лицензий в указанном порядке не является основанием для внесения изменений в Лицензионные договоры, заключенные до даты публикации Лицензиаром информации об изменении Типов лицензии.
+</p>
+<h2>8. Порядок использования Программы</h2>
+<p>
+8.1. Регистрация.
+</p>
+<p>
+8.1.1. Для того чтобы воспользоваться Программой Лицензиату необходимо пройти процедуру Регистрации, в результате которой для Лицензиата будет создана уникальная Учетная запись Пользователя.
+</p>
+<p>
+8.1.2. Регистрация осуществляется Лицензиатом самостоятельно путем заполнения регистрационной формы, расположенной в сети Интернет на странице <a href="https://www.yclients.com/onboarding/first" target="_blank">https://www.yclients.com/onboarding/first</a>.
+</p>
+<p>
+8.1.3. Регистрация в YCLIENTS является бесплатной и добровольной.
+</p>
+<p>
+8.1.4. При Регистрации в YCLIENTS Пользователь обязан предоставить Лицензиару необходимую достоверную и актуальную информацию.
+</p>
+<p>
+8.1.5. Пользователь не вправе осуществлять Регистрацию от имени или вместо другого лица за исключением случая, когда Пользователь обладает оформленными в установленном законодательством Российской Федерации порядке необходимыми полномочиями, позволяющими ему осуществлять Регистрацию от имени третьего лица.
+</p>
+<p>
+8.1.6. Пользователь несет ответственность за достоверность, актуальность, полноту и соответствие законодательству Российской Федерации предоставленной при Регистрации информации и ее чистоту от претензий третьих лиц. Если Пользователь предоставляет неверную информацию, либо если у Лицензиара
+есть основания полагать, что предоставленная Пользователем информация неполна или недостоверна, Лицензиар имеет право заблокировать либо удалить Учетную запись Пользователя, созданную Лицензиатом, а также запретить Лицензиату использование Программы.
+</p>
+<p>
+8.2. После регистрации Пользователь получает право на условиях простой (неисключительной) лицензии использовать Программу и пользоваться Услугами, в объеме, определенном Лицензиаром и Лицензионным договором.
+</p>
+<p>
+8.3. Для добавления Авторизованных пользователей необходимо зарегистрировать их в Личном кабинете Пользователя путем заполнения соответствующей формы. Количество Авторизованных пользователей определяется исходя из Типа лицензии.
+</p>
+<p>
+8.4. После Регистрации Лицензиар направляет Лицензиату на указанный при Регистрации адрес электронной почты и (или) номер сотового телефона (посредством SMS) имя пользователя и пароль, которые могут быть использованы Пользователем при Авторизации. В дальнейшем Пользователь вправе с использованием соответствующего интерфейса Программы самостоятельно изменить имя пользователя и (или) пароль. В этом случае Пользователь самостоятельно несет ответственность за безопасность (устойчивость к угадыванию) выбранного им имени пользователя и (или) пароля.
+</p>
+<p>
+8.4.1. Пользователь не имеет права передавать полученные от Лицензиара при Регистрации, либо измененные самостоятельно с использованием соответствующего интерфейса Программы имя пользователя и пароль третьим лицам.
+</p>
+<p>
+8.4.2. Пользователь несет полную ответственность за сохранность и конфиденциальность имени пользователя и пароля, самостоятельно выбирая способ их хранения. Пользователь на используемом им аппаратно-программном обеспечении может разрешить хранение имени пользователя и (или) пароля (в том числе с использованием файлов cookies) для последующей автоматической авторизации в YCLIENTS.
+</p>
+<p>
+8.4.3. Если Пользователем не доказано обратное, любые действия, совершенные с использованием полученных от Лицензиара при Регистрации, либо измененных самостоятельно в соответствующем интерфейсе Программы имени пользователя и пароля, считаются совершенными соответствующим Пользователем. В случае несанкционированного доступа к указанным имени пользователя и паролю и (или) Личному кабинету Пользователя и (или) Персональной странице Пользователя, а равно в случае распространения указанных имени пользователя и пароля, нарушения или подозрения о нарушении их конфиденциальности Пользователь обязан незамедлительно сообщить об этом Лицензиару любым доступным способом. Действия в Программе, имеющие место после получения Лицензиаром такого сообщения, не признаются совершенными Пользователем.
+</p>
+<p>
+8.4.4. Лицензиар вправе вводить ограничения (в том числе запрет) на использование определенных имен пользователя, а также устанавливать требования к имени пользователя и паролю (длина, допустимые символы и т.д.).
+</p>
+<p>
+8.5. В целях безопасности Пользователь обязан самостоятельно осуществлять безопасное завершение работы под своей Учетной записью Пользователя (кнопка «Выход») по окончании каждой сессии работы с Программой. Лицензиар не отвечает за возможную потерю данных, а также другие последствия любого характера, которые могут произойти из-за нарушения Пользователем положений этой части настоящего Соглашения.
+</p>
+<p>
+8.6. Пользователь несет полную ответственность за свои действия, связанные с использованием YCLIENTS и Услуг, в соответствии с законодательством Российской Федерации. В случае обнаружения Лицензиаром факта нарушения Пользователем настоящего Соглашения, законодательства Российской Федерации, Лицензионного договора, Лицензиар вправе заблокировать доступ Пользователя к YCLIENTS.
+</p>
+<p>
+8.7. При использовании Программы и Услуг Пользователь обязан:
+</p>
+<p>
+8.7.1. Соблюдать положения законодательства Российской Федерации, настоящего Соглашения, Лицензионного договора и иных документов, размещаемых Лицензиаром в YCLIENTS.
+</p>
+<p>
+8.7.2. Использовать Программу, Услуги только для законных целей и законными способами с учетом законодательства Российской Федерации.
+</p>
+<p>
+8.7.3. Не размещать в YCLIENTS информацию и объекты (включая ссылки на них), которые могут нарушать права и интересы других лиц.
+</p>
+<p>
+8.7.4. Хранить в тайне и не предоставлять другим Пользователям и третьим лицам ставшие ему известными в результате общения с другими Пользователями и иного использования YCLIENTS персональные данные (включая, но не ограничиваясь, адресами в адресной системе Российской Федерации, номерами телефонов, адресами электронной почты, номерами ICQ, паспортными данными, банковской информацией) и информацию о частной жизни других Пользователей и третьих лиц без получения соответствующего предварительного письменного разрешения последних.
+</p>
+<p>
+8.7.5. При использовании Онлайн-записи размещать на сайте или иных онлайн-ресурсах, на которых размещен специальный интерфейс YCLIENTS, с помощью которого осуществляется Онлайн-запись, информацию о правилах использования данного сервиса, включающую информацию о порядке, способах и целях обработки, использования, передачи, хранения и обеспечения сохранности получаемых в результате Онлайн-записи персональных данных третьих лиц. Ответственность за подготовку и размещение указанных правил несет Лицензиат.
+</p>
+<p>
+8.7.6. При использовании Онлайн-записи обеспечивать определенный законодательством Российской Федерации уровень защиты персональных данных третьих лиц, поступающих к Пользователю в результате Онлайн-записи. Не допускать использования указанных персональных данных с нарушением правил, установленных законодательством Российской Федерации.
+</p>
+<p>
+8.7.7. Обеспечивать актуальность адреса электронной почты и (или) телефонного номера, используемого в качестве имени пользователя при Авторизации.
+</p>
+<p>
+8.8. При использовании Программы и Услуг Пользователю запрещается:
+</p>
+<p>
+8.8.1. Загружать, хранить, публиковать, распространять и предоставлять доступ или иным образом использовать любую информацию, которая содержит угрозы, дискредитирует, оскорбляет, порочит честь и достоинство или деловую репутацию, либо нарушает неприкосновенность частной жизни других Пользователей или третьих лиц.
+</p>
+<p>
+8.8.2. Загружать, хранить, публиковать, распространять и предоставлять доступ или иным образом использовать любую информацию, которая нарушает права несовершеннолетних лиц.
+</p>
+<p>
+8.8.3. Загружать, хранить, публиковать, распространять и предоставлять доступ или иным образом использовать любую информацию, которая является вульгарной или непристойной, содержит нецензурную лексику, содержит порнографические изображения и тексты, содержит сцены сексуального характера с участием несовершеннолетних.
+</p>
+<p>
+8.8.4. Загружать, хранить, публиковать, распространять и предоставлять доступ или иным образом использовать любую информацию, которая содержит сцены насилия, в том числе бесчеловечного обращения с животными.
+</p>
+<p>
+8.8.5. Загружать, хранить, публиковать, распространять и предоставлять доступ или иным образом использовать любую информацию, которая содержит описание средств и способов суицида, любое подстрекательство к его совершению.
+</p>
+<p>
+8.8.6. Загружать, хранить, публиковать, распространять и предоставлять доступ или иным образом использовать любую информацию, которая пропагандирует и (или) способствует разжиганию расовой, религиозной, этнической ненависти или вражды, пропагандирует фашизм или идеологию расового превосходства.
+</p>
+<p>
+8.8.7. Загружать, хранить, публиковать, распространять и предоставлять доступ или иным образом использовать любую информацию, которая содержит экстремистские материалы.
+</p>
+<p>
+8.8.8. Загружать, хранить, публиковать, распространять и предоставлять доступ или иным образом использовать любую информацию, которая пропагандирует преступную деятельность или содержит советы, инструкции или руководства по совершению преступных действий.
+</p>
+<p>
+8.8.9. Загружать, хранить, публиковать, распространять и предоставлять доступ или иным образом использовать любую информацию, которая содержит информацию ограниченного доступа, включая, но не ограничиваясь, государственной и коммерческой тайной, информацией о частной жизни третьих лиц.
+</p>
+<p>
+8.8.10. Загружать, хранить, публиковать, распространять и предоставлять доступ или иным образом использовать любую информацию, которая содержит рекламу или описывает привлекательность
+употребления наркотических веществ, в том числе звуковых файлов, оказывающих воздействие на мозг человека за счет бинауральных ритмов, информацию о распространении таких веществ (в том числе звуковых файлов), рецепты их изготовления и советы по употреблению.
+</p>
+<p>
+8.8.11. Загружать, хранить, публиковать, распространять и предоставлять доступ или иным образом использовать любую информацию, которая носит мошеннический характер.
+</p>
+<p>
+8.8.12. Загружать, хранить, публиковать, распространять и предоставлять доступ или иным образом использовать любую информацию, которая нарушает иные права и интересы граждан и юридических лиц или требования законодательства Российской Федерации.
+</p>
+<p>
+8.8.13. Незаконно загружать, хранить, публиковать, распространять и предоставлять доступ или иным образом использовать интеллектуальную собственность Лицензиара, Пользователей, третьих лиц.
+</p>
+<p>
+8.8.14. Размещать любую другую информацию, которая, по мнению Лицензиара, является нежелательной, не соответствует целям использования в YCLIENTS, ущемляет интересы Пользователей или по другим причинам является нежелательной для размещения в YCLIENTS.
+</p>
+<p>
+8.8.15. Использовать программное обеспечение и осуществлять действия, направленные на нарушение нормального функционирования YCLIENTS, ее сервисов, Услуг.
+</p>
+<p>
+8.8.16. Загружать, хранить, публиковать, распространять и предоставлять доступ или иным образом использовать вирусы, трояны и другие вредоносные программы.
+</p>
+<p>
+8.8.17. Использовать без специального письменного и предварительного разрешения Лицензиара автоматизированные скрипты (программы) для сбора информации в YCLIENTS и (или) взаимодействия с YCLIENTS, ее сервисами, Услугами.
+</p>
+<p>
+8.8.18. Любым способом, в том числе, но не ограничиваясь, путем обмана, злоупотребления доверием, взлома, пытаться получить доступ к имени пользователя и паролю другого Пользователя.
+</p>
+<p>
+8.8.19. Осуществлять незаконно (в том числе с нарушением правил, установленных законодательством Российской Федерации) сбор и обработку персональных данных других лиц.
+</p>
+<p>
+8.8.20. Осуществлять (в том числе пытаться получить) доступ к каким-либо Услугам иным способом, кроме как через YCLIENTS (интерфейс, предоставленный Лицензиаром), за исключением случаев, когда такие действия были прямо и предварительно разрешены Пользователю в соответствии с Лицензионным договором или иным отдельным соглашением с Лицензиаром.
+</p>
+<p>
+8.8.21. Воспроизводить, дублировать, копировать, продавать, осуществлять торговые операции и перепродавать Услуги для каких-либо целей, за исключением случаев, когда такие действия были прямо и предварительно разрешены Пользователю в соответствии с Лицензионным договором или иным отдельным соглашением с Лицензиаром.
+</p>
+<p>
+8.8.22. Использовать Программу, YCLIENTS, Услуги для осуществления массовых рассылок электронных и прочих сообщений коммерческого, рекламного и иного характера, не согласованных (не запрошенных) получателем информации. Под указанный запрет не попадает рассылка информации с согласия получателя при возможности отказа от получения подобной информации в дальнейшем.
+</p>
+<p>
+8.9. Пользователь несет ответственность за любую информацию, которую размещает в Программе, сообщает другим Пользователям и третьим лицам, а также за любые взаимодействия с другими Пользователями и третьими лицами.
+</p>
+<p>
+8.10. Пользователь несет ответственность за собственные действия в связи с созданием и размещением информации в YCLIENTS в соответствии с законодательством Российской Федерации.
+</p>
+<p>8.11. Лицензиар не несет ответственности за нарушение Пользователем настоящего Соглашения и оставляет за собой право по своему усмотрению, а также при получении информации от других Пользователей либо третьих лиц о нарушении Пользователем настоящего Соглашения, изменять (модерировать) и (или) удалять любую публикуемую Пользователем информацию, нарушающую запреты, установленные настоящим Соглашением, приостанавливать, ограничивать или прекращать доступ Пользователя ко всем или к любому из разделов или сервисов в YCLIENTS в любое время по любой причине без объяснения причин, с предварительным уведомлением или без такового, не отвечая за любой вред, который может быть причинен Пользователю такими действиями.</p>
+<p>
+8.12. Лицензиар вправе без объяснения причин приостановить, ограничить или прекратить доступ Пользователя к YCLIENTS или к любой Услуге. Лицензиар не несет ответственности за осуществленное в соответствии с настоящим Соглашением временное блокирование или удаление информации, или удаление Учетной записи Пользователя.
+</p>
+<p>
+8.13. Удаление Учетной записи Пользователя.
+</p>
+<p>
+8.13.1. Лицензиар вправе заблокировать и удалить Учетную запись Пользователя Лицензиата, включая весь контент, без объяснения причин, в случае нарушения условий настоящего Соглашения. С этого момента восстановление Учетной записи Пользователя, какой-либо информации, относящейся к ней, а равно доступов к Программе с использованием удаленной Учетной записи Пользователя невозможны.
+</p>
+<p>
+8.13.2. В случае несогласия Пользователя с настоящим Соглашением или его обновлением, осуществленным в порядке, предусмотренном п. 13.4. настоящего Соглашения, Пользователь обязан отказаться от использования Программы, проинформировав об этом Лицензиара любым доступным способом. После получения указанного сообщения Лицензиар вправе заблокировать и (или) удалить Учетную запись Пользователя Лицензиата, включая весь контент. С этого момента восстановление Учетной записи Пользователя, какой-либо информации, относящейся к ней, а равно доступов к Программе с использованием удаленной Учетной записи Пользователя невозможны.
+</p>
+<p>
+8.14. Лицензиар сохраняет за собой право в любое время изменять оформление в YCLIENTS, ее содержание, список сервисов и Услуг, изменять или дополнять используемые скрипты, программное обеспечение и другие объекты, используемые или хранящиеся в YCLIENTS, любые серверные приложения с предварительным уведомлением Пользователя или без такового.
+</p>
+<p>8.15. Лицензиар имеет право направлять Пользователю информацию о развитии YCLIENTS и ее сервисов, Услуг, а также рекламировать собственную деятельность и услуги.
+</p>
+<p>
+8.16. Лицензиар обеспечивает конфиденциальность и безопасность персональных данных при их обработке Пользователем с использованием YCLIENTS путем:
+</p>
+<p>
+8.16.1. Предоставления доступа к YCLIENTS по протоколу HTTPS или аналогу, обеспечивающему аналогичный уровень безопасности.
+</p>
+<p>
+8.16.2. Антивирусной защиты сервера (серверов) на котором размещена YCLIENTS, с помощью стандартного антивирусного программного обеспечения, обычно применяемого для защиты серверов подобного типа.
+</p>
+<p>
+8.16.3. Использования межсетевого экрана, пропускающего только сетевой трафик, необходимый для использования и обслуживания YCLIENTS.
+</p>
+<p>8.16.4. Регистрации фактов Авторизации Пользователя и выхода Пользователя из YCLIENTS.</p>
+<h2>9. Ограничения использования Программы</h2>
+<p>
+9.1. Пользователь не вправе совершать действия, которые могут повлечь:
+</p>
+<p>
+9.1.1. Нарушение функционирования оборудования и сети Лицензиара.
+</p>
+<p>
+9.1.2. Нарушение работы Программы или ограничение возможностей других Пользователей в использовании Программы.
+</p>
+<p>
+9.1.3. Несанкционированный доступ к Программе, а также информационно-вычислительным и сетевым ресурсам Лицензиара.
+</p>
+<p>
+9.1.4. Причинение либо угрозу причинения ущерба третьим лицам, в том числе путем размещения информации и ссылок на ресурсы сети, содержание которых противоречит законодательству Российской Федерации.
+</p>
+<p>
+9.2. Пользователь не имеет права на модификацию Программы, YCLIENTS, их дизайна и внешнего вида.
+</p>
+<p>
+9.3. Лицензиат самостоятельно обеспечивает наличие оборудования, соответствующего техническим требованиям для использования Программы и доступа к сети Интернет.
+</p>
+<p>
+9.4. Пользователь гарантирует, что он имеет все необходимые права на все данные, компьютерные программы или сервисы, которые используются им в связи с использованием Программы, и что такие действия не нарушают прав третьих лиц.
+</p>
+<p>
+9.5. Пользователь не имеет права использовать Программу иными способами, кроме указанных в настоящем Соглашении, а также копировать, продавать и перепродавать ее или доступ к ней, кроме тех случаев, когда Пользователь получил на это предварительное письменное разрешение Лицензиара.
+</p>
+<h2>10. Ограниченная гарантия и ответственность</h2>
+<p>
+10.1. Программа, Услуги, YCLIENTS и ее сервисы, включая все скрипты, приложения, контент и оформление, предоставляются по принципу «как есть». Лицензиар не гарантирует, что все функциональные возможности Программы будут отвечать ожиданиям Лицензиата, Пользователей и смогут быть применимы для конкретной его цели. Лицензиар также отказывается от всяких гарантий того, что YCLIENTS, Услуги или сервисы могут подходить или не подходить для конкретных целей Пользователя. Лицензиар не может гарантировать и не обещает никаких специфических результатов от использования YCLIENTS, Услуг и (или) сервисов.
+</p>
+<p>
+10.2. Лицензиар не инициирует и не контролирует размещение Пользователем любой информации в процессе использования Программы, YCLIENTS, Услуг и сервисов, не влияет на ее содержание и целостность, а также в момент размещения указанной информации не знает и не может знать нарушает ли она охраняемые законом права и интересы третьих лиц, международные договоры и законодательство Российской Федерации.
+</p>
+<p>
+10.3. За содержание создаваемых и поддерживаемых Лицензиатом данных, несет ответственность непосредственно сам Лицензиат. Лицензиар не осуществляет предварительного контроля за содержанием размещаемой и (или) распространяемой Лицензиатом информации, однако если размещение и распространение такой информации противоречит законодательству Российской Федерации, Лицензиар вправе заблокировать или удалить соответствующую Учетную запись и данные без какого-либо предварительного предупреждения.
+</p>
+<p>
+10.4. Ни при каких обстоятельствах Лицензиар не несет ответственность перед Пользователем или перед любыми третьими лицами за любой косвенный, случайный, неумышленный ущерб, включая упущенную выгоду или потерянные данные, вред чести, достоинству или деловой репутации, возникший в связи с использованием Программы, YCLIENTS, Услуг, содержимого YCLIENTS или иных материалов, к которым Пользователь или иные лица получили доступ с помощью YCLIENTS, даже если Пользователь предупреждал или указывал на возможность такого вреда.
+</p>
+<p>
+10.5. Лицензиар не несет ответственности перед Пользователем за любой ущерб, любую потерю доходов, прибыли, информации или сбережений, связанных с использованием или с невозможностью использования Программы, YCLIENTS, Услуг, в том числе в случае предварительного уведомления со стороны Пользователя о возможности такого ущерба, или по любому иску третьей стороны.
+</p>
+<p>
+10.6. Лицензиар обеспечивает функционирование и работоспособность Программы, YCLIENTS и обязуется оперативно восстанавливать их работоспособность в случае технических сбоев и перерывов. Лицензиар не несет ответственности за временные сбои и перерывы в работе Программы, YCLIENTS и вызванные ими потерю информации.
+</p>
+<p>
+10.7. Лицензиар не несет ответственности за любой ущерб компьютеру Пользователя или иного лица, мобильным устройствам, любому другому оборудованию или программному обеспечению, вызванный или связанный со скачиванием и (или) загрузкой материалов из YCLIENTS или по ссылкам, размещенным в YCLIENTS.
+</p>
+<p>
+10.8. Если при использовании Программы будут обнаружены ошибки, Лицензиар предпримет меры для их исправления в максимально короткие сроки. Точные сроки устранения конкретных ошибок могут определяться Лицензионным договором с учетом того, что Программа тесно взаимодействует с другими программами для ЭВМ сторонних разработчиков, операционными системами и аппаратными ресурсами компьютеров Лицензиата и работоспособность Программы и время устранения проблем в полной мере не зависят только от Лицензиара.
+</p>
+<p>
+10.9. В случае совершения Лицензиатом действий, запрещенных положениями настоящего Соглашения, Лицензиар вправе без объяснения причин и какого-либо предварительного уведомления Лицензиата предпринять меры, выявляющие и предотвращающие указанные нарушения.
+</p>
+<p>
+10.10. За нарушение условий настоящего Соглашения Лицензиатом наступает ответственность, предусмотренная законодательством Российской Федерации.
+</p>
+<h2>11. Условия обработки и использования персональных данных</h2>
+<p>
+11.1. Принимая условия настоящего Соглашения, Пользователь в соответствии с Федеральным законом от 27.07.2006 No 152-ФЗ «О персональных данных», действуя свободно, своей волей и в своем интересе, выражает свое согласие на предоставление своих персональных данных, включающих Фамилию, Имя, Отчество, адрес электронной почты, номер контактного телефона, дату рождения, регион, город, организацию, должность для их обработки Лицензиаром.
+</p>
+<p>11.2. Цели обработки персональных данных Лицензиаром:
+</p>
+<p>
+11.2.1. Предоставление Пользователю права использования Программы, YCLIENTS, Услуг.
+</p>
+<p>
+11.2.2. Направление Пользователю уведомлений, касающихся использования Программы, YCLIENTS, Услуг.
+</p>
+<p>
+11.2.3. Подготовка и направление Лицензиаром ответов на запросы Пользователя, включая, но не ограничиваясь, обращением в службу поддержки.
+</p>
+<p>
+11.2.4. Направление Лицензиаром информации о мероприятиях, проводимых Лицензиаром.
+</p>
+<p>
+11.2.5. Направление Лицензиаром информации о продуктах и услугах Лицензиара.
+</p>
+<p>
+11.3. Перечень действий с персональными данными, на которые Пользователь выражает свое согласие: сбор, систематизация, накопление, хранение, уточнение (обновление, изменение), использование, обезличивание, передача третьим лицам для указанных в п. 12.2 настоящего Соглашения целей, а также осуществление любых иных действий, предусмотренных законодательством Российской Федерации как неавтоматизированными, так и автоматизированными способами.
+</p>
+<p>
+11.4. Лицензиар обязуется принимать все предусмотренные законодательством Российской Федерации необходимые меры для защиты персональных данных Пользователя от неправомерного доступа или раскрытия.
+</p>
+<p>
+11.5. Указанное в п. 11.1-11.3 настоящего Соглашения согласие действует до момента его отзыва Пользователем путем направления соответствующего уведомления на адрес электронной почты Лицензиара
+<a href="../../cdn-cgi/l/email-protection.html#a8dbddd8d8c7dadce8d1cbc4c1cdc6dcdb86cbc7c5" target="_blank"><span class="__cf_email__" data-cfemail="c5b6b0b5b5aab7b185bca6a9aca0abb1b6eba6aaa8">[email&#160;protected]</span></a> или передачи такого сообщения сотрудникам Лицензиара по телефону
+<a href="tel:88005050475">8 (800) 505-04-75</a>. Пользователь понимает и соглашается с тем, что в случае отзыва данного согласия он лишается возможности использовать часть или все возможности Программы, YCLIENTS и (или) Услуг.
+</p>
+<p>11.6. Пользователь соглашается на получение от Лицензиара и его партнеров посредством номера телефона, адреса электронной почты, которые он указывает при Регистрации, рекламно-информационных сообщений, SMS-сообщений, Push-сообщений о продукции, услугах и мероприятиях, связанных с продуктами Лицензиара.
+</p>
+<h2>12. Действие, изменение и расторжение настоящего Соглашения</h2>
+<p>12.1. Настоящее Соглашение регулируется и толкуется в соответствии с законодательством Российской Федерации. Вопросы, не урегулированные настоящим Соглашением, подлежат разрешению в соответствии с законодательством Российской Федерации, если иной порядок определения применимого права не предусмотрен Лицензионным договором, либо нормами международного права.
+</p>
+<p>12.2. Настоящее Соглашение вступает в силу для Пользователя с момента его присоединения к нему и действуют в течение неопределенного срока.
+</p>
+<p>12.3. Настоящее Соглашение распространяется на все обновления Программы, предоставляемые Лицензиату, если только при обновлении Программы не предлагается ознакомиться и принять новое Соглашение или дополнения к настоящему Соглашению.
+</p>
+<p>12.4. Лицензиар имеет право изменять условия настоящего Соглашения в одностороннем порядке путем размещения измененного текста в сети Интернет на странице <a href="https://www.yclients.com/info/user-agreement" target="_blank">https://www.yclients.com/info/user-agreement</a>.
+</p>
+<p>12.5. Если по тем или иным причинам одно или несколько положений настоящего Соглашения будут в установленном порядке признаны недействительными или не имеющими юридической силы, это не оказывает влияния на действительность или применимость остальных положений настоящего Соглашения.
+</p>
+<p>12.6. В случае возникновения любых споров или разногласий, связанных с исполнением настоящего Соглашения, Пользователь и Лицензиар приложат все усилия для их разрешения путем проведения переговоров. В случае, если споры не будут разрешены путем переговоров, споры подлежат разрешению в порядке, установленном законодательством Российской Федерации, по месту нахождения Лицензиара, если иной порядок определения применимого права и (или) места рассмотрения спора
+не предусмотрен Лицензионным договором, законодательством Российской Федерации, нормами международного права.</p>
+<p>12.7. Лицензиар имеет право в случае нарушения Пользователем условий настоящего Соглашения по использованию Программы, YCLIENTS, Услуг в одностороннем порядке расторгнуть настоящее Соглашение.
+</p>
+<p>12.8. При расторжении настоящего Соглашения любой стороной и по любым основаниям Лицензиат и Пользователь обязаны полностью прекратить использование Программы, YCLIENTS, Услуг.
+</p>
+<h2>13. Сведения о Лицензиаре</h2>
+<p>13.1. Обращения по вопросам условий настоящего Соглашения принимаются на адрес электронной почты Лицензиара
+<a href="../../cdn-cgi/l/email-protection.html#bac9cfcacad5c8cefac3d9d6d3dfd4cec994d9d5d7" target="_blank"><span class="__cf_email__" data-cfemail="4b383e3b3b24393f0b322827222e253f3865282426">[email&#160;protected]</span></a> или по телефону <a href="tel:88005050475">8 (800) 505-04-75</a>.
+</p>
+<p>
+</p><p>
+13.2. Лицензиар - ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "УАЙКЛАЕНТС", ОГРН 5157746100716, ИНН/КПП 7708274185/771501001, адрес (место нахождения): 127018, Москва, ул. Образцова д. 4 строение 1.
+</p>
+<p>
+13.3. Банковские реквизиты Лицензиара: БИК: 044525593, Название банка: АО "АЛЬФА-БАНК", Корр.счет: 30101 810 2000 0000 0593, Расчетный счет: 40702 810 9013 0000 8233
+</p>
+<p>Дата публикации: 24.03.2021 г.</p>
+<h2>Предыдущие редакции</h2>
+<p><a href="https://www.yclients.com/info/user-agreement-05032018">от 05.03.2018 г.</a></p>
+<p><a href="https://www.yclients.com/info/user-agreement-20102017">от 20.10.2017 г.</a></p>
+<p><a href="https://www.yclients.com/info/user-agreement-01102017">от 01.10.2017 г.</a></p>
+</div>
+</section>
+
+</main>
+
+
+<div class="fixed-bottom-box">
+<div class="callback-wrapper">
+<a href="tel:88005050475" class="tel_link">
+8 (800) 505-04-75
+</a>
+<div class="callback" onclick="if (!window.__cfRLUnblockHandlers) return false; ms.callback.showWidget()" data-cf-modified-97d79a3b5d1f52e47ddd0049-="">
+<p>Заказать звонок</p>
+</div>
+</div>
+<div class="select-holder">
+<select name="dropdown" class="dropdown-lang">
+<option value="/en">En</option>
+<option value="/el">El</option>
+<option value="/hr">Hr</option>
+<option value="/hu">Hu</option>
+<option value="/pt">Pt</option>
+<option selected value="/ru">Ru</option>
+<option value="/sr">Sr</option>
+<option value="/tr">Tr</option>
+</select> </div>
+</div>
+<div class="fixed-callback-button" onclick="if (!window.__cfRLUnblockHandlers) return false; ms.callback.showWidget()" data-cf-modified-97d79a3b5d1f52e47ddd0049-="" />
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<script src="../../themes/yclients/new-2019/all.min.js%3Fv2.22" async type="97d79a3b5d1f52e47ddd0049-text/javascript"></script>
+<script type="97d79a3b5d1f52e47ddd0049-text/javascript">
+    const promoCheckerInitInterval = setInterval(() => {
+        if (window.promoChecker) {
+            window.promoChecker.init(1)
+            clearInterval(promoCheckerInitInterval)
+        }
+    }, 50)
+</script>
+<script type="97d79a3b5d1f52e47ddd0049-text/javascript">
+    (function(g, e, t) {
+        e.GetReviewWidgetID = 'dCQVIye7txLqasHx';
+        var s = g.createElement('script');
+        e[t] = e[t] || function() {
+            (e[t].queue = e[t].queue || []).push(arguments);
+        };
+        s.async = true;
+        s.charset = 'UTF-8';
+        s.src = 'https://app.getreview.io/static/bundle.js';
+        if (g.head) { g.head.appendChild(s); }
+    })(document, window, 'GetReview');
+</script>
+<script type="97d79a3b5d1f52e47ddd0049-text/javascript">
+    function onloadCallback() {
+        ms.callback.renderCallbackCaptcha()
+    }
+</script>
+
+
+
+
+<script type="97d79a3b5d1f52e47ddd0049-text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-40235336-1', 'auto');
+    ga('send', 'pageview');
+</script>
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KB8MG4"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<noindex>
+
+<div class="modal inmodal animated bounceInRight" id="callModal" role="dialog" style="display: none;">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header text-center">
+<button type="button" class="close" onclick="if (!window.__cfRLUnblockHandlers) return false; ms.callback.hideWidget()" data-dismiss="modal" data-cf-modified-97d79a3b5d1f52e47ddd0049-=""><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+<img class="call-us_icon" src="../../assets/yclients/images/new_site/callback.png" alt="Online Booking Software and Appointment Scheduling">
+<div class="modal-title">У Вас остались вопросы?</div>
+<div class="modal-subtitle">Мы перезвоним Вам в течение 59 секунд</div>
+</div>
+<div class="modal-body">
+<form class="form-horizontal">
+<div id="validation-phone" class="form-group">
+<label for="callBack">Телефон</label>
+<input id="callBack" type="tel" placeholder="+7" class="phone form-control">
+<div class="validation">Некорректный номер телефона</div>
+</div>
+<div id="callbackRecaptchaWrapper" style="margin-top: 15px;"></div>
+<div id="validation-agreement" class="form-group">
+<div class="check-material check-material-ru agreement-block">
+<input id="agreement-block" type="checkbox" class="js-checkbox-kkm-module" name="agreement">
+<label for="agreement-block"></label>
+<div class="agreement-label"> Отправляя заявку, вы даете согласие с<a href="https://www.yclients.com/rinfo/user-agreement" target="_blank"> Политикой обработки персональных данных</a> и принимаете условия <a href="confidential.html" target="_blank">Политики конфиденциальности</a></div>
+<div class="validation">Подтвердите соглашение</div>
+</div>
+</div>
+<div id="validation-agreement3" class="form-group">
+<div class="check-material check-material-ru agreement-block">
+<input id="agreement-block3" type="checkbox" class="js-checkbox-kkm-module" name="agreement">
+<label for="agreement-block3"></label>
+<div class="agreement-label">Я согласен(а) на получение сообщений рекламного характера.</div>
+<div class="validation">Подтвердите соглашение</div>
+</div>
+</div>
+<div class="form-group text-center m-b-none">
+<a class="btn btn-primary" id="makeCallButton" onclick="if (!window.__cfRLUnblockHandlers) return false; return ms.callback.makeCall();" data-cf-modified-97d79a3b5d1f52e47ddd0049-="">
+<span id="timer_result">Заказать звонок</span>
+</a>
+</div>
+<span class="modal-info-text">или напишите нам</span>
+<div style="display: flex;" class="col-12 justify-content-center mr-0 mt-3">
+<a class="mr-2" href="https://api.whatsapp.com/send/?phone=79311112399&text&app_absent=0">
+<img src="../../assets/yclients/2019-template/img/icon/whatsapp.png" alt="">
+</a>
+<a class="mr-2" href="https://t.me/yclientsofficial_bot">
+<img src="../../assets/yclients/2019-template/img/icon/telegram.png" alt="">
+</a>
+<a href="viber://pa?chatURI=yclients">
+<img src="../../assets/yclients/2019-template/img/icon/viber.png" alt="">
+</a>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</noindex>
+<script type="97d79a3b5d1f52e47ddd0049-text/javascript" src="../../themes/yclients/new-2019/1.bundle.js%3Fv2.22"></script><script type="97d79a3b5d1f52e47ddd0049-text/javascript" src="../../themes/yclients/new-2019/bundle.js%3Fv2.22"></script><script src="../../cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="97d79a3b5d1f52e47ddd0049-|49" defer=""></script><script type="text/javascript">(function(){window['__CF$cv$params']={r:'71700b6aadc19dd8',m:'xvLkhk_xLIri9K6a6KciJq7M9hSYlRAmzEFozKzMi74-1654506938-0-AbEJeaTUrFCQsR0Hdpxw5A2vdbI/daxkN5Q0ShpjwLrcgfzQyZR8zQMZTm0s2K9ZNFCPZ/0NkIca7KwP59iwBo2vcnmRcKv3ej10NdZVMgrRhHoAELWlE/9YvDt57+DVX/vuetP4qXy88K5hoZXysLs=',s:[0x8c9e4cd596,0x32e3f002d5],}})();</script></body>
+</html>

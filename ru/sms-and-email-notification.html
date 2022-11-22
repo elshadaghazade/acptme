@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html class="side-header" lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<script src="https://www.artfut.com/static/tagtag.min.js?campaign_code=bc95bf7490" async onerror='var self = this; window.ADMITAD=window.ADMITAD||{},ADMITAD.Helpers=ADMITAD.Helpers||{},ADMITAD.Helpers.generateDomains=function(){for(var e=new Date,n=Math.floor(new Date(2020,e.getMonth(),e.getDate()).setUTCHours(0,0,0,0)/1e3),t=parseInt(1e12*(Math.sin(n)+1)).toString(30),i=["de"],o=[],a=0;a<i.length;++a)o.push({domain:t+"."+i[a],name:t});return o},ADMITAD.Helpers.findTodaysDomain=function(e){function n(){var o=new XMLHttpRequest,a=i[t].domain,D="https://"+a+"/";o.open("HEAD",D,!0),o.onload=function(){setTimeout(e,0,i[t])},o.onerror=function(){++t<i.length?setTimeout(n,0):setTimeout(e,0,void 0)},o.send()}var t=0,i=ADMITAD.Helpers.generateDomains();n()},window.ADMITAD=window.ADMITAD||{},ADMITAD.Helpers.findTodaysDomain(function(e){if(window.ADMITAD.dynamic=e,window.ADMITAD.dynamic){var n=function(){return function(){return self.src?self:""}}(),t=n(),i=(/campaign_code=([^&]+)/.exec(t.src)||[])[1]||"";t.parentNode.removeChild(t);var o=document.getElementsByTagName("head")[0],a=document.createElement("script");a.src="https://www."+window.ADMITAD.dynamic.domain+"/static/"+window.ADMITAD.dynamic.name.slice(1)+window.ADMITAD.dynamic.name.slice(0,1)+".min.js?campaign_code="+i,o.appendChild(a)}});' type="76996c583e1ab29aeddfdeaf-text/javascript"></script>
+
+
+<script type="76996c583e1ab29aeddfdeaf-text/javascript">
+    // имя cookie для хранения источника
+    // если используется другое имя, укажите его
+    var cookie_name = 'deduplication_cookie';
+    // число дней жизни куки
+    var days_to_store = 90;
+    // ожидаемое значение deduplication_cookie для Admitad
+    var deduplication_cookie_value = 'admitad';
+    // имя GET параметра для дедупликации
+    // если у вас используется другой параметр, укажите его имя
+    var channel_name = 'deduplication_channel';
+    // функция для получения источника из GET параметра
+    getSourceParamFromUri = function () {
+        var pattern = channel_name + '=([^&]+)';
+        var re = new RegExp(pattern);
+        return (re.exec(document.location.search) || [])[1] || '';
+    };
+
+    // функция для получения источника из cookie с именем cookie_name
+    getSourceCookie = function () {
+        var matches = document.cookie.match(new RegExp(
+            '(?:^|; )' + cookie_name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + '=([^;]*)'
+        ));
+        return matches ? decodeURIComponent(matches[1]) : undefined;
+    };
+
+    // функция для записи источника в cookie с именем cookie_name
+    setSourceCookie = function () {
+        var param = getSourceParamFromUri();
+        if (!param) { return; }
+        var period = days_to_store * 60 * 60 * 24 * 1000;	// в секундах
+        var expiresDate = new Date((period) + +new Date);
+        var cookieString = cookie_name + '=' + param + '; path=/; expires=' + expiresDate.toGMTString();
+        document.cookie = cookieString;
+        document.cookie = cookieString + '; domain=.' + location.host;
+    };
+
+    // запись куки
+    setSourceCookie();
+
+    // определение канала для Admitad
+    if (window.ADMITAD) {
+        if (!getSourceCookie(cookie_name)) {
+            ADMITAD.Invoice.broker = 'na';
+        } else if (getSourceCookie(cookie_name) != deduplication_cookie_value) {
+            ADMITAD.Invoice.broker = getSourceCookie(cookie_name);
+        } else {
+            ADMITAD.Invoice.broker = 'adm';
+        }
+    }
+
+</script>
+
+
+<script type="76996c583e1ab29aeddfdeaf-text/javascript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KB8MG4');</script>
+
+<link rel="canonical" href="../sms-and-email-notification.html" hreflang="ru-RU" />
+<link rel="alternate" href="https://www.yclients.com/ua/sms-and-email-notification" hreflang="uk-UA" />
+<link rel="alternate" href="https://www.yclients.com/hu/sms-and-email-notification" hreflang="hu" />
+<link rel="alternate" href="https://www.yclients.com/tr/sms-and-email-notification" hreflang="tr" />
+<link rel="alternate" href="../ro/sms-and-email-notification.html" hreflang="ro" />
+<link rel="alternate" href="../en/sms-and-email-notification.html" hreflang="en" />
+<link rel="alternate" href="https://www.yclients.com/hr/sms-and-email-notification" hreflang="hr" />
+<title>Оповещение через SMS и по электронной почте клиентов и сотрудников | YCLIENTS</title>
+<meta name="description" content="YCLIENTS – сервис SMS и email-уведомлений. Напоминайте о записях, мотивируйте посещать чаще на 20%. Получить консультацию: ✆ 8-800-505-04-75.">
+<meta name="author" content="YCLIENTS LLC">
+<meta property="og:title" content="YCLIENTS — сервис онлайн-записи и платформа автоматизации для сферы услуг." />
+<meta property="og:description" content="Платформа позволяет подключить онлайн-запись на сайте, в социальных сетях и на других площадках, а также рассылать уведомления, управлять работой персонала, вести складской и финансовый учёт. YCLIENTS используют более 23 000 компаний и миллионы посетителей в России, СНГ и других странах мира." />
+<meta property="og:image" content="/assets/yclients/img/ru/og_image.png" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.yclients.com/sms-and-email-notification" />
+<meta name="ahrefs-site-verification" content="62bbcdff1dafd2dca5fd1c13f5db9fda8652a1662ad099a6b7d106d8f22f4e63">
+<link type="image/png" href="../favicon.png" rel="shortcut icon" />
+<link rel="preload" href="../assets/yclients/2019-template/img/YCLIENTS_yellow_dot_sm.gif" as="image">
+
+<link rel="preload" href="../assets/yclients/2019-template/img/logo-mini.svg" as="image">
+<link rel="preload" href="../assets/yclients/2019-template/img/logo-mini.svg" as="image">
+<link rel="preload" href="../assets/yclients/images/new_site/phone_ico_mob.svg" as="image" media="(max-width: 700px)">
+<link rel="preload" href="../assets/yclients/images/new_site/appstore.svg" as="image" media="(max-width: 700px)">
+<link rel="preload" href="../assets/yclients/images/new_site/google-play.svg" as="image" media="(max-width: 700px)">
+<link rel="preload" href="../assets/yclients/images/new_site/select_arr.svg" as="image" media="(max-width: 700px)">
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer type="76996c583e1ab29aeddfdeaf-text/javascript"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-970179016" type="76996c583e1ab29aeddfdeaf-text/javascript"></script>
+<script type="76996c583e1ab29aeddfdeaf-text/javascript">
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-970179016');
+</script>
+<noindex>
+
+<script type="76996c583e1ab29aeddfdeaf-text/javascript">
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym");
+    ym(20454571, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+        trackHash:true
+    });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/20454571" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+</noindex>
+<link href="../themes/yclients/new-2019/vendor.css" rel="stylesheet"><link href="../themes/yclients/new-2019/app.css" rel="stylesheet"><script async src='../cdn-cgi/bm/cv/669835187/api.js'></script></head>
+<body>
+<div class="loader">
+<div class="sk-three-bounce loader_img">
+<div class="sk-child sk-bounce1"></div>
+<div class="sk-child sk-bounce2"></div>
+<div class="sk-child sk-bounce3"></div>
+</div>
+</div>
+<div class="body">
+
+<header id="mob-header" class="header scrolled">
+<div class="burger burger-open">
+<span></span>
+</div>
+<div class="header-backdrop"></div>
+<ul class="nav-list">
+<li>
+<a href="info/pricing.html">Цены</a>
+</li>
+<li>
+<a href="../reviews.html">Отзывы</a>
+</li>
+<li>
+<a href="info/about.html">О компании</a>
+</li>
+<li class="last-child">
+<a href="../blog.html" target="_blank">
+Блог
+</a>
+
+</ul>
+<strong class="logo">
+<a href="../ru.html"></a>
+</strong>
+<div class="inner-box">
+<a href="https://www.yclients.com/onboarding/first" class="reg-link" target="_blank">Регистрация</a>
+<a href="../signin.html" class="log-link mob-active" target="_blank">Войти</a>
+</div>
+<a href="tel:88005050475" class="tel_link mob">8 (800) 505-04-75</a>
+</header>
+<div class="menu-holder" id="block_id">
+<div class="inner-wrap">
+<div class="scroll-holder">
+<div class="holder-box">
+<div class="box">
+<span class="title">Продукт:</span>
+<span class="title mob">Функции продукта:</span>
+<ul class="menu-list">
+<li>
+<a href="../online-booking.html">Онлайн-запись</a>
+</li>
+<li>
+<a href="../electronic-schedule.html">Электронный журнал</a>
+</li>
+<li>
+<a href="../sms-and-email-notification.html">SMS и Email уведомления</a>
+</li>
+<li>
+<a href="../client-base.html">Клиентская база</a>
+</li>
+<li>
+<a href="../statistics-and-analytics.html">Статистика и аналитика</a>
+</li>
+<li>
+<a href="../inventory-control.html">Складской учет</a>
+</li>
+<li>
+<a href="../app.html">Мобильное приложение</a>
+</li>
+<li class="small">
+<a href="../finances-and-accounting.html">Финансовый учет</a>
+</li>
+<li class="small">
+<a href="../electronic-cards.html">Электронные карты</a>
+</li>
+<li class="small">
+<a href="../calculation-of-salaries.html">Расчет зарплат</a>
+</li>
+<li class="small">
+<a href="../personal-mobile-applications.html">Мобильные приложения</a>
+</li>
+<li class="small">
+<a href="../loyalty-program.html">Программа лояльности</a>
+</li>
+<li class="small">
+<a href="../kassa.html">Работа с кассами</a>
+</li>
+</ul>
+</div>
+<div class="box">
+<ul class="menu-list style2">
+<li>
+<a href="info/pricing.html">Цены</a>
+</li>
+ <li>
+<a href="../reviews.html">Отзывы</a>
+</li>
+<li>
+<a href="info/about.html">О компании</a>
+</li>
+
+<li class="small">
+<a href="../marketplace.html">Интеграции</a>
+</li>
+<li class="small">
+<a href="../blog.html" target="_blank">
+Блог
+</a>
+</li>
+<li class="small">
+<a href="http://partners.yclients.com/" target="_blank" class="arr">Партнерская программа</a>
+</li>
+<li class="small">
+<a href="info/contact.html">Обратная связь</a>
+</li>
+
+<li class="small">
+<a href="http://support.yclients.com/hc/ru" target="_blank" class="arr">База знаний</a>
+</li>
+<li class="small">
+<a href="https://developers.yclients.com/ru/" target="_blank" class="arr">Разработчикам</a>
+</li>
+</ul>
+<div class="app-holder">
+<h3 class="holder-title">Мы в социальных сетях</h3>
+<div class="header-row justify-content-end">
+<ul class="header-social-icons social-icons social-icons-mobile social-icons-clean d-sm-0 ml-0">
+
+
+
+
+
+
+
+
+
+
+<li>
+<a href="https://vk.com/yclients?roistat_visit=482540" target="_blank" title="Vk" rel=”nofollow”>
+<i class="fab fa-vk"></i>
+</a>
+</li>
+<li>
+<a class="social-youtube" href="https://www.youtube.com/channel/UC6aHCPPSU9CDSA5cExZLd3Q?roistat_visit=482540" target="_blank" title="Youtube" rel=”nofollow”>
+<i class="fab fa-youtube"></i>
+</a>
+</li>
+<li>
+<a class="social-twitter" href="https://twitter.com/yclients?roistat_visit=482540" target="_blank" title="Twitter" rel="nofollow">
+<i class="fab fa-twitter">
+</i>
+</a>
+</li>
+</ul>
+</div>
+<h3 class="holder-title">Мобильные приложения для сотрудников</h3>
+<ul class="app-list">
+<li>
+<a href="https://itunes.apple.com/ru/app/yclients/id1084371596?mt=8" class="apple" target="_blank" rel="nofollow">
+<span class="text">
+<img class="lazy-img" src="../assets/yclients/images/new_site/apple_ico.png" alt="image description">
+Apple Store
+</span>
+</a>
+</li>
+<li>
+<a href="https://play.google.com/store/apps/details?id=apps.yclients1" class="gg" target="_blank" rel="nofollow">
+<span class="text">
+<img class="lazy-img" alt="image description" src="../assets/yclients/images/new_site/market_ico.png">
+Google play
+</span>
+</a>
+</li>
+<li>
+<a href="https://appgallery.huawei.com/app/C105004393?sharePrepath=ag" class="huawei" target="_blank" rel="nofollow">
+<span class="text">
+<img class="lazy-img" alt="image description" src="../assets/yclients/images/new_site/huawei_ico.png">
+AppGallery
+</span>
+</a>
+</li>
+</ul> </div>
+</div>
+</div>
+<div class="bottom-menu ">
+<a href="../signin.html" class="log-link" target="_blank">Войти</a>
+<a href="https://www.yclients.com/onboarding/first" class="reg-link pl-4" target="_blank">Регистрация</a>
+<div class="select-mobile">
+<div class="select-holder">
+<select name="dropdown" class="dropdown-lang">
+<option value="/en">En</option>
+<option value="/el">El</option>
+<option value="/hr">Hr</option>
+<option value="/hu">Hu</option>
+<option value="/pt">Pt</option>
+<option selected value="/ru">Ru</option>
+<option value="/sr">Sr</option>
+<option value="/tr">Tr</option>
+</select> </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<header id="header" class="side-header d-flex">
+<div class="header-body">
+<div class="header-container container d-flex h-100">
+<div class="header-column flex-row flex-lg-column justify-content-center h-100">
+<div class="header-row flex-row justify-content-start justify-content-lg-center py-lg-5">
+<div class="header-logo">
+<a href="../ru.html">
+<img alt="YCLIENTS" src="../assets/yclients/2019-template/img/logo.svg">
+</a>
+</div>
+</div>
+<div class="header-row header-row-side-header flex-row h-100 pb-lg-5">
+<div class="header-nav header-nav-links header-nav-links-side-header header-nav-links-vertical header-nav-links-vertical-columns align-self-center">
+<div class="header-nav-main header-nav-main-square header-nav-main-dropdown-no-borders">
+<nav class="collapse">
+<ul class="nav nav-pills menu-nav_list" id="mainNav">
+<li class="menu-nav_item">
+<a href="../online-booking.html">
+Онлайн-запись
+</a>
+</li>
+<li class="menu-nav_item">
+<a href="../electronic-schedule.html">
+Электронный журнал
+ </a>
+</li>
+<li class="menu-nav_item">
+<a href="../sms-and-email-notification.html">
+Модуль уведомлений
+</a>
+</li>
+<li class="menu-nav_item">
+<a href="../client-base.html">
+Клиентская база
+</a>
+</li>
+<li class="menu-nav_item">
+<a href="../statistics-and-analytics.html">
+Статистика и аналитика
+</a>
+</li>
+<li class="menu-nav_item">
+<a href="../inventory-control.html">
+Складской учет
+</a>
+</li>
+<li class="menu-nav_item">
+<a href="../app.html">
+Мобильное приложение
+</a>
+</li>
+<li class="dropdown">
+<a class="dropdown-item dropdown-toggle" href="../sms-and-email-notification.html#">
+<strong style="font-weight: 600">Все возможности</strong>
+</a>
+<ul class="dropdown-menu">
+<li class="menu-nav_item">
+<a class="dropdown-item" href="../finances-and-accounting.html">Финансовый учет</a>
+</li>
+<li class="menu-nav_item">
+<a class="dropdown-item" href="../loyalty-program.html">Программы лояльности</a>
+</li>
+<li class="menu-nav_item">
+<a class="dropdown-item" href="../electronic-cards.html">Электронные карты</a>
+</li>
+<li class="menu-nav_item">
+<a class="dropdown-item" href="../calculation-of-salaries.html">Расчет зарплат</a>
+</li>
+<li class="menu-nav_item">
+<a class="dropdown-item" href="../personal-mobile-applications.html">Мобильные приложения для клиентов</a>
+</li>
+<li class="menu-nav_item">
+<a class="dropdown-item" href="../telephony.html">Интеграция с телефонией</a>
+</li>
+<li class="menu-nav_item">
+<a class="dropdown-item" href="../kassa.html">Интеграция с кассовым оборудованием</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+ <div class="header-row justify-content-end pb-lg-3 hidden">
+<ul class="header-social-icons social-icons d-none d-sm-block social-icons-clean d-sm-0 ml-0">
+
+<li class="social-icons-vk">
+<a href="https://vk.com/yclients?roistat_visit=482540" target="_blank" title="Vk" rel=”nofollow”>
+<i class="fab fa-vk"></i>
+</a>
+</li>
+<li class="social-icons-youtube">
+<a class="social-youtube" href="https://www.youtube.com/channel/UC6aHCPPSU9CDSA5cExZLd3Q?roistat_visit=482540" target="_blank" title="Youtube" rel="nofollow">
+<i class="fab fa-youtube"></i>
+</a>
+</li>
+<li class="social-icons-twitter">
+<a class="social-twitter" href="https://twitter.com/yclients?roistat_visit=482540" target="_blank" title="Twitter" rel="nofollow">
+<i class="fab fa-twitter">
+</i>
+</a>
+</li>
+</ul>
+</div>
+<div class="justify-content-end pb-lg-3 hidden">
+<a href="https://itunes.apple.com/ru/app/yclients/id1084371596?mt=8" class="apple" target="_blank" rel="nofollow">
+<img src="../assets/yclients/images/new_site/appstore.svg" alt="App Store"></span>
+</a>
+<a href="https://play.google.com/store/apps/details?id=apps.yclients1" class="gg" target="_blank" rel="nofollow">
+<img src="../assets/yclients/images/new_site/google-play.svg" alt="Google Play">
+</a>
+<a href="https://appgallery.huawei.com/app/C105004393?sharePrepath=ag" class="huawei" target="_blank" rel="nofollow">
+<img src="../assets/yclients/images/new_site/huawei.svg" alt="Google Play">
+</a>
+</div>
+</div>
+</div>
+</div>
+</header>
+<div class="top-header-row py-lg-4 d-none d-xl-block">
+<ul class="nav-list">
+<li>
+<a href="info/pricing.html" class="anim-link-2">Цены</a>
+</li>
+<li>
+<a href="../marketplace.html" class="anim-link-2">Интеграции</a>
+</li>
+<li>
+<a href="../reviews.html" class="anim-link-2">Отзывы</a>
+</li>
+<li>
+<a href="info/about.html" class="anim-link-2">О компании</a>
+</li>
+<li>
+<a href="../blog.html" class="anim-link-2" target="_blank">
+Блог
+</a>
+</li>
+
+</ul>
+<ul class="inner-box">
+<li>
+<a href="https://www.yclients.com/onboarding/first" class="header-account header-signup anim-link-2">Регистрация</a>
+ </li>
+<li>
+<a href="../signin.html" class="header-account header-login anim-link-2">Вход</a>
+</li>
+</ul>
+</div>
+
+<main id="content">
+<section class="vertical-center illust-block">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-md-8">
+<div class="clearfix">
+<h1 class="main-title">
+Модуль уведомлений
+</h1>
+<p class="mt-3 mb-4">
+Клиенты не забудут к вам прийти
+</p>
+<a href="https://www.yclients.com/onboarding/first" class="btn btn-warning pr-5 pl-5 transition-hover">
+Зарегистрироваться
+</a>
+</div>
+</div>
+</div>
+<div class="col-12 col-md-7 col-lg-7 position-illust pr-0 main-image main-image pb-6">
+<figure class="ie-main-hero">
+<img src="../assets/yclients/2019-template/img/illustrations-img/Modul.png" class="w-70 position-illust" alt="Image Description">
+</figure>
+</div>
+</div>
+</section>
+<section class="section pt-0">
+<div class="container overflow-visible z-index-10">
+<div class="row justify-content-lg-center">
+<div class="col-sm-12 col-md-12 col-lg-4 mb-7">
+<div class="media transition-hover rounded bg-primary text-white">
+<div class="media-body">
+<div class="p-7">
+<div class="mb-5">
+<img src="../assets/yclients/2019-template/img/svg/smartphone-5.svg" class="size-svg_65" alt="Image Description">
+</div>
+<h3 class="h5">
+Собственные шаблоны SMS
+</h3>
+<p class="fw-300">
+Индивидуальная настройка всех сообщений
+</p>
+<p>
+В YCLIENTS можно изменить текст любого уведомления. Например, напоминание о записи может выглядеть так: %client_name%, мы ждем Вас в %title% через %hour_minutes%. Наш адрес: %address% и телефон %phone%
+Все сообщения приходят от имени вашего бренда.
+</p>
+<a href="https://www.yclients.com/onboarding/first" target="_blank" class="btn btn-white btn-pill btn-sm transition-hover pr-3 pl-4">
+Зарегистрироваться<span class="fas fa-angle-right align-middle ml-2"></span>
+</a>
+</div>
+<div class="oval-divider--bottom oval-divider--9 position-static"></div>
+</div>
+</div>
+</div>
+<div class="col-sm-12 col-md-12 col-lg-4 mb-3 mt-5 mb-7">
+<div class="media transition-hover rounded bg-light">
+<div class="media-body">
+<div class="p-7">
+<div class="mb-5">
+<img src="../assets/yclients/2019-template/img/svg/analytics-3.svg" class="size-svg_65" alt="Image Description">
+</div>
+<h3 class="h5">
+На 60% меньше опозданий
+</h3>
+<p class="mb-4">
+И никаких спорных ситуаций
+</p>
+<p>
+Каждый опоздавший клиент - это сдвиг всего расписания на день и сотрудники, которые выполняют услуги в спешке. Неприятно, правда? А ведь своевременно напомнить клиенту о визите может даже программа.
+Вы сталкивались с тем, что клиент сам перепутал время визита и устроил скандал? А если бы у него была SMS с подтверждением, конфликт бы сразу исчерпал сам себя.
+</p>
+<a href="https://www.yclients.com/onboarding/first" target="_blank" class="btn btn-primary btn-pill btn-sm transition-hover pr-3 pl-4">
+Зарегистрироваться<span class="fas fa-angle-right align-middle ml-2"></span>
+</a>
+</div>
+<div class="oval-divider--bottom oval-divider--9 position-static"></div>
+</div>
+</div>
+</div>
+<div class="col-12 col-lg-4 mb-6 mt-5">
+<div class="media transition-hover rounded bg-light">
+<div class="media-body">
+<div class="p-7">
+<div class="mb-5">
+<img src="../assets/yclients/2019-template/img/svg/agreement-r.svg" class="size-svg_65" alt="Image Description">
+</div>
+<h3 class="h5">
+Стоимость
+</h3>
+<p class="mb-4">
+Модуль уведомлений не нужно оплачивать дополнительно — опция уже входит в стоимость лицензии YCLIENTS. На любой срок и любое количество сотрудников.
+</p>
+<p class="mb-4">
+Оплачивается только SMS-рассылка, стоимость одного сообщения — от 2,3 ₽. Для стран СНГ действуют специальные тарифы.
+</p>
+<p>
+Узнайте больше у вашего менеджера.
+</p>
+<a href="../sms-and-email-notification.html#" onclick="if (!window.__cfRLUnblockHandlers) return false; ms.callback.showWidget()" target="_blank" class="btn btn-primary btn-pill btn-sm transition-hover pr-3 pl-4" data-cf-modified-76996c583e1ab29aeddfdeaf-="">
+Получить консультацию <span class="fas fa-angle-right align-middle ml-2"></span>
+</a>
+</div>
+<div class="oval-divider--bottom oval-divider--9 position-static"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="vertical-center parallax-block parallax-img-8" data-overlay="5">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-md-8">
+
+<div class="mb-7 mnt-6">
+<h2 class="text-white">
+Уведомления в реальном времени!
+</h2>
+<p class="text-white">
+Более 20 настраиваемых SMS, Email, Push, VK и Viber сообщений
+</p>
+</div>
+<a href="https://www.yclients.com/onboarding/first" target="_blank" class="btn btn-outline-light">
+Зарегистрироваться
+</a><br>
+</div>
+</div>
+</div>
+<div class="oval-divider--bottom oval-divider--7"></div>
+</section>
+<section class="section pt-7 pb-7">
+<div class="container">
+<div class="row">
+<div class="col-md-12 title-img">
+<h3 class="h5 mt-0 mb-5 pr-lg-5">
+<img src="../assets/yclients/2019-template/img/svg/user-2.svg" class="size-svg_65" alt="Image Description">
+Сотрудникам
+</h3>
+</div>
+</div>
+<div class="row mt-6 justify-content-lg-center">
+<div class="col-md-6 col-lg-5 offset-lg-1">
+<div class="media pr-lg-5">
+<div class="media-body">
+<ul class="check-list mb-0">
+<li>
+О переносе записи администратору
+</li>
+<li>
+О переносе записи сотруднику
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-5 offset-lg-1">
+<div class="media pr-lg-5">
+<div class="media-body">
+<ul class="check-list mb-0">
+<li>
+Об отмене записи администратору
+</li>
+<li>
+Об отмене записи сотруднику
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section pt-1 pb-7">
+<div class="container">
+<div class="row">
+<div class="col-md-12 title-img">
+<h3 class="h5 mt-0 mb-5 pr-lg-5">
+<img src="../assets/yclients/2019-template/img/svg/sms-2.svg" class="size-svg_65" alt="Image Description">
+Клиентам
+</h3>
+</div>
+</div>
+<div class="row mt-6 justify-content-lg-center">
+<div class="col-md-6 col-lg-5 offset-lg-1">
+<div class="media pr-lg-5">
+<div class="media-body">
+<ul class="check-list mb-0">
+<li>
+Об отмене записи
+</li>
+<li>
+Напоминание о записи
+</li>
+<li>
+Напоминание о повторном визите
+</li>
+<li>
+Детали онлайн-записи
+</li>
+<li>
+Детали записи по телефону
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-5 offset-lg-1">
+<div class="media pr-lg-5">
+<div class="media-body">
+<ul class="check-list mb-0">
+<li>
+Поздравление с Днем Рождения
+</li>
+<li>
+Информация о скидках
+</li>
+<li>
+Запрос отзыва после визита
+</li>
+<li>
+О начислении бонуса или скидки
+</li>
+<li>
+Об окончании действия скидки
+</li>
+ </ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section text-center content-center">
+<div class="container">
+<div class="row">
+<div class="col-md-12 mb-9">
+<h2>
+Email каким он должен быть
+</h2>
+<p class="fw-300">
+Все email-уведомления бесплатны для вас!
+</p>
+</div>
+</div>
+<div class="row text-center center-block">
+<div class="col-md-4">
+<div class="px-3 mb-8 mb-lg-0">
+<img class="img-responsive w-80px" src="../assets/yclients/2019-template/img/svg/pencil.svg" alt="Image Description">
+<h3 class="h5 mb-3 mt-4">
+Персональный дизайн
+</h3>
+<p>
+Письма приходят от вашего имени, в ваших фирменных цветах, с вашим логотипом и контактными данными.
+</p>
+</div>
+</div>
+<div class="col-md-4">
+<div class="px-3 mb-8 mb-lg-0">
+<img class="img-responsive w-80px" src="../assets/yclients/2019-template/img/svg/artboard.svg" alt="Image Description">
+<h3 class="h5 mb-3 mt-4">
+Индивидуальный канал
+</h3>
+<p class="pl-lg-2 pr-lg-2">
+Ответы клиентов на Email доставляются на ваш личный или корпоративный почтовый ящик.
+</p>
+</div>
+</div>
+<div class="col-md-4">
+<div class="px-3">
+<img class="img-responsive w-80px" src="../assets/yclients/2019-template/img/svg/analytics-6.svg" alt="Image Description">
+<h3 class="h5 mb-3 mt-4">
+Только ваша информация
+</h3>
+<p>
+Мы не продвигаем свои продукты и услуги через ваши каналы коммуникации.
+</p>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12 text-center pt-6">
+<a href="https://www.yclients.com/onboarding/first" target="_blank" class="btn btn-warning pr-5 pl-5 transition-hover">
+Зарегистрироваться
+<span class="fas fa-angle-right align-middle ml-2"></span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<section class="section pt-0 pb-0">
+<div class="container">
+<div class="w-md-80 w-lg-50 text-center mx-md-auto">
+<h2 class="text-primary">
+Партнеры
+</h2>
+<p class="fw-300">
+Крупнейшие SMS провайдеры
+</p>
+</div>
+<div class="row justify-content-center text-center pt-5">
+<div class="col-6 col-md-2 mb-8 align-self-center">
+<a href="https://imobis.ru/yclients?roistat_visit=65691" target="_blank" rel="nofollow">
+<img src="../assets/yclients/images/logo-partner/imobis.png" class="pr-2 pl-2 img-fluid transition-hover" alt="imobis logo">
+</a>
+</div>
+<div class="col-6 col-md-2 mb-8 align-self-center">
+<a href="https://prontosms.ru/integration/yclients/" target="_blank" rel="nofollow">
+<img src="../assets/yclients/images/logo-partner/pronto_logo1.png" class="pr-2 pl-2 img-fluid transition-hover" alt="prostorsms logo">
+</a>
+</div>
+<div class="col-6 col-md-2 mb-8 align-self-center">
+<a href="http://alfasms.info/yclients/?roistat_visit=65691" target="_blank" rel="nofollow">
+<img src="../assets/yclients/images/logo-partner/alpha_sms.png" class="pr-2 pl-2 img-fluid transition-hover" alt="alfasms logo">
+</a>
+</div>
+<div class="col-6 col-md-2 mb-8 align-self-center">
+<a href="https://sms-prosto.ru/partnery/yclients/?roistat_visit=65691" target="_blank" rel="nofollow">
+<img src="../assets/yclients/images/logo-partner/sms-prosto.png" class="pr-2 pl-2 img-fluid transition-hover" alt="sms-prosto logo">
+</a>
+</div>
+<div class="col-6 col-md-2 mb-8 align-self-center">
+<a href="http://emails.notisend.ru/yclients/?roistat_visit=65691" target="_blank" rel="nofollow">
+<img src="../assets/yclients/images/logo-partner/notisend.png" class="pr-2 pl-2 img-fluid transition-hover" alt="notisend logo">
+</a>
+</div>
+<div class="col-6 col-md-2 mb-8 align-self-center">
+<a href="https://sigmasms.ru/y-clients/?utm_source=yclients&amp;utm_medium=sajt&amp;utm_campaign=modul+uvedomlenij&amp;roistat_visit=65691" target="_blank" rel="nofollow">
+<img src="../assets/yclients/images/logo-partner/sigma_messaging.png" class="pr-2 pl-2 img-fluid transition-hover" alt="sigmasms logo">
+</a>
+</div>
+<div class="w-100"></div>
+<div class="col-6 col-md-2 mb-8 align-self-center">
+<a href="https://messaggio.com/plugins-and-add-ons/yclients" target="_blank" rel="nofollow">
+<img src="../assets/yclients/images/logo-partner/messaggio.png" class="pr-2 pl-2 img-fluid transition-hover" alt="messaggio logo">
+</a>
+</div>
+<div class="col-6 col-md-2 mb-8 align-self-center">
+<a href="https://iqsms.ru/yclients/?roistat_visit=65691" target="_blank" rel="nofollow">
+<img src="../assets/yclients/images/logo-partner/sms_discount_new.png" class="pr-2 pl-2 img-fluid transition-hover" alt="iqsms logo">
+</a>
+</div>
+<div class="col-6 col-md-2 mb-8 align-self-center">
+<a href="https://pir.company/integration/integration-with-yclients/?roistat_visit=65691" target="_blank" rel="nofollow">
+<img src="../assets/yclients/images/logo-partner/pir_logo.png" class="pr-2 pl-2 img-fluid transition-hover" alt="pir logo">
+</a>
+</div>
+<div class="col-6 col-md-2 mb-8 align-self-center">
+<a href="https://rocketsms.by/integrations/yclients?roistat_visit=65691" target="_blank" rel="nofollow">
+<img src="../assets/yclients/images/logo-partner/rocketsms.png" class="pr-2 pl-2 img-fluid transition-hover" alt="rocketsms logo">
+</a>
+</div>
+<div class="col-6 col-md-2 mb-8 align-self-center">
+<a href="https://i-dgtl.ru/yclients/?utm_source=yclients&amp;utm_medium=referral&amp;utm_campaign=yclientstraf&amp;roistat_visit=65691" target="_blank" rel="nofollow">
+<img src="../assets/yclients/images/logo-partner/I-DIGITAL_logo.png" class="pr-2 pl-2 img-fluid transition-hover" alt="I-DIGITAL logo">
+</a>
+</div>
+<div class="col-6 col-md-2 mb-8 align-self-center">
+<a href="https://sms.by/yclients.html" target="_blank" rel="nofollow">
+<img src="../assets/yclients/images/logo-partner/sms-by.png" class="pr-2 pl-2 img-fluid transition-hover" alt="SMS.BY logo">
+</a>
+</div>
+<div class="w-100"></div>
+<div class="col-6 col-md-2 mb-8 align-self-center">
+<a href="https://prostor-sms.ru/?crmplatform=yclients&amp;roistat_visit=65691" target="_blank" rel="nofollow">
+<img src="../assets/yclients/images/logo-partner/prostor-sms.png" class="pr-2 pl-2 img-fluid transition-hover" alt="prostorsms logo">
+</a>
+</div>
+<div class="col-6 col-md-2 mb-8 align-self-center">
+<a href="https://qntk.ru/lp-yclients/?roistat_visit=65691" target="_blank" rel="nofollow">
+<img src="../assets/yclients/images/logo-partner/qntk-logo-big-white.jpg" class="pr-2 pl-2 img-fluid transition-hover" alt="qntk logo">
+</a>
+</div>
+<div class="col-6 col-md-2 mb-8 align-self-center">
+<a href="https://p1sms.ru/yclients.php?utm_source=yclients" target="_blank" rel="nofollow">
+<img src="../assets/yclients/images/logo-partner/logo-p1sms.png" class="pr-2 pl-2 img-fluid transition-hover" alt="p1sms logo">
+</a>
+</div>
+<div class="col-6 col-md-2 mb-8 align-self-center">
+<a href="https://targetsms.ru/integratsii/yclients" target="_blank" rel="nofollow">
+<img src="../assets/yclients/images/logo-partner/target_sms.png" class="pr-2 pl-2 img-fluid transition-hover" alt="targetsms logo">
+</a>
+</div>
+<div class="col-6 col-md-2 mb-8 align-self-center">
+<a href="https://smspro.nikita.kg/kg/register.html" target="_blank" rel="nofollow">
+<img src="../assets/yclients/images/logo-partner/SMSPRO.KG.png" class="pr-2 pl-2 img-fluid transition-hover" alt="SMSPRO.KG logo">
+</a>
+</div>
+<div class="col-6 col-md-2 mb-8 align-self-center">
+<a href="https://rumessage.ru/" target="_blank" rel="nofollow">
+<img src="../assets/yclients/images/logo-partner/rumessage.png" class="pr-2 pl-2 img-fluid transition-hover" alt="rumessage logo">
+</a>
+</div>
+<div class="w-100"></div>
+<div class="col-6 col-md-2 mb-8 align-self-center">
+<a href="https://terasms.ru/integrations/crm/yclients" target="_blank" rel="nofollow">
+<img src="../assets/yclients/images/logo-partner/terasms.png" class="pr-2 pl-2 img-fluid transition-hover" alt="TeraSMS logo">
+</a>
+</div>
+<div class="col-6 col-md-2 mb-8 align-self-center">
+<a href="https://sms.expecto.me/" target="_blank" rel="nofollow">
+<img src="../assets/yclients/images/logo-partner/Expecto-logo.png" class="pr-2 pl-2 img-fluid transition-hover" alt="Экспекто SMS logo">
+</a>
+</div>
+<div class="col-6 col-md-2 mb-8 align-self-center">
+<a href="http://smsgorod.ru/yclients.html" target="_blank" rel="nofollow">
+<img src="../assets/yclients/images/logo-partner/smsgorod.png" class="pr-2 pl-2 img-fluid transition-hover" alt="SMS Город logo">
+</a>
+</div>
+<div class="col-6 col-md-2 mb-8 align-self-center">
+<a href="https://mobilgroup.ru/api/yclients-sms-integraciya-zvonki.html" target="_blank" rel="nofollow">
+<img src="../assets/yclients/images/logo-partner/mobilgroup_logo.png" class="pr-2 pl-2 img-fluid transition-hover" alt="Mobilgroup logo">
+</a>
+</div>
+<div class="col-6 col-md-2 mb-8 align-self-center">
+<a href="https://messedo.com/ru/yclients" target="_blank" rel="nofollow">
+<img src="../assets/yclients/images/logo-partner/MESSEDO.png" class="pr-2 pl-2 img-fluid transition-hover" alt="MesseDo logo">
+</a>
+</div>
+<div class="col-6 col-md-2 mb-8 align-self-center">
+<a href="https://intel-tele.com/integracziya-s-yclients/" target="_blank" rel="nofollow">
+<img src="../assets/yclients/images/logo-partner/intel-telecom.jpg" class="pr-2 pl-2 img-fluid transition-hover" alt="Intel-Telecom logo">
+</a>
+</div>
+<div class="col-6 col-md-2 mb-8 align-self-center">
+<a href="https://sms-boom.ru/yclients" target="_blank" rel="nofollow">
+<img src="../assets/yclients/images/logo-partner/sms_boom.png" class="pr-2 pl-2 img-fluid transition-hover" alt="SMS BOOM logo">
+</a>
+</div>
+<div class="col-6 col-md-2 mb-8 align-self-center">
+<a href="https://pushsms.ru/integrations/yclients" target="_blank" rel="nofollow">
+<img src="../assets/yclients/images/logo-partner/push-sms.png" class="pr-2 pl-2 img-fluid transition-hover" alt="PushSMS logo">
+</a>
+</div>
+<div class="col-6 col-md-2 mb-8 align-self-center">
+<a href="https://startsend.ru/yclients.html" target="_blank" rel="nofollow">
+<img src="../assets/yclients/images/logo-partner/start-send.png" class="pr-2 pl-2 img-fluid transition-hover" alt="StartSend logo">
+</a>
+</div>
+<div class="col-6 col-md-2 mb-8 align-self-center">
+<a href="https://dzinga.com/" target="_blank" rel="nofollow">
+<img src="../assets/yclients/images/logo-partner/dzinga.png" class="pr-2 pl-2 img-fluid transition-hover" alt="Dzinga logo">
+</a>
+</div>
+<div class="col-6 col-md-2 mb-8 align-self-center">
+<a href="https://mega-sms.ru/yclients/" target="_blank" rel="nofollow">
+<img src="../assets/yclients/images/logo-partner/MegaLogo.png" class="pr-2 pl-2 img-fluid transition-hover" alt="MegaSMS logo">
+</a>
+</div>
+<div class="col-6 col-md-2 mb-8 align-self-center">
+<a href="http://www.pigeon-telecom.ru/" target="_blank" rel="nofollow">
+<img src="../assets/yclients/images/logo-partner/Pigeon_Telecom.png" class="pr-2 pl-2 img-fluid transition-hover" alt="PigeonTelecom logo">
+</a>
+</div>
+<div class="col-6 col-md-2 mb-8 align-self-center">
+<a href="http://redsms.ru/" target="_blank" rel="nofollow">
+<img src="../assets/yclients/images/logo-partner/REDSMS.svg" class="pr-2 pl-2 img-fluid transition-hover" alt="REDSMS logo">
+</a>
+</div>
+</div>
+</div>
+</section>
+<section class="m-gab-2">
+<div class="container py-3">
+<div class="row">
+<div class="col-12 text-center">
+<h2 class="mb-4">
+Присоединяйтесь к 23 000 компаний,<br>
+которые доверяют YCLIENTS
+</h2>
+<p class="mb-0 text-dark fw-500">
+Зарегистрируйтесь и узнайте подробнее об условиях активации модуля уведомлений
+</p>
+<p class="text-center mt-7">
+<a href="https://www.yclients.com/onboarding/first" target="_blank" class="btn btn-warning pr-5 pl-5 transition-hover">
+Зарегистрироваться
+</a>
+</p>
+</div>
+</div>
+</div>
+</section>
+
+</main>
+
+
+<div class="fixed-bottom-box">
+<div class="callback-wrapper">
+<a href="tel:88005050475" class="tel_link">
+8 (800) 505-04-75
+</a>
+<div class="callback" onclick="if (!window.__cfRLUnblockHandlers) return false; ms.callback.showWidget()" data-cf-modified-76996c583e1ab29aeddfdeaf-="">
+<p>Заказать звонок</p>
+</div>
+</div>
+<div class="select-holder">
+<select name="dropdown" class="dropdown-lang">
+<option value="/en">En</option>
+<option value="/el">El</option>
+<option value="/hr">Hr</option>
+<option value="/hu">Hu</option>
+<option value="/pt">Pt</option>
+ <option selected value="/ru">Ru</option>
+<option value="/sr">Sr</option>
+<option value="/tr">Tr</option>
+</select> </div>
+</div>
+<div class="fixed-callback-button" onclick="if (!window.__cfRLUnblockHandlers) return false; ms.callback.showWidget()" data-cf-modified-76996c583e1ab29aeddfdeaf-="" />
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<script src="../themes/yclients/new-2019/all.min.js%3Fv2.22" async type="76996c583e1ab29aeddfdeaf-text/javascript"></script>
+<script type="76996c583e1ab29aeddfdeaf-text/javascript">
+    const promoCheckerInitInterval = setInterval(() => {
+        if (window.promoChecker) {
+            window.promoChecker.init(1)
+            clearInterval(promoCheckerInitInterval)
+        }
+    }, 50)
+</script>
+<script type="76996c583e1ab29aeddfdeaf-text/javascript">
+    (function(g, e, t) {
+        e.GetReviewWidgetID = 'dCQVIye7txLqasHx';
+        var s = g.createElement('script');
+        e[t] = e[t] || function() {
+            (e[t].queue = e[t].queue || []).push(arguments);
+        };
+        s.async = true;
+        s.charset = 'UTF-8';
+        s.src = 'https://app.getreview.io/static/bundle.js';
+        if (g.head) { g.head.appendChild(s); }
+    })(document, window, 'GetReview');
+</script>
+<script type="76996c583e1ab29aeddfdeaf-text/javascript">
+    function onloadCallback() {
+        ms.callback.renderCallbackCaptcha()
+    }
+</script>
+
+
+
+
+<script type="76996c583e1ab29aeddfdeaf-text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-40235336-1', 'auto');
+    ga('send', 'pageview');
+</script>
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KB8MG4"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<noindex>
+
+<div class="modal inmodal animated bounceInRight" id="callModal" role="dialog" style="display: none;">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header text-center">
+<button type="button" class="close" onclick="if (!window.__cfRLUnblockHandlers) return false; ms.callback.hideWidget()" data-dismiss="modal" data-cf-modified-76996c583e1ab29aeddfdeaf-=""><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+<img class="call-us_icon" src="../assets/yclients/images/new_site/callback.png" alt="Online Booking Software and Appointment Scheduling">
+<div class="modal-title">У Вас остались вопросы?</div>
+<div class="modal-subtitle">Мы перезвоним Вам в течение 59 секунд</div>
+</div>
+<div class="modal-body">
+<form class="form-horizontal">
+<div id="validation-phone" class="form-group">
+<label for="callBack">Телефон</label>
+<input id="callBack" type="tel" placeholder="+7" class="phone form-control">
+<div class="validation">Некорректный номер телефона</div>
+</div>
+<div id="callbackRecaptchaWrapper" style="margin-top: 15px;"></div>
+<div id="validation-agreement" class="form-group">
+<div class="check-material check-material-ru agreement-block">
+<input id="agreement-block" type="checkbox" class="js-checkbox-kkm-module" name="agreement">
+<label for="agreement-block"></label>
+<div class="agreement-label"> Отправляя заявку, вы даете согласие с<a href="https://www.yclients.com/rinfo/user-agreement" target="_blank"> Политикой обработки персональных данных</a> и принимаете условия <a href="info/confidential.html" target="_blank">Политики конфиденциальности</a></div>
+<div class="validation">Подтвердите соглашение</div>
+</div>
+</div>
+<div id="validation-agreement3" class="form-group">
+<div class="check-material check-material-ru agreement-block">
+<input id="agreement-block3" type="checkbox" class="js-checkbox-kkm-module" name="agreement">
+<label for="agreement-block3"></label>
+<div class="agreement-label">Я согласен(а) на получение сообщений рекламного характера.</div>
+<div class="validation">Подтвердите соглашение</div>
+</div>
+</div>
+<div class="form-group text-center m-b-none">
+<a class="btn btn-primary" id="makeCallButton" onclick="if (!window.__cfRLUnblockHandlers) return false; return ms.callback.makeCall();" data-cf-modified-76996c583e1ab29aeddfdeaf-="">
+<span id="timer_result">Заказать звонок</span>
+</a>
+</div>
+<span class="modal-info-text">или напишите нам</span>
+<div style="display: flex;" class="col-12 justify-content-center mr-0 mt-3">
+<a class="mr-2" href="https://api.whatsapp.com/send/?phone=79311112399&text&app_absent=0">
+<img src="../assets/yclients/2019-template/img/icon/whatsapp.png" alt="">
+</a>
+<a class="mr-2" href="https://t.me/yclientsofficial_bot">
+<img src="../assets/yclients/2019-template/img/icon/telegram.png" alt="">
+</a>
+<a href="viber://pa?chatURI=yclients">
+<img src="../assets/yclients/2019-template/img/icon/viber.png" alt="">
+</a>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</noindex>
+<script type="76996c583e1ab29aeddfdeaf-text/javascript" src="../themes/yclients/new-2019/1.bundle.js%3Fv2.22"></script><script type="76996c583e1ab29aeddfdeaf-text/javascript" src="../themes/yclients/new-2019/bundle.js%3Fv2.22"></script><script src="../cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="76996c583e1ab29aeddfdeaf-|49" defer=""></script><script type="text/javascript">(function(){window['__CF$cv$params']={r:'71700ac8caca9dd8',m:'eil9IhRBsxd29zTJoEMpQo1gQEdpinxVL_mqdxrVfDY-1654506912-0-AWMMUDYUEOaVhbHGDAyQ8ypi1niOMvkL0/onqMT+tP7LAixERzjMwFhZQWnfCeY/Os2ODre9kHwWj/465fSfGCNlN85S/4w/ditzA1hpM9l0H9nOSBf61dMPG2u0kuIHan768LGi2XMH+boIO3Ndhu4=',s:[0x54d88e0e2f,0x00841e83c4],}})();</script></body>
+</html>
